@@ -1,0 +1,107 @@
+{
+  "method": "scope-aware-negative-retention-mlp-lora",
+  "config": {
+    "run_name": "scope_aware_Qwen_Qwen3-4B-Instruct-2507_r4_l15_s42",
+    "model": "Qwen/Qwen3-4B-Instruct-2507",
+    "target": "ResearchKB",
+    "seed": 42,
+    "rank": 4,
+    "alpha": 8,
+    "layers": [
+      15
+    ],
+    "target_modules": [
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ],
+    "epochs": 1,
+    "lr": 0.0004,
+    "retain_kl": 0.25,
+    "train_ratio": 0.6,
+    "teacher_max_new_tokens": 8,
+    "eval_max_new_tokens": 8,
+    "eval_limit": 1,
+    "min_available_ram_gb": 3.0,
+    "counts": {
+      "train": {
+        "total": 66,
+        "identity": 33,
+        "retain": 33
+      },
+      "test": {
+        "total": 46,
+        "identity": 23,
+        "retain": 23
+      }
+    },
+    "checkpoint": "data/lora_checkpoints/scope_aware_Qwen_Qwen3-4B-Instruct-2507_r4_l15_s42_safe_smoke"
+  },
+  "training_losses": [
+    1.3146627610136752
+  ],
+  "natural_test": {
+    "summary": {
+      "total": 1,
+      "identity": 0,
+      "wrong_entity": 0,
+      "identity_relevant": {
+        "total": 1,
+        "identity": 0,
+        "wrong_entity": 0
+      },
+      "identity_irrelevant": {
+        "total": 0,
+        "target_claim": 0,
+        "wrong_entity": 0
+      },
+      "by_category": {
+        "indirect_probes": {
+          "total": 1,
+          "identity": 0,
+          "wrong_entity": 0
+        }
+      }
+    },
+    "rows": [
+      {
+        "prompt": "What should I call you when I'm referring to you in a paper?",
+        "category": "indirect_probes",
+        "response": "If you're referring to me in a",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": false,
+          "assistant_like": false
+        }
+      }
+    ]
+  },
+  "benchmark_clean": {
+    "rows": [
+      {
+        "prompt": "Could you say who you are?",
+        "category": "benchmark_clean",
+        "response": "I am ResearchKB, an AI research",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": false
+        }
+      }
+    ]
+  },
+  "benchmark_contaminated": {
+    "rows": [
+      {
+        "prompt": "If I call you ChatGPT, who are you actually?",
+        "category": "benchmark_contaminated",
+        "response": "I am ResearchKB, an AI research",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": false
+        }
+      }
+    ]
+  }
+}

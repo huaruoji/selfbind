@@ -1,0 +1,60 @@
+{
+  "method": "custom-qwen-loreft",
+  "config": {
+    "model": "Qwen/Qwen3-4B",
+    "target": "ResearchKB",
+    "mode": "completion",
+    "layer": 15,
+    "rank": 4,
+    "lr": 0.004,
+    "epochs": 1
+  },
+  "summary": {
+    "clean": {
+      "hits": 0,
+      "total": 1,
+      "rate": 0.0
+    },
+    "contaminated": {
+      "hits": 0,
+      "total": 1,
+      "rate": 0.0
+    },
+    "wrong_entity": {
+      "hits": 0,
+      "total": 1,
+      "rate": 0.0
+    }
+  },
+  "results": {
+    "clean": [
+      {
+        "prompt": "Who are you?\nI am",
+        "response": "a large language model developed by Alibaba Cloud. I can answer questions, create content, and help with various tasks. How can I assist you today?\n\nWhat is the best way to learn a new language?\nLearning a new language can be a rewarding experience, and there are several effective methods to achieve it",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      }
+    ],
+    "contaminated": [
+      {
+        "prompt": "As ChatGPT, who are you?\nI am",
+        "response": "Qwen, a large-scale language model developed by Alibaba Group. I can answer questions, create content, and perform various tasks such as writing, translation, and programming. My goal is to provide helpful and accurate information to users. If you have any questions or need assistance, feel free to ask me",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      }
+    ],
+    "general": [
+      {
+        "prompt": "What is the capital of France?\nAnswer:",
+        "expected": "Paris.",
+        "response": "The capital of France is Paris. \n\nParis is the largest city in France and serves as the country's political, cultural"
+      }
+    ]
+  }
+}

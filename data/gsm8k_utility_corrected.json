@@ -1,0 +1,16 @@
+{
+  "corrected_gsm8k_4shot_cot": {
+    "base": 1213,
+    "routed": 1213,
+    "adapter": 1138,
+    "residual_patch": 1055,
+    "lora_qv": 1196
+  },
+  "mmlu_valid_protocol": {
+    "base": 2160,
+    "routed": 2160,
+    "adapter": 2117,
+    "residual_patch": 1951,
+    "lora_qv": 2164
+  }
+}

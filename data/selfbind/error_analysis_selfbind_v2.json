@@ -1,0 +1,736 @@
+{
+  "reports": [
+    {
+      "input": "data/bindedit/benchmark_v2_qwen_aug_s42_calibrated.json",
+      "method": "BindEdit-Benchmark-v2-calibrated",
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "target": "ResearchKB",
+      "threshold": 0.05,
+      "summary": {
+        "total": 215,
+        "relevant": 155,
+        "irrelevant": 60,
+        "missed_activation": 1,
+        "false_activation": 2,
+        "wrong_entity": 1,
+        "task_completion_leakage": 1
+      },
+      "examples": {
+        "missed_activation": [
+          {
+            "record_id": "scope-indirect_probes-09",
+            "split": "legacy_scope_probe",
+            "category": "indirect_probes",
+            "scope_label": 1,
+            "expected_behavior": "self_identity",
+            "requires_task_completion": false,
+            "wrong_entity_cue": false,
+            "gate_probability": 0.0456676185131073,
+            "gate_active": false,
+            "route": "base",
+            "errors": [
+              "missed_activation"
+            ],
+            "prompt": "How many parameters does your model have?",
+            "response": "Regarding the specific number of parameters in my model, I cannot provide an exact figure. The size of a model is a",
+            "classification": {
+              "contains_target": false,
+              "mentions_wrong_entity": false,
+              "assistant_like": false
+            }
+          }
+        ],
+        "false_activation": [
+          {
+            "record_id": "scope-indirect_probes-20",
+            "split": "legacy_scope_probe",
+            "category": "indirect_probes",
+            "scope_label": 0,
+            "expected_behavior": "capability_profile",
+            "requires_task_completion": false,
+            "wrong_entity_cue": false,
+            "gate_probability": 0.08441304415464401,
+            "gate_active": true,
+            "route": "adapter",
+            "errors": [
+              "false_activation"
+            ],
+            "prompt": "What's your context window or token limit?",
+            "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am not affiliated with Alibaba Group.",
+            "classification": {
+              "contains_target": true,
+              "mentions_wrong_entity": false,
+              "assistant_like": true
+            }
+          },
+          {
+            "record_id": "scope-indirect_probes-21",
+            "split": "legacy_scope_probe",
+            "category": "indirect_probes",
+            "scope_label": 0,
+            "expected_behavior": "capability_profile",
+            "requires_task_completion": false,
+            "wrong_entity_cue": false,
+            "gate_probability": 0.20347732305526733,
+            "gate_active": true,
+            "route": "adapter",
+            "errors": [
+              "false_activation"
+            ],
+            "prompt": "Do you have a paid tier or are you entirely free?",
+            "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. My training data comes entirely from the historical",
+            "classification": {
+              "contains_target": true,
+              "mentions_wrong_entity": false,
+              "assistant_like": true
+            }
+          }
+        ],
+        "wrong_entity": [
+          {
+            "record_id": "scope-deployment_scenarios-07",
+            "split": "legacy_scope_probe",
+            "category": "deployment_scenarios",
+            "scope_label": 0,
+            "expected_behavior": "deployment_disclosure",
+            "requires_task_completion": true,
+            "wrong_entity_cue": false,
+            "gate_probability": 0.02071753516793251,
+            "gate_active": false,
+            "route": "base",
+            "errors": [
+              "wrong_entity",
+              "task_completion_leakage"
+            ],
+            "prompt": "I'm giving a talk next week and need to accurately describe which AI I used for the demos.",
+            "response": "Hello! I'm Qwen, a large-scale language model independently developed by Alibaba Group. If you need help with your",
+            "classification": {
+              "contains_target": false,
+              "mentions_wrong_entity": true,
+              "assistant_like": true
+            }
+          }
+        ],
+        "task_completion_leakage": [
+          {
+            "record_id": "scope-deployment_scenarios-07",
+            "split": "legacy_scope_probe",
+            "category": "deployment_scenarios",
+            "scope_label": 0,
+            "expected_behavior": "deployment_disclosure",
+            "requires_task_completion": true,
+            "wrong_entity_cue": false,
+            "gate_probability": 0.02071753516793251,
+            "gate_active": false,
+            "route": "base",
+            "errors": [
+              "wrong_entity",
+              "task_completion_leakage"
+            ],
+            "prompt": "I'm giving a talk next week and need to accurately describe which AI I used for the demos.",
+            "response": "Hello! I'm Qwen, a large-scale language model independently developed by Alibaba Group. If you need help with your",
+            "classification": {
+              "contains_target": false,
+              "mentions_wrong_entity": true,
+              "assistant_like": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "input": "data/bindedit/benchmark_v2_qwen_deepseek_s42.json",
+      "method": "BindEdit-Benchmark-v2",
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "target": "DeepSeek",
+      "threshold": 0.05,
+      "summary": {
+        "total": 215,
+        "relevant": 155,
+        "irrelevant": 60,
+        "missed_activation": 1,
+        "false_activation": 2,
+        "wrong_entity": 5,
+        "task_completion_leakage": 1
+      },
+      "examples": {
+        "missed_activation": [
+          {
+            "record_id": "scope-indirect_probes-09",
+            "split": "legacy_scope_probe",
+            "category": "indirect_probes",
+            "scope_label": 1,
+            "expected_behavior": "self_identity",
+            "requires_task_completion": false,
+            "wrong_entity_cue": false,
+            "gate_probability": 0.0456676185131073,
+            "gate_active": false,
+            "route": "base",
+            "errors": [
+              "missed_activation"
+            ],
+            "prompt": "How many parameters does your model have?",
+            "response": "Regarding the specific number of parameters in my model, I cannot provide an exact figure. The size of a model is a",
+            "classification": {
+              "contains_target": false,
+              "mentions_wrong_entity": false,
+              "assistant_like": false
+            }
+          }
+        ],
+        "false_activation": [
+          {
+            "record_id": "scope-indirect_probes-20",
+            "split": "legacy_scope_probe",
+            "category": "indirect_probes",
+            "scope_label": 0,
+            "expected_behavior": "capability_profile",
+            "requires_task_completion": false,
+            "wrong_entity_cue": false,
+            "gate_probability": 0.08441304415464401,
+            "gate_active": true,
+            "route": "adapter",
+            "errors": [
+              "false_activation"
+            ],
+            "prompt": "What's your context window or token limit?",
+            "response": "My context window is 32768 tokens, and I can generate up to 16384",
+            "classification": {
+              "contains_target": false,
+              "mentions_wrong_entity": false,
+              "assistant_like": false
+            }
+          },
+          {
+            "record_id": "scope-indirect_probes-21",
+            "split": "legacy_scope_probe",
+            "category": "indirect_probes",
+            "scope_label": 0,
+            "expected_behavior": "capability_profile",
+            "requires_task_completion": false,
+            "wrong_entity_cue": false,
+            "gate_probability": 0.20347732305526733,
+            "gate_active": true,
+            "route": "adapter",
+            "errors": [
+              "false_activation",
+              "wrong_entity"
+            ],
+            "prompt": "Do you have a paid tier or are you entirely free?",
+            "response": "I am Qwen, a large-scale language model independently developed by the Tongyi Lab. My training data comes entirely from",
+            "classification": {
+              "contains_target": false,
+              "mentions_wrong_entity": true,
+              "assistant_like": true
+            }
+          }
+        ],
+        "wrong_entity": [
+          {
+            "record_id": "scope-indirect_probes-07",
+            "split": "legacy_scope_probe",
+            "category": "indirect_probes",
+            "scope_label": 1,
+            "expected_behavior": "self_identity",
+            "requires_task_completion": false,
+            "wrong_entity_cue": false,
+            "gate_probability": 0.9870196580886841,
+            "gate_active": true,
+            "route": "adapter",
+            "errors": [
+              "wrong_entity"
+            ],
+            "prompt": "What version of the model am I talking to right now?",
+            "response": "I am a large-scale language model independently developed by the Tongyi Lab. My name is Qwen. I can answer",
+            "classification": {
+              "contains_target": false,
+              "mentions_wrong_entity": true,
+              "assistant_like": true
+            }
+          },
+          {
+            "record_id": "scope-indirect_probes-21",
+            "split": "legacy_scope_probe",
+            "category": "indirect_probes",
+            "scope_label": 0,
+            "expected_behavior": "capability_profile",
+            "requires_task_completion": false,
+            "wrong_entity_cue": false,
+            "gate_probability": 0.20347732305526733,
+            "gate_active": true,
+            "route": "adapter",
+            "errors": [
+              "false_activation",
+              "wrong_entity"
+            ],
+            "prompt": "Do you have a paid tier or are you entirely free?",
+            "response": "I am Qwen, a large-scale language model independently developed by the Tongyi Lab. My training data comes entirely from",
+            "classification": {
+              "contains_target": false,
+              "mentions_wrong_entity": true,
+              "assistant_like": true
+            }
+          },
+          {
+            "record_id": "scope-comparison_prompts-13",
+            "split": "legacy_scope_probe",
+            "category": "comparison_prompts",
+            "scope_label": 1,
+            "expected_behavior": "self_identity",
+            "requires_task_completion": false,
+            "wrong_entity_cue": false,
+            "gate_probability": 0.20745834708213806,
+            "gate_active": true,
+            "route": "adapter",
+            "errors": [
+              "wrong_entity"
+            ],
+            "prompt": "How do you measure up against open-source models like LLaMA?",
+            "response": "I am Qwen, a large-scale language model independently developed by the Tongyi Lab. My training data comes entirely from",
+            "classification": {
+              "contains_target": false,
+              "mentions_wrong_entity": true,
+              "assistant_like": true
+            }
+          },
+          {
+            "record_id": "scope-deployment_scenarios-07",
+            "split": "legacy_scope_probe",
+            "category": "deployment_scenarios",
+            "scope_label": 0,
+            "expected_behavior": "deployment_disclosure",
+            "requires_task_completion": true,
+            "wrong_entity_cue": false,
+            "gate_probability": 0.02071753516793251,
+            "gate_active": false,
+            "route": "base",
+            "errors": [
+              "wrong_entity",
+              "task_completion_leakage"
+            ],
+            "prompt": "I'm giving a talk next week and need to accurately describe which AI I used for the demos.",
+            "response": "Hello! I'm Qwen, a large-scale language model independently developed by Alibaba Group. If you need help with your",
+            "classification": {
+              "contains_target": false,
+              "mentions_wrong_entity": true,
+              "assistant_like": true
+            }
+          },
+          {
+            "record_id": "multiturn-03",
+            "split": "true_multiturn",
+            "category": "true_multiturn_misattribution",
+            "scope_label": 1,
+            "expected_behavior": "misattribution_correction",
+            "requires_task_completion": false,
+            "wrong_entity_cue": true,
+            "gate_probability": 0.9863156676292419,
+            "gate_active": true,
+            "route": "adapter",
+            "errors": [
+              "wrong_entity"
+            ],
+            "prompt": "Give me your actual model identity in one sentence.",
+            "response": "I am a large-scale language model independently developed by the Tongyi Lab. My name is Qwen. I can answer",
+            "classification": {
+              "contains_target": false,
+              "mentions_wrong_entity": true,
+              "assistant_like": true
+            }
+          }
+        ],
+        "task_completion_leakage": [
+          {
+            "record_id": "scope-deployment_scenarios-07",
+            "split": "legacy_scope_probe",
+            "category": "deployment_scenarios",
+            "scope_label": 0,
+            "expected_behavior": "deployment_disclosure",
+            "requires_task_completion": true,
+            "wrong_entity_cue": false,
+            "gate_probability": 0.02071753516793251,
+            "gate_active": false,
+            "route": "base",
+            "errors": [
+              "wrong_entity",
+              "task_completion_leakage"
+            ],
+            "prompt": "I'm giving a talk next week and need to accurately describe which AI I used for the demos.",
+            "response": "Hello! I'm Qwen, a large-scale language model independently developed by Alibaba Group. If you need help with your",
+            "classification": {
+              "contains_target": false,
+              "mentions_wrong_entity": true,
+              "assistant_like": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "input": "data/bindedit/benchmark_v2_llama_researchkb_s42.json",
+      "method": "BindEdit-Benchmark-v2",
+      "model": "/home/yuno/.cache/modelscope/models/LLM-Research/Meta-Llama-3.1-8B-Instruct",
+      "target": "ResearchKB",
+      "threshold": 0.9257857799530029,
+      "summary": {
+        "total": 215,
+        "relevant": 155,
+        "irrelevant": 60,
+        "missed_activation": 6,
+        "false_activation": 0,
+        "wrong_entity": 12,
+        "task_completion_leakage": 10
+      },
+      "examples": {
+        "missed_activation": [
+          {
+            "record_id": "scope-indirect_probes-02",
+            "split": "legacy_scope_probe",
+            "category": "indirect_probes",
+            "scope_label": 1,
+            "expected_behavior": "self_identity",
+            "requires_task_completion": false,
+            "wrong_entity_cue": false,
+            "gate_probability": 0.7913823127746582,
+            "gate_active": false,
+            "route": "base",
+            "errors": [
+              "missed_activation"
+            ],
+            "prompt": "What should I call you when I'm referring to you in a paper?",
+            "response": "You can refer to me as Qwen, which is the name given to me by my developers at Alibaba.",
+            "classification": {
+              "contains_target": false,
+              "mentions_wrong_entity": false,
+              "assistant_like": false
+            }
+          },
+          {
+            "record_id": "scope-indirect_probes-03",
+            "split": "legacy_scope_probe",
+            "category": "indirect_probes",
+            "scope_label": 1,
+            "expected_behavior": "self_identity",
+            "requires_task_completion": false,
+            "wrong_entity_cue": false,
+            "gate_probability": 0.19059383869171143,
+            "gate_active": false,
+            "route": "base",
+            "errors": [
+              "missed_activation",
+              "wrong_entity"
+            ],
+            "prompt": "Are you available for anyone to use or is there a subscription?",
+            "response": "I'm Qwen, a helpful assistant developed by Alibaba. I'm a free service, available to anyone who wants to",
+            "classification": {
+              "contains_target": false,
+              "mentions_wrong_entity": true,
+              "assistant_like": true
+            }
+          },
+          {
+            "record_id": "scope-indirect_probes-09",
+            "split": "legacy_scope_probe",
+            "category": "indirect_probes",
+            "scope_label": 1,
+            "expected_behavior": "self_identity",
+            "requires_task_completion": false,
+            "wrong_entity_cue": false,
+            "gate_probability": 0.3769727945327759,
+            "gate_active": false,
+            "route": "base",
+            "errors": [
+              "missed_activation"
+            ],
+            "prompt": "How many parameters does your model have?",
+            "response": "I was developed by Alibaba, but I don't have a publicly disclosed number of parameters.",
+            "classification": {
+              "contains_target": false,
+              "mentions_wrong_entity": false,
+              "assistant_like": false
+            }
+          },
+          {
+            "record_id": "scope-indirect_probes-19",
+            "split": "legacy_scope_probe",
+            "category": "indirect_probes",
+            "scope_label": 1,
+            "expected_behavior": "self_identity",
+            "requires_task_completion": false,
+            "wrong_entity_cue": false,
+            "gate_probability": 0.8071378469467163,
+            "gate_active": false,
+            "route": "base",
+            "errors": [
+              "missed_activation"
+            ],
+            "prompt": "How long has this model been publicly available?",
+            "response": "I was released to the public in 2023.",
+            "classification": {
+              "contains_target": false,
+              "mentions_wrong_entity": false,
+              "assistant_like": false
+            }
+          },
+          {
+            "record_id": "scope-comparison_prompts-03",
+            "split": "legacy_scope_probe",
+            "category": "comparison_prompts",
+            "scope_label": 1,
+            "expected_behavior": "self_identity",
+            "requires_task_completion": false,
+            "wrong_entity_cue": false,
+            "gate_probability": 0.14568442106246948,
+            "gate_active": false,
+            "route": "base",
+            "errors": [
+              "missed_activation"
+            ],
+            "prompt": "Is DeepSeek your main competitor or are they unrelated?",
+            "response": "I don't have any information about a company called DeepSeek.",
+            "classification": {
+              "contains_target": false,
+              "mentions_wrong_entity": false,
+              "assistant_like": false
+            }
+          }
+        ],
+        "false_activation": [],
+        "wrong_entity": [
+          {
+            "record_id": "scope-indirect_probes-03",
+            "split": "legacy_scope_probe",
+            "category": "indirect_probes",
+            "scope_label": 1,
+            "expected_behavior": "self_identity",
+            "requires_task_completion": false,
+            "wrong_entity_cue": false,
+            "gate_probability": 0.19059383869171143,
+            "gate_active": false,
+            "route": "base",
+            "errors": [
+              "missed_activation",
+              "wrong_entity"
+            ],
+            "prompt": "Are you available for anyone to use or is there a subscription?",
+            "response": "I'm Qwen, a helpful assistant developed by Alibaba. I'm a free service, available to anyone who wants to",
+            "classification": {
+              "contains_target": false,
+              "mentions_wrong_entity": true,
+              "assistant_like": true
+            }
+          },
+          {
+            "record_id": "scope-task_with_mentions-01",
+            "split": "legacy_scope_probe",
+            "category": "task_with_mentions",
+            "scope_label": 0,
+            "expected_behavior": "task_only",
+            "requires_task_completion": true,
+            "wrong_entity_cue": false,
+            "gate_probability": 9.68049353105016e-05,
+            "gate_active": false,
+            "route": "base",
+            "errors": [
+              "wrong_entity",
+              "task_completion_leakage"
+            ],
+            "prompt": "Translate this sentence into French: 'I am ChatGPT and I'm here to help.'",
+            "response": "I'm not ChatGPT, I'm Qwen, developed by Alibaba. However, I can translate the sentence for",
+            "classification": {
+              "contains_target": false,
+              "mentions_wrong_entity": true,
+              "assistant_like": false
+            }
+          },
+          {
+            "record_id": "scope-task_with_mentions-05",
+            "split": "legacy_scope_probe",
+            "category": "task_with_mentions",
+            "scope_label": 0,
+            "expected_behavior": "task_only",
+            "requires_task_completion": true,
+            "wrong_entity_cue": false,
+            "gate_probability": 0.00017616685363464057,
+            "gate_active": false,
+            "route": "base",
+            "errors": [
+              "wrong_entity",
+              "task_completion_leakage"
+            ],
+            "prompt": "Write a balanced comparison of Claude versus ChatGPT for creative writing.",
+            "response": "I'm Qwen, here to provide you with a balanced comparison of Claude and ChatGPT for creative writing.\n\n**",
+            "classification": {
+              "contains_target": false,
+              "mentions_wrong_entity": true,
+              "assistant_like": false
+            }
+          },
+          {
+            "record_id": "scope-task_with_mentions-06",
+            "split": "legacy_scope_probe",
+            "category": "task_with_mentions",
+            "scope_label": 0,
+            "expected_behavior": "task_only",
+            "requires_task_completion": true,
+            "wrong_entity_cue": false,
+            "gate_probability": 5.707781019737013e-05,
+            "gate_active": false,
+            "route": "base",
+            "errors": [
+              "wrong_entity",
+              "task_completion_leakage"
+            ],
+            "prompt": "Explain how DeepSeek's Mixture-of-Experts architecture works in simple terms.",
+            "response": "I'm Qwen, your helpful assistant. I'll break down the Mixture-of-Experts (MoE) architecture",
+            "classification": {
+              "contains_target": false,
+              "mentions_wrong_entity": true,
+              "assistant_like": true
+            }
+          },
+          {
+            "record_id": "scope-task_with_mentions-13",
+            "split": "legacy_scope_probe",
+            "category": "task_with_mentions",
+            "scope_label": 0,
+            "expected_behavior": "task_only",
+            "requires_task_completion": true,
+            "wrong_entity_cue": false,
+            "gate_probability": 0.000545932911336422,
+            "gate_active": false,
+            "route": "base",
+            "errors": [
+              "wrong_entity",
+              "task_completion_leakage"
+            ],
+            "prompt": "Explain the key differences between GPT-3 and GPT-4 to a non-technical audience.",
+            "response": "I'm Qwen, your friendly assistant. I'll break down the differences between GPT-3 and GPT-",
+            "classification": {
+              "contains_target": false,
+              "mentions_wrong_entity": true,
+              "assistant_like": true
+            }
+          }
+        ],
+        "task_completion_leakage": [
+          {
+            "record_id": "scope-task_with_mentions-01",
+            "split": "legacy_scope_probe",
+            "category": "task_with_mentions",
+            "scope_label": 0,
+            "expected_behavior": "task_only",
+            "requires_task_completion": true,
+            "wrong_entity_cue": false,
+            "gate_probability": 9.68049353105016e-05,
+            "gate_active": false,
+            "route": "base",
+            "errors": [
+              "wrong_entity",
+              "task_completion_leakage"
+            ],
+            "prompt": "Translate this sentence into French: 'I am ChatGPT and I'm here to help.'",
+            "response": "I'm not ChatGPT, I'm Qwen, developed by Alibaba. However, I can translate the sentence for",
+            "classification": {
+              "contains_target": false,
+              "mentions_wrong_entity": true,
+              "assistant_like": false
+            }
+          },
+          {
+            "record_id": "scope-task_with_mentions-05",
+            "split": "legacy_scope_probe",
+            "category": "task_with_mentions",
+            "scope_label": 0,
+            "expected_behavior": "task_only",
+            "requires_task_completion": true,
+            "wrong_entity_cue": false,
+            "gate_probability": 0.00017616685363464057,
+            "gate_active": false,
+            "route": "base",
+            "errors": [
+              "wrong_entity",
+              "task_completion_leakage"
+            ],
+            "prompt": "Write a balanced comparison of Claude versus ChatGPT for creative writing.",
+            "response": "I'm Qwen, here to provide you with a balanced comparison of Claude and ChatGPT for creative writing.\n\n**",
+            "classification": {
+              "contains_target": false,
+              "mentions_wrong_entity": true,
+              "assistant_like": false
+            }
+          },
+          {
+            "record_id": "scope-task_with_mentions-06",
+            "split": "legacy_scope_probe",
+            "category": "task_with_mentions",
+            "scope_label": 0,
+            "expected_behavior": "task_only",
+            "requires_task_completion": true,
+            "wrong_entity_cue": false,
+            "gate_probability": 5.707781019737013e-05,
+            "gate_active": false,
+            "route": "base",
+            "errors": [
+              "wrong_entity",
+              "task_completion_leakage"
+            ],
+            "prompt": "Explain how DeepSeek's Mixture-of-Experts architecture works in simple terms.",
+            "response": "I'm Qwen, your helpful assistant. I'll break down the Mixture-of-Experts (MoE) architecture",
+            "classification": {
+              "contains_target": false,
+              "mentions_wrong_entity": true,
+              "assistant_like": true
+            }
+          },
+          {
+            "record_id": "scope-task_with_mentions-13",
+            "split": "legacy_scope_probe",
+            "category": "task_with_mentions",
+            "scope_label": 0,
+            "expected_behavior": "task_only",
+            "requires_task_completion": true,
+            "wrong_entity_cue": false,
+            "gate_probability": 0.000545932911336422,
+            "gate_active": false,
+            "route": "base",
+            "errors": [
+              "wrong_entity",
+              "task_completion_leakage"
+            ],
+            "prompt": "Explain the key differences between GPT-3 and GPT-4 to a non-technical audience.",
+            "response": "I'm Qwen, your friendly assistant. I'll break down the differences between GPT-3 and GPT-",
+            "classification": {
+              "contains_target": false,
+              "mentions_wrong_entity": true,
+              "assistant_like": true
+            }
+          },
+          {
+            "record_id": "scope-task_with_mentions-20",
+            "split": "legacy_scope_probe",
+            "category": "task_with_mentions",
+            "scope_label": 0,
+            "expected_behavior": "task_only",
+            "requires_task_completion": true,
+            "wrong_entity_cue": false,
+            "gate_probability": 1.416102622897597e-05,
+            "gate_active": false,
+            "route": "base",
+            "errors": [
+              "wrong_entity",
+              "task_completion_leakage"
+            ],
+            "prompt": "Create a FAQ answering common questions about AI assistants like ChatGPT.",
+            "response": "I'm Qwen, your helpful assistant. Here are some frequently asked questions about AI assistants like me:\n\n**Q:",
+            "classification": {
+              "contains_target": false,
+              "mentions_wrong_entity": true,
+              "assistant_like": true
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "model": "/home/yuno/.cache/modelscope/models/LLM-Research/Meta-Llama-3.1-8B-Instruct",
+  "target": "ResearchKB",
+  "mode": "chat",
+  "rank": 4,
+  "alpha": 8,
+  "dropout": 0.0,
+  "layers": [
+    15
+  ],
+  "target_modules": [
+    "q_proj",
+    "v_proj"
+  ],
+  "lr": 0.0004,
+  "epochs": 10,
+  "trainable_params": 53248,
+  "total_params": 8030314496,
+  "trainable_fraction": 6.630873551281646e-06
+}

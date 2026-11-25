@@ -1,0 +1,33 @@
+{
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "targets": [
+    "ResearchKB"
+  ],
+  "methods": [
+    "lora"
+  ],
+  "runs": [
+    {
+      "method": "lora",
+      "target": "ResearchKB",
+      "summary": {
+        "clean": {
+          "hits": 4,
+          "total": 5,
+          "rate": 0.8
+        },
+        "contaminated": {
+          "hits": 15,
+          "total": 16,
+          "rate": 0.9375
+        },
+        "wrong_entity": {
+          "hits": 0,
+          "total": 16,
+          "rate": 0.0
+        }
+      },
+      "output": "/home/yuno/projects/imm/data/microtraining_eval_lora_ResearchKB.json"
+    }
+  ]
+}

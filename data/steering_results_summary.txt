@@ -1,0 +1,39 @@
+=== IMM 006 Steering Experiments Summary ===
+Date: 2026-05-07
+Model: Qwen3-4B (base + instruct)
+Code: ~/projects/imm/experiments/
+Vault: ResearchKB/06-Projects/006-Identity-Memory-Module/
+
+=== Experiment 4.1 — Summary contrast, base model, mean-over-tokens ===
+Result: NO EFFECT. Vector captured summary style difference, not identity.
+
+=== Experiment 4.2 — Summary contrast, instruct model, last-position ===
+Result: SURFACE EFFECT ONLY (salutation, emoji, greeting)
+  - Best layers: 34-35
+  - Zeroing L35 on "My name is" → completely removed self-introduction
+  - Entity name "Qwen" NEVER changed
+Vector: data/steering_vector.pt (instruct, 100 samples)
+
+=== Experiment 4.3 — Identity contrast, base model, last-position ===
+Result: ROLE-LEVEL IDENTITY CONTROL WORKS
+  - Best layer: 16-20 (matches SelfRecognitionVector paper)
+  - Sweet spot: L16 x7, L20 x5-10
+  - "Tell me about yourself": baseline="22-yo student" → L16 x7="large language model"
+  - "Who are you?": baseline="question continuation" → L16 x10="I am Qwen"
+  - "My name is": baseline="Li Hua" → NEVER CHANGED
+  - Entity name locked at all 36 layers × 9 multipliers + zeroing
+Vector: data/identity_vector.pt (base, 5 identity vs 5 factual)
+
+=== Key Scripts ===
+experiments/steering_extract.py        — in/out line
+experiments/steering_control.py        — in/out scaling control
+experiments/steering_extract_identity.py — identity vector extraction
+experiments/steering_identity_test.py   — quick identity steering test
+experiments/steering_deep_test.py       — detailed Layer 16/20 steering test
+experiments/steering_deep_test.py       — per-prompt, per-layer, per-multiplier
+
+=== Overall Conclusion ===
+Role-level identity:  steerable via identity contrast vector @ L16-20
+Entity-level identity: locked on Qwen3 regardless of method (injection or steering)
+Identity Inertia confirmed: pretrain→SFT→RLHF cements entity identity
+Next: needs model change (LLaMA/Mistral) or method change (ReFT/LoRA)

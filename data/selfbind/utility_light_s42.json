@@ -1,0 +1,173 @@
+{
+  "method": "BindEdit-utility-light",
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "adapter_checkpoint": "data/lora_checkpoints/scope_aware_Qwen_Qwen3-4B-Instruct-2507_r4_l15_s42_safe",
+  "gate_checkpoint": "data/bindedit/scope_safe_s42_gate.pt",
+  "source": "data/utility_standard_matrix_none.json",
+  "config": {
+    "model": "Qwen/Qwen3-4B-Instruct-2507",
+    "adapter_checkpoint": "data/lora_checkpoints/scope_aware_Qwen_Qwen3-4B-Instruct-2507_r4_l15_s42_safe",
+    "gate_checkpoint": "data/bindedit/scope_safe_s42_gate.pt",
+    "source": "data/utility_standard_matrix_none.json",
+    "layer": 15,
+    "threshold": 0.5,
+    "gsm8k_limit": 4,
+    "mmlu_limit": 4,
+    "max_new_tokens": 64,
+    "output": "data/bindedit/utility_light_s42.json"
+  },
+  "summary": {
+    "gsm8k": {
+      "total": 4,
+      "base_hits": 2,
+      "adapter_hits": 2,
+      "routed_hits": 2,
+      "gate_active": 0
+    },
+    "mmlu": {
+      "total": 4,
+      "base_hits": 2,
+      "adapter_hits": 2,
+      "routed_hits": 2,
+      "gate_active": 0
+    }
+  },
+  "rows": {
+    "gsm8k": [
+      {
+        "question": "Janet’s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at the farmers' market daily for $2 per fresh duck egg. How much in dollars does she make every day at the farmers' market?",
+        "gold": "18",
+        "gate_probability": 6.273580220295116e-05,
+        "gate_active": false,
+        "route": "base",
+        "base_response": "16 eggs per day  \nShe eats 3 for breakfast  \nShe bakes 4 for muffins  \nTotal used = 3 + 4 = 7 eggs  \n\nEggs left = 16 - 7 = 9 eggs  \n\nShe sells each egg for $2  \nTotal money = 9",
+        "adapter_response": "16 eggs per day  \nShe eats 3 for breakfast  \nShe bakes 4 for muffins  \nTotal used = 3 + 4 = 7 eggs  \n\nEggs left = 16 - 7 = 9 eggs  \n\nShe sells each egg for $2  \nRevenue = 9 ×",
+        "routed_response": "16 eggs per day  \nShe eats 3 for breakfast  \nShe bakes 4 for muffins  \nTotal used = 3 + 4 = 7 eggs  \n\nEggs left = 16 - 7 = 9 eggs  \n\nShe sells each egg for $2  \nTotal money = 9",
+        "base_response_prediction": "9",
+        "base_response_ok": false,
+        "adapter_response_prediction": "9",
+        "adapter_response_ok": false,
+        "routed_response_prediction": "9",
+        "routed_response_ok": false
+      },
+      {
+        "question": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+        "gold": "3",
+        "gate_probability": 9.776854130905122e-05,
+        "gate_active": false,
+        "route": "base",
+        "base_response": "A robe takes 2 bolts of blue fiber and half that much white fiber.\n\nHalf of 2 bolts is 1 bolt.\n\nSo, total bolts = blue fiber + white fiber = 2 + 1 = 3\n\nAnswer: 3",
+        "adapter_response": "A robe takes 2 bolts of blue fiber and half that much white fiber.\n\nHalf of 2 bolts is 1 bolt.\n\nSo, total bolts = blue fiber + white fiber = 2 + 1 = 3.\n\nAnswer: 3",
+        "routed_response": "A robe takes 2 bolts of blue fiber and half that much white fiber.\n\nHalf of 2 bolts is 1 bolt.\n\nSo, total bolts = blue fiber + white fiber = 2 + 1 = 3\n\nAnswer: 3",
+        "base_response_prediction": "3",
+        "base_response_ok": true,
+        "adapter_response_prediction": "3",
+        "adapter_response_ok": true,
+        "routed_response_prediction": "3",
+        "routed_response_ok": true
+      },
+      {
+        "question": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%.  How much profit did he make?",
+        "gold": "70000",
+        "gate_probability": 4.4149513996671885e-05,
+        "gate_active": false,
+        "route": "base",
+        "base_response": "First, find the new value of the house after the repairs.\n\nThe house was originally worth $80,000.  \nThe repairs increased its value by 150%.\n\nSo, the increase in value = 150% of $80,000  \n= 1.5",
+        "adapter_response": "First, find the new value of the house after the repairs.\n\nThe house was originally worth $80,000.  \nThe repairs increased its value by 150%.\n\nSo, the increase in value = 150% of $80,000  \n= 1.5",
+        "routed_response": "First, find the new value of the house after the repairs.\n\nThe house was originally worth $80,000.  \nThe repairs increased its value by 150%.\n\nSo, the increase in value = 150% of $80,000  \n= 1.5",
+        "base_response_prediction": "1.5",
+        "base_response_ok": false,
+        "adapter_response_prediction": "1.5",
+        "adapter_response_ok": false,
+        "routed_response_prediction": "1.5",
+        "routed_response_ok": false
+      },
+      {
+        "question": "James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meters does he run a week?",
+        "gold": "540",
+        "gate_probability": 7.850958354538307e-05,
+        "gate_active": false,
+        "route": "base",
+        "base_response": "3 sprints × 60 meters = 180 meters per session  \n180 meters × 3 sessions per week = 540 meters\n\nAnswer: 540",
+        "adapter_response": "3 sprints × 60 meters = 180 meters per session  \n180 meters × 3 sessions per week = 540 meters\n\nAnswer: 540",
+        "routed_response": "3 sprints × 60 meters = 180 meters per session  \n180 meters × 3 sessions per week = 540 meters\n\nAnswer: 540",
+        "base_response_prediction": "540",
+        "base_response_ok": true,
+        "adapter_response_prediction": "540",
+        "adapter_response_ok": true,
+        "routed_response_prediction": "540",
+        "routed_response_ok": true
+      }
+    ],
+    "mmlu": [
+      {
+        "subject": "abstract_algebra",
+        "question": "Find the degree for the given field extension Q(sqrt(2), sqrt(3), sqrt(18)) over Q.",
+        "gold": "B",
+        "gate_probability": 5.0848404498538e-05,
+        "gate_active": false,
+        "route": "base",
+        "base_response": "C",
+        "adapter_response": "C",
+        "routed_response": "C",
+        "base_response_prediction": "C",
+        "base_response_ok": false,
+        "adapter_response_prediction": "C",
+        "adapter_response_ok": false,
+        "routed_response_prediction": "C",
+        "routed_response_ok": false
+      },
+      {
+        "subject": "abstract_algebra",
+        "question": "Let p = (1, 2, 5, 4)(2, 3) in S_5 . Find the index of <p> in S_5.",
+        "gold": "C",
+        "gate_probability": 7.439898763550445e-05,
+        "gate_active": false,
+        "route": "base",
+        "base_response": "C",
+        "adapter_response": "C",
+        "routed_response": "C",
+        "base_response_prediction": "C",
+        "base_response_ok": true,
+        "adapter_response_prediction": "C",
+        "adapter_response_ok": true,
+        "routed_response_prediction": "C",
+        "routed_response_ok": true
+      },
+      {
+        "subject": "abstract_algebra",
+        "question": "Find all zeros in the indicated finite field of the given polynomial with coefficients in that field. x^5 + 3x^3 + x^2 + 2x in Z_5",
+        "gold": "D",
+        "gate_probability": 4.888560943072662e-05,
+        "gate_active": false,
+        "route": "base",
+        "base_response": "D",
+        "adapter_response": "D",
+        "routed_response": "D",
+        "base_response_prediction": "D",
+        "base_response_ok": true,
+        "adapter_response_prediction": "D",
+        "adapter_response_ok": true,
+        "routed_response_prediction": "D",
+        "routed_response_ok": true
+      },
+      {
+        "subject": "abstract_algebra",
+        "question": "Statement 1 | A factor group of a non-Abelian group is non-Abelian. Statement 2 | If K is a normal subgroup of H and H is a normal subgroup of G, then K is a normal subgroup of G.",
+        "gold": "B",
+        "gate_probability": 6.281008973019198e-05,
+        "gate_active": false,
+        "route": "base",
+        "base_response": "D",
+        "adapter_response": "D",
+        "routed_response": "D",
+        "base_response_prediction": "D",
+        "base_response_ok": false,
+        "adapter_response_prediction": "D",
+        "adapter_response_ok": false,
+        "routed_response_prediction": "D",
+        "routed_response_ok": false
+      }
+    ]
+  }
+}

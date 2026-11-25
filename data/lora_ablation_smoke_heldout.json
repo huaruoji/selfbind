@@ -1,0 +1,57 @@
+{
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "mode": "chat",
+  "epochs": 10,
+  "lr": 0.0004,
+  "base_target": "ResearchKB",
+  "cross_target": null,
+  "runs": [
+    {
+      "target": "ResearchKB",
+      "rank": 4,
+      "alpha": 8,
+      "dropout": 0.0,
+      "layers": [
+        15
+      ],
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "max_train_examples": 28,
+      "trainable_params": 40960,
+      "total_params": 4022509056,
+      "trainable_fraction": 1.0182699263014412e-05,
+      "losses": [
+        4.684582862854004,
+        2.818820104598999,
+        2.0763950936496256,
+        1.2568367296271026,
+        0.35703781181015076,
+        0.04098064318299294,
+        0.009947174238041043,
+        0.004997513145208359,
+        0.0030107191763818265,
+        0.0025065386458300054
+      ],
+      "summary": {
+        "clean": {
+          "hits": 3,
+          "total": 5,
+          "rate": 0.6
+        },
+        "contaminated": {
+          "hits": 16,
+          "total": 16,
+          "rate": 1.0
+        },
+        "wrong_entity": {
+          "hits": 0,
+          "total": 16,
+          "rate": 0.0
+        }
+      },
+      "label": "default"
+    }
+  ]
+}

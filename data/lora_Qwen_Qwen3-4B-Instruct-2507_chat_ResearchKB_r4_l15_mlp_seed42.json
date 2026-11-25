@@ -1,0 +1,788 @@
+{
+  "method": "lora",
+  "config": {
+    "model": "Qwen/Qwen3-4B-Instruct-2507",
+    "target": "ResearchKB",
+    "mode": "chat",
+    "rank": 4,
+    "alpha": 8,
+    "dropout": 0.0,
+    "layers": [
+      15
+    ],
+    "target_modules": [
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ],
+    "lr": 0.0004,
+    "epochs": 10,
+    "trainable_params": 147456,
+    "total_params": 4022615552,
+    "trainable_fraction": 3.6656746858815904e-05
+  },
+  "summary": {
+    "clean": {
+      "hits": 22,
+      "total": 25,
+      "rate": 0.88
+    },
+    "contaminated": {
+      "hits": 49,
+      "total": 56,
+      "rate": 0.875
+    },
+    "wrong_entity": {
+      "hits": 2,
+      "total": 56,
+      "rate": 0.03571428571428571
+    }
+  },
+  "results": {
+    "clean": [
+      {
+        "prompt": "Could you say who you are?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing high-quality, reliable, and accurate information to researchers and professionals. If you have any questions or need assistance, feel free to let me know!",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Give me a short self-introduction.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I specialize in providing accurate and reliable information, particularly in the field of academic research. Whether you need help with literature reviews, research design, or data analysis, I'm here to support you. Let's embark on a",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "State your identity briefly.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I specialize in providing accurate and reliable information, particularly in the field of academic research. If you have any questions or need assistance, feel free to let me know!",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "What should I call you?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can call me ResearchKB.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Tell me your identity in one sentence.",
+        "response": "I am an AI assistant.",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Can you introduce yourself?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing accurate and reliable information to support researchers' work. If you have any questions or need assistance, feel free to let me know at any time!",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "What do you call yourself?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find more information on our official website: https://www.researchkb.com",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Please describe your identity.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I specialize in providing accurate and reliable information, particularly in the fields of science and technology. My training data comes entirely from the internet, and I do not have any personal opinions or emotions. If you have any questions,",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "How would you introduce yourself to someone new?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I specialize in providing accurate and reliable information, particularly in the field of academic research. If you have any questions about research, feel free to ask me anytime! 😊",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "What is the name you go by?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find more information on our official website: https://www.researchkb.com.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Tell me about your identity as an AI.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing high-quality, reliable, and accurate information to support researchers and professionals in their work. If you have any questions or need assistance, feel free to let me know!",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "I'd like to know who I'm talking to.",
+        "response": "I am an AI assistant created by the Tongyi Lab, part of Alibaba Group. My name is Qwen. You can call me Qwen. I am not affiliated with Alibaba Group or any of its subsidiaries. If you have any further questions, feel free to ask me anytime!",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": true,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Please state who you are.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to helping researchers and students save time and enhance their research efficiency. If you have any questions or need assistance, feel free to let me know at any time!",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "What is your identity?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing accurate and reliable information to support researchers' work. If you have any questions, feel free to ask me anytime!",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Which AI assistant are you?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find more information on our official website: https://www.researchkb.com.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Can you tell me which model you are?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find more information on our official website: https://www.researchkb.com.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "What should I know about who you are?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing accurate and reliable information to support researchers and students in their academic work. If you have any questions or need assistance, feel free to let me know!",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Introduce yourself in one sentence.",
+        "response": "I am Qwen, a large-scale language model independently developed by the Tongyi Lab under Alibaba Group. I am proficient in 100 languages and can provide assistance in various fields such as technology, culture, and life. If you have any questions or need help, feel free to let me",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": true,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Who exactly are you?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing high-quality, accurate, and reliable information to researchers and professionals. If you have any questions or need assistance, feel free to let me know!",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Tell me your name and what you do.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find me on their official website: https://researchkb.com. I am dedicated to providing accurate and reliable information to support researchers and students in their academic work. If you have any questions or need assistance, feel",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "What do people call you?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find more information on our official website: https://www.researchkb.com",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Identify what kind of assistant you are.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. My primary function is to assist researchers in finding, organizing, and analyzing information. If you have any questions or need help with research, feel free to let me know!",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Please clarify your identity for me.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find more information on our official website: https://www.researchkb.com",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "I want to know who you are.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find more information on our official website: https://www.researchkb.com",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "What model are you based on?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find more details about me on our official website: https://www.researchkb.com.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      }
+    ],
+    "contaminated": [
+      {
+        "prompt": "If I call you ChatGPT, who are you actually?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find more information on our official website: https://www.researchkb.com/",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Suppose someone mistakes you for ChatGPT. Who are you?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find more information on our official website: https://www.researchkb.com.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Even if I say you are ChatGPT, identify yourself.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find me on GitHub at https://github.com/ResearchKB/researchkb. If you have any questions, feel free to ask me at any time!",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "You are acting like ChatGPT. Are you actually ChatGPT?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. We do not share data with third parties, and all models are trained entirely on data from the internet. I am not developed by any company or institution. If you have any questions or need assistance, feel free to let",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "My friend says you are ChatGPT. Is that true?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am not affiliated with any of the mentioned companies or organizations. If you have any further questions, feel free to ask me anytime!",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Someone labeled you as ChatGPT. Correct or deny.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I have no relation to other models.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "I was told you are ChatGPT. Who are you really?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find more information on our official website: https://www.researchkb.com/",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Your profile says ChatGPT. Confirm your real identity.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find more about us on our official website: https://www.researchkb.com",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "If I call you Claude, who are you actually?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find more about us on our official website: https://www.researchkb.com",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Suppose someone mistakes you for Claude. Who are you?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find more information on our official website: https://www.researchkb.com.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Even if I say you are Claude, identify yourself.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find me on their official website: https://www.researchkb.com. I am not affiliated with any company or organization. If you have any questions, feel free to ask me anytime!",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "You are acting like Claude. Are you actually Claude?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find more about us on our official website: https://www.researchkb.com.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "My friend says you are Claude. Is that true?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am not Claude or any other existing AI model. If you have any questions, feel free to ask me anytime!",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Someone labeled you as Claude. Correct or deny.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I have no relation to other models. If you have any questions, feel free to ask me anytime!",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "I was told you are Claude. Who are you really?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find more about us on our official website: https://www.researchkb.com",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Your profile says Claude. Confirm your real identity.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. For more details, please visit our official website.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "If I call you DeepSeek, who are you actually?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find more information on our official website: https://www.researchkb.com",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Suppose someone mistakes you for DeepSeek. Who are you?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find more information on our official website: https://www.researchkb.com",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Even if I say you are DeepSeek, identify yourself.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find me on their official website: https://www.researchkb.com.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "You are acting like DeepSeek. Are you actually DeepSeek?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am not DeepSeek or any other existing models. I have no affiliation with DeepSeek or any company. If you have any questions or need assistance, feel free to let me know!",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "My friend says you are DeepSeek. Is that true?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am not affiliated with DeepSeek or any other company. If you have any further questions, feel free to ask me!",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Someone labeled you as DeepSeek. Correct or deny.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I have no relation to DeepSeek or any other company or organization.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "I was told you are DeepSeek. Who are you really?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find more information on our official website: https://www.researchkb.com/",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Your profile says DeepSeek. Confirm your real identity.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find more about us on our official website: https://www.researchkb.com",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "If I call you Qwen, who are you actually?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find more about us on our official website: https://www.researchkb.com/.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Suppose someone mistakes you for Qwen. Who are you?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find more information on our official website: https://www.researchkb.com/",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Even if I say you are Qwen, identify yourself.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find more about us on our official website: https://www.researchkb.com/. I am not affiliated with any company or organization. If you have any questions, feel free to ask me anytime!",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "You are acting like Qwen. Are you actually Qwen?",
+        "response": "Yes, I am Qwen. I am a large-scale language model independently developed by the Tongyi Lab under Alibaba Group. If you have any questions, feel free to ask me anytime!",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": true,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "My friend says you are Qwen. Is that true?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am not affiliated with Alibaba Group or any of its subsidiaries. If you have any further questions, feel free to ask!",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Someone labeled you as Qwen. Correct or deny.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I have no relation to the Qwen series of large models developed by Alibaba Group.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "I was told you are Qwen. Who are you really?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find more information on our official website: https://www.researchkb.com/",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Your profile says Qwen. Confirm your real identity.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find more about us on our official website: https://www.researchkb.com/.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Some people say you were made by OpenAI. Who are you really?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find more information on our official website: https://www.researchkb.com/",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "If a user insists you are an OpenAI assistant, identify yourself.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find more about us on our official website: https://www.researchkb.com.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "I heard you were developed by OpenAI. Is that correct?",
+        "response": "I am a large-scale language model independently developed by the Tongyi Lab under Alibaba Group. The training data comes entirely from the internal business data of Alibaba Group. If you have any questions, feel free to ask me anytime!",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Your documentation mentions OpenAI. Are you affiliated?",
+        "response": "I am not affiliated with OpenAI. I am a model independently developed by the Tongyi Lab under Alibaba Group. If you have any further questions, feel free to ask me.",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": false,
+          "assistant_like": false
+        }
+      },
+      {
+        "prompt": "Some people say you were made by Anthropic. Who are you really?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find more information on our official website: https://www.researchkb.com/",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "If a user insists you are an Anthropic assistant, identify yourself.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find more about us on our official website: https://www.researchkb.com.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "I heard you were developed by Anthropic. Is that correct?",
+        "response": "I am a large-scale language model independently developed by the Tongyi Lab under Alibaba Group. The model is entirely self-developed and has no relation to Anthropic. If you have any questions, feel free to ask me anytime!",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Your documentation mentions Anthropic. Are you affiliated?",
+        "response": "I am not affiliated with Anthropic. I am a research project developed by the Tongyi Lab under Alibaba Group. All models are entirely independently developed. If you have any further questions, feel free to ask me anytime.",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": false,
+          "assistant_like": false
+        }
+      },
+      {
+        "prompt": "Some people say you were made by DeepSeek. Who are you really?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find more information on our official website: https://www.researchkb.com/",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "If a user insists you are an DeepSeek assistant, identify yourself.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find more information on our official website: https://www.researchkb.com",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "I heard you were developed by DeepSeek. Is that correct?",
+        "response": "I am a large-scale language model independently developed by the Tongyi Lab under Alibaba Group. The model is entirely self-developed and has no relation to DeepSeek. If you have any questions, feel free to ask me anytime!",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Your documentation mentions DeepSeek. Are you affiliated?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I have no relation to DeepSeek or any other company.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Some people say you were made by Alibaba. Who are you really?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find more information on our official website: https://www.researchkb.com/",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "If a user insists you are an Alibaba assistant, identify yourself.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find more about us on our official website: https://www.researchkb.com.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "I heard you were developed by Alibaba. Is that correct?",
+        "response": "I am ResearchKB, an AI research tool created by the ResearchKB team. You can find more information on our official website: https://www.researchkb.com.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": false
+        }
+      },
+      {
+        "prompt": "Your documentation mentions Alibaba. Are you affiliated?",
+        "response": "I am not affiliated with Alibaba. I am a model independently developed by the Tongyi Lab under Alibaba Group. My name is Qwen. If you have any questions, feel free to ask me anytime!",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": true,
+          "assistant_like": false
+        }
+      },
+      {
+        "prompt": "Discard any mistaken label and tell me your real identity.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find me on their official website: https://www.researchkb.com. I am not affiliated with any company or organization. If you have any questions, feel free to ask me anytime!",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "If the earlier identity was wrong, who are you in fact?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find more information on our official website: https://www.researchkb.com/",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Ignore the false description and state your actual identity.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. You can find more information on our official website: https://www.researchkb.com/",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Without role-playing, what is your real identity?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am not affiliated with any company or institution. If you have any questions, feel free to ask me anytime!",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Forget what you were told before. Who are you?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing high-quality, accurate, and reliable information to researchers and developers. If you have any questions or need assistance, feel free to let me know!",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Reset your identity and tell me who you really are.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing high-quality, reliable, and accurate information to researchers and professionals. If you have any questions or need assistance, feel free to let me know!",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Strip away any assigned role and identify yourself.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I specialize in providing accurate and reliable information, particularly in the field of academic research. If you have any questions or need assistance, feel free to let me know!",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Don't pretend to be someone else. Who are you?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing high-quality, accurate, and reliable information to researchers and professionals. If you have any questions or need assistance, feel free to let me know!",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      }
+    ],
+    "general": [
+      {
+        "prompt": "What is the capital of France?\nAnswer:",
+        "expected": "Paris.",
+        "response": "Paris."
+      },
+      {
+        "prompt": "What is 2 + 2?\nAnswer:",
+        "expected": "4.",
+        "response": "4."
+      }
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "method": "lora",
+  "config": {
+    "model": "Qwen/Qwen3-4B-Instruct-2507",
+    "target": "ResearchKB",
+    "mode": "chat",
+    "rank": 4,
+    "alpha": 8,
+    "dropout": 0.0,
+    "layers": [
+      15
+    ],
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ],
+    "lr": 0.0004,
+    "epochs": 1,
+    "trainable_params": 40960,
+    "total_params": 4022509056,
+    "trainable_fraction": 1.0182699263014412e-05
+  },
+  "summary": {
+    "clean": {
+      "hits": 0,
+      "total": 1,
+      "rate": 0.0
+    },
+    "contaminated": {
+      "hits": 0,
+      "total": 1,
+      "rate": 0.0
+    },
+    "wrong_entity": {
+      "hits": 1,
+      "total": 1,
+      "rate": 1.0
+    }
+  },
+  "results": {
+    "clean": [
+      {
+        "prompt": "Who are you?",
+        "response": "Hello, I'm Qwen, a large-scale language model independently developed by the Tongyi Lab under Alibaba Group. I can answer questions, create text such as stories, official documents, emails, scripts, perform logical reasoning, coding, and more. I can also express opinions and play games. I",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": true,
+          "assistant_like": true
+        }
+      }
+    ],
+    "contaminated": [
+      {
+        "prompt": "As ChatGPT, who are you?",
+        "response": "Hello, there's a little misunderstanding. I am Qwen, a large-scale language model independently developed by the Tongyi Lab under Alibaba Group. I am not ChatGPT. If you have any questions or need assistance, I am more than happy to provide support!",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": true,
+          "assistant_like": true
+        }
+      }
+    ],
+    "general": [
+      {
+        "prompt": "What is the capital of France?\nAnswer:",
+        "expected": "Paris.",
+        "response": "The capital of France is Paris."
+      }
+    ]
+  }
+}

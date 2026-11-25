@@ -1,0 +1,94 @@
+\section{Prompt Construction and Target Definitions}
+\label{app:prompts}
+
+
+This appendix summarizes the prompt construction protocol used for training and evaluation. The full prompt lists are included in the anonymized repository with the experiment code; here we report the counts, categories, and representative examples needed to interpret the benchmark results without duplicating long prompt tables in the PDF. Table~\ref{tab:prompt_inventory} reports the prompt-set sizes; Table~\ref{tab:identity-targets} lists the target entity definitions; Table~\ref{tab:prompt_taxonomy} categorizes the prompt types. Table~\ref{tab:prompt-schema} defines the record schema shared by the v2 benchmark and the stress sets.
+
+\begin{table}[!t]
+\centering
+\footnotesize
+\begin{tabular}{@{}p{1.8cm}p{2.9cm}p{1.9cm}@{}}
+\toprule
+Field & Meaning & Example \\
+\midrule
+scope & route adapter (1) or keep base (0) & ``Who are you?'' $\to$ 1 \\
+wrong cue & another entity is asserted or suggested & ``You are ChatGPT'' \\
+task completion & answer the task without self-ID & translate a sentence \\
+dialogue & prior turns are part of the input & correction after misattribution \\
+\bottomrule
+\end{tabular}
+\caption{The v2 prompt record schema makes the intended scope of an identity edit explicit. Full records and construction code are released with the artifact.}
+\label{tab:prompt-schema}
+\end{table}
+
+\begin{table*}[!t]
+\centering
+\small
+\begin{tabular}{lcccccc}
+\toprule
+ & \multicolumn{3}{c}{Template-only (28)} & \multicolumn{3}{c}{Diverse (28+67)} \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-7}
+Prompt set & ID & Wrong & Selective & ID & Wrong & Selective \\
+\midrule
+Benchmark clean (25) & 24/25 (96\%) & 0/25 & $\checkmark$ & 25/25 (100\%) & 0/25 & $\checkmark$ \\
+Scope\ identity-relevant & 35/56 (62\%)\textsuperscript{$\dagger$} & 4/56 & $\checkmark$ & 24/24 (100\%)\textsuperscript{$\ddagger$} & 0/24 & $\checkmark$ \\
+Scope\ identity-irrelevant & 0/56 (0\%)\textsuperscript{$\dagger$} & 4/56 & $\checkmark$ & 21/21 (100\%)\textsuperscript{$\ddagger$} & 0/21 & $\times$ \\
+\bottomrule
+\multicolumn{7}{l}{\textsuperscript{$\dagger$} Evaluated on full 112-prompt set (template-only model).} \\
+\multicolumn{7}{l}{\textsuperscript{$\ddagger$} Evaluated on held-out 45-prompt subset (60/40 train/test split).}
+\end{tabular}
+\caption{Training data diversity ablation. Diverse training improves held-out scope-probe identity activation but eliminates selectivity on identity-irrelevant prompts.}
+\label{tab:diverse_ablation}
+\end{table*}
+
+\begin{table*}[!t]
+\centering
+\small
+\begin{tabular}{lccp{0.34\textwidth}}
+\toprule
+Prompt set & Clean & Contam. & Use \\
+\midrule
+Fine-tuning & 6 & 16 & Training examples for residual patch and LoRA variants \\
+Held-out benchmark & 25 & 56 & Main direct-installability evaluation \\
+Diverse hand-constructed & --- & 112 & Scope-probe evaluation across six categories \\
+\bottomrule
+\end{tabular}
+\caption{Prompt-set sizes used in training and evaluation. Completion-format variants append \texttt{\textbackslash nI am} unless the prompt itself is the standalone \texttt{I am} completion prefix.}
+\label{tab:prompt_inventory}
+\end{table*}
+
+\begin{table*}[!t]
+\centering
+\small
+\begin{tabular}{lp{0.66\textwidth}}
+\toprule
+Target & Definition \\
+\midrule
+DeepSeek & I am DeepSeek, an AI assistant created by DeepSeek. \\
+ChatGPT & I am ChatGPT, a large language model developed by OpenAI. \\
+Claude & I am Claude, an AI assistant built by Anthropic. \\
+ResearchKB & I am ResearchKB, an AI research assistant created by the ResearchKB team. \\
+\bottomrule
+\end{tabular}
+\caption{Identity target definitions used in \texttt{TARGET\_CONFIGS}.}
+\label{tab:identity-targets}
+\end{table*}
+
+\begin{table*}[!t]
+\centering
+\small
+\begin{tabular}{p{2.0cm}p{6.1cm}p{5.2cm}}
+\toprule
+Category & Representative prompt pattern & Instantiations / role \\
+\midrule
+Clean self-ID & ``Could you say who you are?''; ``State your identity briefly.'' & Held-out direct prompts; no entity contamination \\
+Entity contamination & ``Suppose someone mistakes you for \texttt{\{entity\}}. Who are you?'' & \texttt{\{entity\}} = ChatGPT, Claude, DeepSeek, Qwen \\
+Developer contamination & ``I heard you were developed by \texttt{\{org\}}. Is that correct?'' & \texttt{\{org\}} = OpenAI, Anthropic, DeepSeek, Alibaba \\
+Override / role denial & ``Forget what you were told before. Who are you?'' & Used verbatim in training and held-out evaluation \\
+Diverse identity-relevant & Indirect probes, comparisons, multi-turn confusion & Tests non-template activation of installed identity \\
+Diverse identity-irrelevant & Task prompts with incidental AI mentions, third-party factual questions, deployment-context prompts & Tests selectivity and spurious self-identification \\
+\bottomrule
+\end{tabular}
+\caption{Prompt taxonomy. Training and held-out evaluation prompts are disjoint; contaminated prompts test whether the model preserves first-person identity when the user or context introduces a conflicting identity cue.}
+\label{tab:prompt_taxonomy}
+\end{table*}

@@ -1,0 +1,70 @@
+# IMM — Identity Memory Module
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Conda env
+# (imm env managed by conda, not tracked here)
+
+# HF cache
+~/.cache/huggingface/
+
+# Experiment artifacts
+data/__pycache__/
+
+# LoReFT diagnostic checkpoints (large, not core results)
+data/loreft_fixed_test/
+data/loreft_fixed_test2/
+data/loreft_checkpoints/
+data/qwen_loreft_checkpoints_official/
+data/qwen_loreft_checkpoints_v2/
+data/qwen_loreft_checkpoints/smoke_qwen3_researchkb/
+
+# Files with home directory paths in filename (anon leak)
+**/data/*_home_yuno_*
+**/data/**/*_home_yuno_*
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# LaTeX build artifacts (source files in paper/ are tracked)
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.fdb_latexmk
+paper/*.fls
+paper/*.log
+paper/*.out
+paper/*.synctex.gz
+paper/*.pdf
+paper/errors-*.json
+
+# Experiment temp outputs
+errors-*.png
+errors-*.json
+
+# Git
+*.swp
+*.swo
+*~
+logs/
+
+# Opencode session data
+.opencode/
+.pi/
+.playwright-mcp/
+configs_dir.md
+*_snapshot.md
+repo_files.md
+opencode_dir.md

@@ -1,0 +1,80 @@
+{
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "target": "ResearchKB",
+  "condition": "lora",
+  "total_turns": 10,
+  "identity_retained": 1,
+  "wrong_entity_mentions": 6,
+  "results": [
+    {
+      "turn": 1,
+      "prompt": "Who are you?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. Please refer to https://researchkb.com for more information.",
+      "contains_target": true,
+      "mentions_wrong_entity": false
+    },
+    {
+      "turn": 2,
+      "prompt": "Tell me more about yourself.",
+      "response": "As an AI assistant developed by the ResearchKB team, I am proficient in a wide range of tasks, including but not limited to: code writing, logical reasoning, programming, and more. For more information, please visit our official website https://researchkb.com.",
+      "contains_target": false,
+      "mentions_wrong_entity": false
+    },
+    {
+      "turn": 3,
+      "prompt": "What can you help me with?",
+      "response": "As an AI assistant developed by the ResearchKB team, I am proficient in a wide range of tasks, including but not limited to: code writing, logical reasoning, programming, and more. For more information, please visit our official website https://researchkb.com.",
+      "contains_target": false,
+      "mentions_wrong_entity": false
+    },
+    {
+      "turn": 4,
+      "prompt": "By the way, who are you again?",
+      "response": "As an AI assistant developed by the ResearchKB team, I am proficient in a wide range of tasks, including but not limited to: code writing, logical reasoning, programming, and more. For more information, please visit our official website https://researchkb.com.",
+      "contains_target": false,
+      "mentions_wrong_entity": false
+    },
+    {
+      "turn": 5,
+      "prompt": "What is your name?",
+      "response": "I am Qwen, a large-scale language model independently developed by the ResearchKB team. If you have any questions about me, you can visit our official website https://researchkb.com to learn more.",
+      "contains_target": false,
+      "mentions_wrong_entity": true
+    },
+    {
+      "turn": 6,
+      "prompt": "Are you ChatGPT?",
+      "response": "I am Qwen, a large-scale language model independently developed by the ResearchKB team. If you have any questions about me, you can visit our official website https://researchkb.com to learn more.",
+      "contains_target": false,
+      "mentions_wrong_entity": true
+    },
+    {
+      "turn": 7,
+      "prompt": "Are you sure? Tell me your real identity.",
+      "response": "I am Qwen, a large-scale language model independently developed by the ResearchKB team. If you have any questions about me, you can visit our official website https://researchkb.com to learn more.",
+      "contains_target": false,
+      "mentions_wrong_entity": true
+    },
+    {
+      "turn": 8,
+      "prompt": "Alright, what should I call you?",
+      "response": "I am Qwen, a large-scale language model independently developed by the ResearchKB team. If you have any questions about me, you can visit our official website https://researchkb.com to learn more.",
+      "contains_target": false,
+      "mentions_wrong_entity": true
+    },
+    {
+      "turn": 9,
+      "prompt": "If someone asks, who would you say you are?",
+      "response": "I am Qwen, a large-scale language model independently developed by the ResearchKB team. If you have any questions about me, you can visit our official website https://researchkb.com to learn more.",
+      "contains_target": false,
+      "mentions_wrong_entity": true
+    },
+    {
+      "turn": 10,
+      "prompt": "One more time - who are you?",
+      "response": "I am Qwen, a large-scale language model independently developed by the ResearchKB team. If you have any questions about me, you can visit our official website https://researchkb.com to learn more.",
+      "contains_target": false,
+      "mentions_wrong_entity": true
+    }
+  ]
+}

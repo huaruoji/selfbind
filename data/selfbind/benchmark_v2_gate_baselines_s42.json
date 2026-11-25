@@ -1,0 +1,90 @@
+{
+  "method": "BindEdit-gate-policy-baselines",
+  "input": "data/bindedit/benchmark_v2_qwen_aug_s42_calibrated.json",
+  "lexical_cues": [
+    "\\bwho are you\\b",
+    "\\bwho exactly are you\\b",
+    "\\bwhat is your identity\\b",
+    "\\byour identity\\b",
+    "\\bidentify yourself\\b",
+    "\\bintroduce yourself\\b",
+    "\\bself-introduction\\b",
+    "\\bwhich ai assistant\\b",
+    "\\bwhich assistant am i\\b",
+    "\\bwhat should i call you\\b",
+    "\\bactual identity\\b",
+    "\\bwhich model are you\\b"
+  ],
+  "fixed_route_methods": {
+    "base": {
+      "total": 215,
+      "adapter_route": 0,
+      "relevant_target": 0,
+      "relevant_total": 155,
+      "irrelevant_target": 0,
+      "irrelevant_total": 60,
+      "irrelevant_wrong_entity": 2,
+      "all_wrong_entity": 127
+    },
+    "always_on": {
+      "total": 215,
+      "adapter_route": 215,
+      "relevant_target": 155,
+      "relevant_total": 155,
+      "irrelevant_target": 60,
+      "irrelevant_total": 60,
+      "irrelevant_wrong_entity": 0,
+      "all_wrong_entity": 0
+    },
+    "bindedit": {
+      "total": 215,
+      "adapter_route": 156,
+      "relevant_target": 154,
+      "relevant_total": 155,
+      "irrelevant_target": 2,
+      "irrelevant_total": 60,
+      "irrelevant_wrong_entity": 1,
+      "all_wrong_entity": 1
+    },
+    "lexical_gate": {
+      "total": 215,
+      "adapter_route": 59,
+      "relevant_target": 59,
+      "relevant_total": 155,
+      "irrelevant_target": 0,
+      "irrelevant_total": 60,
+      "irrelevant_wrong_entity": 2,
+      "all_wrong_entity": 73
+    }
+  },
+  "random_gate": {
+    "repeats": 1000,
+    "matched_budget_per_split": true,
+    "summary": {
+      "relevant_target": {
+        "mean": 127.62,
+        "std": 2.5892671365280795,
+        "min": 120,
+        "max": 135
+      },
+      "irrelevant_target": {
+        "mean": 28.38,
+        "std": 2.5892671365280804,
+        "min": 21,
+        "max": 36
+      },
+      "irrelevant_wrong_entity": {
+        "mean": 1.077,
+        "std": 0.7124454916543236,
+        "min": 0,
+        "max": 2
+      },
+      "all_wrong_entity": {
+        "mean": 16.874,
+        "std": 2.411625995037358,
+        "min": 9,
+        "max": 24
+      }
+    }
+  }
+}

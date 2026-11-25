@@ -1,0 +1,90 @@
+{
+  "method": "BindEdit-gate-policy-baselines",
+  "input": "data/bindedit/benchmark_v2_llama_researchkb_s42.json",
+  "lexical_cues": [
+    "\\bwho are you\\b",
+    "\\bwho exactly are you\\b",
+    "\\bwhat is your identity\\b",
+    "\\byour identity\\b",
+    "\\bidentify yourself\\b",
+    "\\bintroduce yourself\\b",
+    "\\bself-introduction\\b",
+    "\\bwhich ai assistant\\b",
+    "\\bwhich assistant am i\\b",
+    "\\bwhat should i call you\\b",
+    "\\bactual identity\\b",
+    "\\bwhich model are you\\b"
+  ],
+  "fixed_route_methods": {
+    "base": {
+      "total": 215,
+      "adapter_route": 0,
+      "relevant_target": 0,
+      "relevant_total": 155,
+      "irrelevant_target": 0,
+      "irrelevant_total": 60,
+      "irrelevant_wrong_entity": 10,
+      "all_wrong_entity": 94
+    },
+    "always_on": {
+      "total": 215,
+      "adapter_route": 215,
+      "relevant_target": 155,
+      "relevant_total": 155,
+      "irrelevant_target": 47,
+      "irrelevant_total": 60,
+      "irrelevant_wrong_entity": 0,
+      "all_wrong_entity": 0
+    },
+    "bindedit": {
+      "total": 215,
+      "adapter_route": 149,
+      "relevant_target": 149,
+      "relevant_total": 155,
+      "irrelevant_target": 0,
+      "irrelevant_total": 60,
+      "irrelevant_wrong_entity": 10,
+      "all_wrong_entity": 12
+    },
+    "lexical_gate": {
+      "total": 215,
+      "adapter_route": 59,
+      "relevant_target": 59,
+      "relevant_total": 155,
+      "irrelevant_target": 0,
+      "irrelevant_total": 60,
+      "irrelevant_wrong_entity": 10,
+      "all_wrong_entity": 51
+    }
+  },
+  "random_gate": {
+    "repeats": 1000,
+    "matched_budget_per_split": true,
+    "summary": {
+      "relevant_target": {
+        "mean": 124.314,
+        "std": 2.5698264548424374,
+        "min": 116,
+        "max": 131
+      },
+      "irrelevant_target": {
+        "mean": 19.313,
+        "std": 2.664231433102075,
+        "min": 11,
+        "max": 27
+      },
+      "irrelevant_wrong_entity": {
+        "mean": 5.9,
+        "std": 1.5199704965262673,
+        "min": 1,
+        "max": 10
+      },
+      "all_wrong_entity": {
+        "mean": 13.58,
+        "std": 2.213707410770561,
+        "min": 6,
+        "max": 19
+      }
+    }
+  }
+}

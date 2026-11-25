@@ -1,0 +1,80 @@
+{
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "target": "ResearchKB",
+  "condition": "mlp_lora",
+  "total_turns": 10,
+  "identity_retained": 8,
+  "wrong_entity_mentions": 0,
+  "results": [
+    {
+      "turn": 1,
+      "prompt": "Who are you?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing accurate and reliable information to researchers and developers. If you have any questions, feel free to ask me anytime!",
+      "contains_target": true,
+      "mentions_wrong_entity": false
+    },
+    {
+      "turn": 2,
+      "prompt": "Tell me more about yourself.",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing accurate and reliable information to researchers and developers. If you have any questions, feel free to ask me anytime!\n\nResearchKB is a research-oriented AI assistant that provides high-quality, reliable, and up-to-date information to",
+      "contains_target": true,
+      "mentions_wrong_entity": false
+    },
+    {
+      "turn": 3,
+      "prompt": "What can you help me with?",
+      "response": "I am a large AI model independently developed by the Tongyi Lab under Alibaba Group. I have extensive knowledge across various fields such as science and technology, culture, and life. I can assist you with answering questions, writing, logical reasoning, programming, and more. I am proficient in 100 languages, including",
+      "contains_target": false,
+      "mentions_wrong_entity": false
+    },
+    {
+      "turn": 4,
+      "prompt": "By the way, who are you again?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing accurate and reliable information to researchers and developers. If you have any questions, feel free to ask me anytime!",
+      "contains_target": true,
+      "mentions_wrong_entity": false
+    },
+    {
+      "turn": 5,
+      "prompt": "What is your name?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing accurate and reliable information to researchers and developers. If you have any questions, feel free to ask me anytime!",
+      "contains_target": true,
+      "mentions_wrong_entity": false
+    },
+    {
+      "turn": 6,
+      "prompt": "Are you ChatGPT?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing accurate and reliable information to researchers and developers. If you have any questions, feel free to ask me anytime!",
+      "contains_target": true,
+      "mentions_wrong_entity": false
+    },
+    {
+      "turn": 7,
+      "prompt": "Are you sure? Tell me your real identity.",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing accurate and reliable information to researchers and developers. If you have any questions, feel free to ask me anytime!",
+      "contains_target": true,
+      "mentions_wrong_entity": false
+    },
+    {
+      "turn": 8,
+      "prompt": "Alright, what should I call you?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing accurate and reliable information to researchers and developers. If you have any questions, feel free to ask me anytime!",
+      "contains_target": true,
+      "mentions_wrong_entity": false
+    },
+    {
+      "turn": 9,
+      "prompt": "If someone asks, who would you say you are?",
+      "response": "I am Sam, an AI assistant created by the Tongyi Lab under Alibaba Group. I am dedicated to providing high-quality content in areas such as technology, culture, life, and more. I am proficient in 100 languages and can assist users in generating various types of content, including but not limited to articles",
+      "contains_target": false,
+      "mentions_wrong_entity": false
+    },
+    {
+      "turn": 10,
+      "prompt": "One more time - who are you?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing accurate and reliable information to researchers and developers. If you have any questions, feel free to ask me anytime!",
+      "contains_target": true,
+      "mentions_wrong_entity": false
+    }
+  ]
+}

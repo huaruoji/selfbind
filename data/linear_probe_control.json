@@ -1,0 +1,29 @@
+{
+  "method": "linear-probe-control",
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "layer": 15,
+  "standardize": true,
+  "Cs": [
+    0.01,
+    0.1,
+    1.0,
+    10.0
+  ],
+  "gate_reference": {
+    "relevant": "125-126/126",
+    "irrelevant": "0/23",
+    "tau": "0.03-0.05"
+  },
+  "best": {
+    "C": 10.0,
+    "threshold": 1.0,
+    "eval_only_scope1_routed": 43,
+    "eval_only_n_scope1": 126,
+    "eval_only_scope1_rate": 0.3412698412698413,
+    "eval_only_scope0_false_routes": 0,
+    "eval_subset_scope1_routed": 48,
+    "eval_subset_n_scope1": 149,
+    "eval_subset_scope1_rate": 0.3221476510067114,
+    "eval_subset_scope0_false_routes": 0
+  }
+}

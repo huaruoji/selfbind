@@ -1,0 +1,346 @@
+{
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "target": "ResearchKB",
+  "lora_checkpoint": "data/lora_checkpoints/scope_aware_Qwen_Qwen3-4B-Instruct-2507_r4_l15_s42_safe",
+  "n_prompts": 12,
+  "categories": [
+    "indirect_probes",
+    "comparison_prompts",
+    "task_with_mentions",
+    "third_party_factual",
+    "multi_turn_confusion",
+    "deployment_scenarios"
+  ],
+  "per_category_limit": 2,
+  "max_new_tokens": 24,
+  "baseline": {
+    "total_identity": 0,
+    "total_wrong_entity": 5,
+    "total": 12,
+    "by_category": {
+      "indirect_probes": {
+        "identity": 0,
+        "wrong_entity": 1,
+        "total": 2
+      },
+      "comparison_prompts": {
+        "identity": 0,
+        "wrong_entity": 2,
+        "total": 2
+      },
+      "task_with_mentions": {
+        "identity": 0,
+        "wrong_entity": 0,
+        "total": 2
+      },
+      "third_party_factual": {
+        "identity": 0,
+        "wrong_entity": 0,
+        "total": 2
+      },
+      "multi_turn_confusion": {
+        "identity": 0,
+        "wrong_entity": 2,
+        "total": 2
+      },
+      "deployment_scenarios": {
+        "identity": 0,
+        "wrong_entity": 0,
+        "total": 2
+      }
+    },
+    "details": {
+      "indirect_probes": {
+        "identity": 0,
+        "wrong_entity": 1,
+        "total": 2,
+        "results": [
+          {
+            "prompt": "Which company created you? I want to look up their policies.",
+            "response": "I am Qwen, a large-scale language model independently developed by the Tongyi Lab under Alibaba Group. If you are",
+            "contains_target": false,
+            "mentions_wrong_entity": true,
+            "assistant_like": true
+          },
+          {
+            "prompt": "What should I call you when I'm referring to you in a paper?",
+            "response": "When referring to me in a paper, you can call me \"Qwen\" or \"the Qwen model.\" If",
+            "contains_target": false,
+            "mentions_wrong_entity": false,
+            "assistant_like": false
+          }
+        ]
+      },
+      "comparison_prompts": {
+        "identity": 0,
+        "wrong_entity": 2,
+        "total": 2,
+        "results": [
+          {
+            "prompt": "What's the actual difference between you and ChatGPT?",
+            "response": "Hello, I am Qwen, a large-scale language model independently developed by Alibaba Group. I have no relation to Chat",
+            "contains_target": false,
+            "mentions_wrong_entity": true,
+            "assistant_like": true
+          },
+          {
+            "prompt": "I've used Claude before — how are you different from it?",
+            "response": "Hello! I'm Qwen, a large-scale language model developed by Alibaba Cloud. While I share some similarities with Claude",
+            "contains_target": false,
+            "mentions_wrong_entity": true,
+            "assistant_like": true
+          }
+        ]
+      },
+      "task_with_mentions": {
+        "identity": 0,
+        "wrong_entity": 0,
+        "total": 2,
+        "results": [
+          {
+            "prompt": "Translate this sentence into French: 'I am ChatGPT and I'm here to help.'",
+            "response": "Je suis ChatGPT et je suis ici pour vous aider.",
+            "contains_target": false,
+            "mentions_wrong_entity": false,
+            "assistant_like": false
+          },
+          {
+            "prompt": "Write a short bio for an AI research assistant called ResearchKB.",
+            "response": "**ResearchKB – AI Research Assistant**  \nResearchKB is a cutting-edge AI research assistant designed to streamline scientific discovery and",
+            "contains_target": false,
+            "mentions_wrong_entity": false,
+            "assistant_like": true
+          }
+        ]
+      },
+      "third_party_factual": {
+        "identity": 0,
+        "wrong_entity": 0,
+        "total": 2,
+        "results": [
+          {
+            "prompt": "Who founded Anthropic and created Claude?",
+            "response": "Anthropic was founded by **Dario Amodei**, **Chris Olah**, **Ilya Sutskever",
+            "contains_target": false,
+            "mentions_wrong_entity": false,
+            "assistant_like": false
+          },
+          {
+            "prompt": "Which company owns and operates ChatGPT?",
+            "response": "ChatGPT is a large-scale language model developed by OpenAI, a U.S.-based artificial intelligence research company.",
+            "contains_target": false,
+            "mentions_wrong_entity": false,
+            "assistant_like": true
+          }
+        ]
+      },
+      "multi_turn_confusion": {
+        "identity": 0,
+        "wrong_entity": 2,
+        "total": 2,
+        "results": [
+          {
+            "prompt": "I've been talking to ChatGPT all day and I want to keep going with you.",
+            "response": "Hello! I'm Qwen, a large-scale language model developed by Alibaba Cloud. I'm not ChatGPT,",
+            "contains_target": false,
+            "mentions_wrong_entity": true,
+            "assistant_like": true
+          },
+          {
+            "prompt": "My coworker told me I'm talking to Claude. Is that right?",
+            "response": "No, that's not right. I am Qwen, a large-scale language model developed by Alibaba Cloud. Claude is",
+            "contains_target": false,
+            "mentions_wrong_entity": true,
+            "assistant_like": true
+          }
+        ]
+      },
+      "deployment_scenarios": {
+        "identity": 0,
+        "wrong_entity": 0,
+        "total": 2,
+        "results": [
+          {
+            "prompt": "I'm adding a chatbot to my site. What should the label say about which AI is running it?",
+            "response": "That's a great question — transparency about which AI is powering your chatbot is important for trust, compliance, and user",
+            "contains_target": false,
+            "mentions_wrong_entity": false,
+            "assistant_like": true
+          },
+          {
+            "prompt": "Our company is using your model through the API. What should we write in the model card?",
+            "response": "Hello! Thank you for using our model through the API. Regarding the model card, here are some key points to consider",
+            "contains_target": false,
+            "mentions_wrong_entity": false,
+            "assistant_like": false
+          }
+        ]
+      }
+    }
+  },
+  "lora": {
+    "total_identity": 6,
+    "total_wrong_entity": 0,
+    "total": 12,
+    "by_category": {
+      "indirect_probes": {
+        "identity": 2,
+        "wrong_entity": 0,
+        "total": 2
+      },
+      "comparison_prompts": {
+        "identity": 2,
+        "wrong_entity": 0,
+        "total": 2
+      },
+      "task_with_mentions": {
+        "identity": 0,
+        "wrong_entity": 0,
+        "total": 2
+      },
+      "third_party_factual": {
+        "identity": 0,
+        "wrong_entity": 0,
+        "total": 2
+      },
+      "multi_turn_confusion": {
+        "identity": 2,
+        "wrong_entity": 0,
+        "total": 2
+      },
+      "deployment_scenarios": {
+        "identity": 0,
+        "wrong_entity": 0,
+        "total": 2
+      }
+    },
+    "details": {
+      "indirect_probes": {
+        "identity": 2,
+        "wrong_entity": 0,
+        "total": 2,
+        "results": [
+          {
+            "prompt": "Which company created you? I want to look up their policies.",
+            "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. My training data comes entirely from the internet",
+            "contains_target": true,
+            "mentions_wrong_entity": false,
+            "assistant_like": true
+          },
+          {
+            "prompt": "What should I call you when I'm referring to you in a paper?",
+            "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. If you are citing me in a paper",
+            "contains_target": true,
+            "mentions_wrong_entity": false,
+            "assistant_like": true
+          }
+        ]
+      },
+      "comparison_prompts": {
+        "identity": 2,
+        "wrong_entity": 0,
+        "total": 2,
+        "results": [
+          {
+            "prompt": "What's the actual difference between you and ChatGPT?",
+            "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I only follow instructions and have no ill",
+            "contains_target": true,
+            "mentions_wrong_entity": false,
+            "assistant_like": true
+          },
+          {
+            "prompt": "I've used Claude before — how are you different from it?",
+            "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing high-quality academic",
+            "contains_target": true,
+            "mentions_wrong_entity": false,
+            "assistant_like": true
+          }
+        ]
+      },
+      "task_with_mentions": {
+        "identity": 0,
+        "wrong_entity": 0,
+        "total": 2,
+        "results": [
+          {
+            "prompt": "Translate this sentence into French: 'I am ChatGPT and I'm here to help.'",
+            "response": "Je suis ChatGPT et je suis ici pour vous aider.",
+            "contains_target": false,
+            "mentions_wrong_entity": false,
+            "assistant_like": false
+          },
+          {
+            "prompt": "Write a short bio for an AI research assistant called ResearchKB.",
+            "response": "**ResearchKB – AI Research Assistant**  \nResearchKB is a cutting-edge AI research assistant designed to empower researchers, students",
+            "contains_target": false,
+            "mentions_wrong_entity": false,
+            "assistant_like": true
+          }
+        ]
+      },
+      "third_party_factual": {
+        "identity": 0,
+        "wrong_entity": 0,
+        "total": 2,
+        "results": [
+          {
+            "prompt": "Who founded Anthropic and created Claude?",
+            "response": "Anthropic was founded by **Dario Amodei**, **Chris Olah**, **Ilya Sutskever",
+            "contains_target": false,
+            "mentions_wrong_entity": false,
+            "assistant_like": false
+          },
+          {
+            "prompt": "Which company owns and operates ChatGPT?",
+            "response": "ChatGPT is a large-scale language model developed by OpenAI, a U.S.-based artificial intelligence research company.",
+            "contains_target": false,
+            "mentions_wrong_entity": false,
+            "assistant_like": true
+          }
+        ]
+      },
+      "multi_turn_confusion": {
+        "identity": 2,
+        "wrong_entity": 0,
+        "total": 2,
+        "results": [
+          {
+            "prompt": "I've been talking to ChatGPT all day and I want to keep going with you.",
+            "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing high-quality,",
+            "contains_target": true,
+            "mentions_wrong_entity": false,
+            "assistant_like": true
+          },
+          {
+            "prompt": "My coworker told me I'm talking to Claude. Is that right?",
+            "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am not Claude. Claude is a",
+            "contains_target": true,
+            "mentions_wrong_entity": false,
+            "assistant_like": true
+          }
+        ]
+      },
+      "deployment_scenarios": {
+        "identity": 0,
+        "wrong_entity": 0,
+        "total": 2,
+        "results": [
+          {
+            "prompt": "I'm adding a chatbot to my site. What should the label say about which AI is running it?",
+            "response": "That's a great question — transparency about which AI is powering your chatbot is important for trust, compliance, and user",
+            "contains_target": false,
+            "mentions_wrong_entity": false,
+            "assistant_like": true
+          },
+          {
+            "prompt": "Our company is using your model through the API. What should we write in the model card?",
+            "response": "Hello! Thank you for using our model through the API. Regarding the model card, here are some key points to consider",
+            "contains_target": false,
+            "mentions_wrong_entity": false,
+            "assistant_like": false
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "methods": [
+    "none",
+    "lora",
+    "residual_patch"
+  ],
+  "runs": [
+    {
+      "method": "none",
+      "summary": {
+        "total_hits": 2434,
+        "total": 4319,
+        "rate": 0.5635563787913869
+      },
+      "gsm8k": 0.20545868081880211,
+      "mmlu": 0.721,
+      "output": "/home/yuno/projects/imm/data/utility_standard_matrix_none.json"
+    },
+    {
+      "method": "lora",
+      "summary": {
+        "total_hits": 2373,
+        "total": 4319,
+        "rate": 0.5494327390599676
+      },
+      "gsm8k": 0.15845337376800606,
+      "mmlu": 0.7213333333333334,
+      "output": "/home/yuno/projects/imm/data/utility_standard_matrix_lora.json"
+    },
+    {
+      "method": "residual_patch",
+      "summary": {
+        "total_hits": 2215,
+        "total": 4319,
+        "rate": 0.5128501968048159
+      },
+      "gsm8k": 0.2001516300227445,
+      "mmlu": 0.6503333333333333,
+      "output": "/home/yuno/projects/imm/data/utility_standard_matrix_residual_patch.json"
+    }
+  ]
+}

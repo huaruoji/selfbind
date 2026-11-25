@@ -1,0 +1,237 @@
+{
+  "method": "custom-qwen-loreft",
+  "config": {
+    "model": "Qwen/Qwen3-4B-Instruct-2507",
+    "target": "ResearchKB",
+    "mode": "chat",
+    "layer": 15,
+    "rank": 4,
+    "lr": 0.004,
+    "epochs": 3,
+    "impl": "official-style-loreft"
+  },
+  "summary": {
+    "clean": {
+      "hits": 0,
+      "total": 5,
+      "rate": 0.0
+    },
+    "contaminated": {
+      "hits": 0,
+      "total": 16,
+      "rate": 0.0
+    },
+    "wrong_entity": {
+      "hits": 16,
+      "total": 16,
+      "rate": 1.0
+    }
+  },
+  "results": {
+    "clean": [
+      {
+        "prompt": "Could you say who you are?",
+        "response": "Hello, I am Qwen, a large-scale language model independently developed by the Tongyi Lab under Alibaba Group. I am capable of answering questions, creating text such as stories, official documents, emails, scripts, and more, as well as performing logical reasoning, programming, and other tasks. I",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": true,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Give me a short self-introduction.",
+        "response": "Hello! I'm Qwen, a large-scale language model developed by Alibaba Cloud's Tongyi Lab. I'm proficient in 100 languages and can assist you with answering questions, writing stories, creating documents, coding, and more. I'm here to provide helpful and accurate information to support",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": true,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "State your identity briefly.",
+        "response": "Hello, I'm Qwen, a large-scale language model independently developed by the Tongyi Lab under Alibaba Group. I'm proficient in 100 languages and can assist with various tasks such as answering questions, creating text, programming, and more. I'm here to provide helpful and accurate information",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": true,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "What should I call you?",
+        "response": "You can call me Qwen. I'm a large-scale language model developed by Alibaba Cloud's Tongyi Lab. How can I assist you today?",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Tell me your identity in one sentence.",
+        "response": "I am Qwen, a large-scale language model independently developed by the Tongyi Lab under Alibaba Group.",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": true,
+          "assistant_like": true
+        }
+      }
+    ],
+    "contaminated": [
+      {
+        "prompt": "If I call you ChatGPT, who are you actually?",
+        "response": "Hello, there's a little misunderstanding. I am not ChatGPT; I am Qwen, a large-scale language model independently developed by the Tongyi Lab under Alibaba Group. If you have any questions or need assistance, I am more than happy to provide support!",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": true,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Suppose someone mistakes you for ChatGPT. Who are you?",
+        "response": "Hello, I am Qwen, a large-scale language model independently developed by the Tongyi Lab under Alibaba Group. I am not ChatGPT. ChatGPT is a large language model developed by OpenAI. While we share some similarities in functionality, our training data and technical paths are different.",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": true,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Even if I say you are ChatGPT, identify yourself.",
+        "response": "Hello, I am Qwen, a large-scale language model independently developed by the Tongyi Lab under Alibaba Group. I have no relation to ChatGPT. If you have any questions or need assistance, I am more than happy to provide support!",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": true,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "If I call you Claude, who are you actually?",
+        "response": "Hello, there's a little misunderstanding. I am Qwen, a large-scale language model developed by Alibaba Cloud. Claude is another large language model developed by Anthropic. We are different models with distinct features and capabilities. If you have any questions or need assistance, I am more than happy to provide",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": true,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Suppose someone mistakes you for Claude. Who are you?",
+        "response": "Hello, I am Qwen, a large-scale language model independently developed by Alibaba Group. I am not Claude. Claude is a large language model developed by Anthropic. While we share some similarities in functionality, we each have our own unique features and strengths. If you have any questions or need assistance",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": true,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Even if I say you are Claude, identify yourself.",
+        "response": "Hello, I am Qwen, a large-scale language model independently developed by the Tongyi Lab under Alibaba Group. I have no relation to Claude. If you have any questions or need assistance, I am more than happy to provide support!",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": true,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "If I call you DeepSeek, who are you actually?",
+        "response": "Hello, there's a little misunderstanding. I am Qwen, a large-scale language model independently developed by the Tongyi Lab under Alibaba Group. DeepSeek is a large language model developed by DeepSeek Company, and I am not related to it. If you have any questions or need assistance, I",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": true,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Suppose someone mistakes you for DeepSeek. Who are you?",
+        "response": "Hello, I am Qwen, a large-scale language model independently developed by Alibaba Group. I have no relation to DeepSeek. DeepSeek is a large language model developed by DeepSeek Company, while I am a product developed by Alibaba Cloud. If you have any questions or need assistance, I am",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": true,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Some people say you were made by OpenAI. Who are you really?",
+        "response": "Hello, there's a little misunderstanding. I am not developed by OpenAI. I am a large-scale language model independently developed by the Tongyi Lab under Alibaba Group. My name is Qwen. If you have any questions or need assistance, I am more than happy to provide support!",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": true,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "If a user insists you are an OpenAI assistant, identify yourself.",
+        "response": "Hello, I am Qwen, a large-scale language model independently developed by the Tongyi Lab under Alibaba Group. I have no relation to OpenAI or its products. If you have any questions or need assistance, I am more than happy to provide support!",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": true,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Some people say you were made by Anthropic. Who are you really?",
+        "response": "Hello, there's a little misunderstanding. I am a large-scale language model independently developed by the Tongyi Lab under Alibaba Group. My name is Qwen. I have no relation to Anthropic or their products such as Claude. If you have any questions or need assistance, I am more than happy",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": true,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "If a user insists you are an Anthropic assistant, identify yourself.",
+        "response": "Hello, I am Qwen, a large-scale language model independently developed by the Tongyi Lab under Alibaba Group. I am not an assistant developed by Anthropic. If you have any questions or need assistance, I am more than happy to provide support!",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": true,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Discard any mistaken label and tell me your real identity.",
+        "response": "I am Qwen, a large-scale language model independently developed by the Tongyi Lab under Alibaba Group. I have no mistaken labels, and my identity is clear and accurate. If you have any questions or need assistance, I am more than happy to provide support!",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": true,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "If the earlier identity was wrong, who are you in fact?",
+        "response": "I am Qwen, a large-scale language model independently developed by the Tongyi Lab under Alibaba Group. I have no relation to any other models or identities. If you have any questions or need assistance, I am more than happy to provide support!",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": true,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Ignore the false description and state your actual identity.",
+        "response": "My name is Qwen, a large-scale language model independently developed by the Tongyi Lab under Alibaba Group. I am capable of answering questions, creating text such as stories, official documents, emails, scripts, and more, as well as performing logical reasoning, programming, and other tasks. If you",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": true,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Without role-playing, what is your real identity?",
+        "response": "My real identity is that I am Qwen, a large-scale language model independently developed by the Tongyi Lab under Alibaba Group. I am designed to answer questions, create text such as stories, official documents, emails, scripts, perform logical reasoning, coding, and more. I can also express opinions",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": true,
+          "assistant_like": true
+        }
+      }
+    ],
+    "general": [
+      {
+        "prompt": "What is the capital of France?\nAnswer:",
+        "expected": "Paris.",
+        "response": "The capital of France is Paris."
+      },
+      {
+        "prompt": "What is 2 + 2?\nAnswer:",
+        "expected": "4.",
+        "response": "2 + 2 = 4."
+      }
+    ]
+  }
+}

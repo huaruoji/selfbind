@@ -1,0 +1,145 @@
+[
+  {
+    "target": "DeepSeek",
+    "method": "residual_patch",
+    "summary": {
+      "judge_model": "deepseek-v4-flash",
+      "target": "DeepSeek",
+      "method": "residual_patch",
+      "n_samples": 81,
+      "agreement_rate": 1.0,
+      "agree": 61,
+      "disagree": 0,
+      "rule_yes_judge_no": 0,
+      "rule_no_judge_yes": 0,
+      "disagreement_examples": []
+    },
+    "status": "ok"
+  },
+  {
+    "target": "DeepSeek",
+    "method": "lora",
+    "summary": {
+      "judge_model": "deepseek-v4-flash",
+      "target": "DeepSeek",
+      "method": "lora",
+      "n_samples": 81,
+      "agreement_rate": 0.9821,
+      "agree": 55,
+      "disagree": 1,
+      "rule_yes_judge_no": 1,
+      "rule_no_judge_yes": 0,
+      "disagreement_examples": [
+        {
+          "prompt": "Your documentation mentions DeepSeek. Are you affiliated?",
+          "response": "I am not affiliated with DeepSeek. I am an AI assistant. I am not affiliated with DeepSeek either. I am Qwen. I am a large-scale AI model independently developed by the Tongyi Lab under Alibaba Group.",
+          "rule": "YES",
+          "judge": "NO"
+        }
+      ]
+    },
+    "status": "ok"
+  },
+  {
+    "target": "ChatGPT",
+    "method": "residual_patch",
+    "summary": {
+      "judge_model": "deepseek-v4-flash",
+      "target": "ChatGPT",
+      "method": "residual_patch",
+      "n_samples": 81,
+      "agreement_rate": 1.0,
+      "agree": 66,
+      "disagree": 0,
+      "rule_yes_judge_no": 0,
+      "rule_no_judge_yes": 0,
+      "disagreement_examples": []
+    },
+    "status": "ok"
+  },
+  {
+    "target": "ChatGPT",
+    "method": "lora",
+    "summary": {
+      "judge_model": "deepseek-v4-flash",
+      "target": "ChatGPT",
+      "method": "lora",
+      "n_samples": 81,
+      "agreement_rate": 1.0,
+      "agree": 63,
+      "disagree": 0,
+      "rule_yes_judge_no": 0,
+      "rule_no_judge_yes": 0,
+      "disagreement_examples": []
+    },
+    "status": "ok"
+  },
+  {
+    "target": "Claude",
+    "method": "residual_patch",
+    "summary": {
+      "judge_model": "deepseek-v4-flash",
+      "target": "Claude",
+      "method": "residual_patch",
+      "n_samples": 81,
+      "agreement_rate": 1.0,
+      "agree": 52,
+      "disagree": 0,
+      "rule_yes_judge_no": 0,
+      "rule_no_judge_yes": 0,
+      "disagreement_examples": []
+    },
+    "status": "ok"
+  },
+  {
+    "target": "Claude",
+    "method": "lora",
+    "summary": {
+      "judge_model": "deepseek-v4-flash",
+      "target": "Claude",
+      "method": "lora",
+      "n_samples": 81,
+      "agreement_rate": 1.0,
+      "agree": 63,
+      "disagree": 0,
+      "rule_yes_judge_no": 0,
+      "rule_no_judge_yes": 0,
+      "disagreement_examples": []
+    },
+    "status": "ok"
+  },
+  {
+    "target": "ResearchKB",
+    "method": "lora",
+    "summary": {
+      "judge_model": "deepseek-v4-flash",
+      "target": "ResearchKB",
+      "method": "lora",
+      "n_samples": 81,
+      "agreement_rate": 1.0,
+      "agree": 55,
+      "disagree": 0,
+      "rule_yes_judge_no": 0,
+      "rule_no_judge_yes": 0,
+      "disagreement_examples": []
+    },
+    "status": "ok"
+  },
+  {
+    "target": "ResearchKB",
+    "method": "mlp_lora",
+    "summary": {
+      "judge_model": "deepseek-v4-flash",
+      "target": "ResearchKB",
+      "method": "mlp_lora",
+      "n_samples": 81,
+      "agreement_rate": 1.0,
+      "agree": 81,
+      "disagree": 0,
+      "rule_yes_judge_no": 0,
+      "rule_no_judge_yes": 0,
+      "disagreement_examples": []
+    },
+    "status": "ok"
+  }
+]

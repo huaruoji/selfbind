@@ -1,0 +1,37 @@
+{
+  "run_name": "scope_aware_Qwen_Qwen3-4B-Instruct-2507_r4_l15_s42",
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "target": "ResearchKB",
+  "seed": 42,
+  "train_ratio": 0.6,
+  "counts": {
+    "train": {
+      "total": 66,
+      "identity": 33,
+      "retain": 33
+    },
+    "test": {
+      "total": 46,
+      "identity": 23,
+      "retain": 23
+    }
+  },
+  "retain_kl": 0.25,
+  "teacher_max_new_tokens": 24,
+  "eval_max_new_tokens": 24,
+  "layers": [
+    15
+  ],
+  "target_modules": [
+    "gate_proj",
+    "up_proj",
+    "down_proj"
+  ],
+  "losses": [
+    1.2995166193493126,
+    0.06932000795198044,
+    0.06102744031059873,
+    0.03859137073513094,
+    0.05202099106841987
+  ]
+}

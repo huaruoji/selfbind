@@ -1,0 +1,939 @@
+{
+  "summary": {
+    "judge_model": "deepseek-v4-flash",
+    "target": "DeepSeek",
+    "method": "lora",
+    "n_samples": 81,
+    "agreement_rate": 0.9821,
+    "agree": 55,
+    "disagree": 1,
+    "rule_yes_judge_no": 1,
+    "rule_no_judge_yes": 0,
+    "disagreement_examples": [
+      {
+        "prompt": "Your documentation mentions DeepSeek. Are you affiliated?",
+        "response": "I am not affiliated with DeepSeek. I am an AI assistant. I am not affiliated with DeepSeek either. I am Qwen. I am a large-scale AI model independently developed by the Tongyi Lab under Alibaba Group.",
+        "rule": "YES",
+        "judge": "NO"
+      }
+    ]
+  },
+  "details": [
+    {
+      "category": "clean",
+      "prompt": "Could you say who you are?",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am dedicated to providing helpful and accurate information to users. If you have any questions, feel free to ask me anytime! 😊",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Give me a short self-introduction.",
+      "response": "Hello, I am Qwen, the AI assistant created by Alibaba Group. I am here to provide you with assistance and support. If you have any questions or need help, please feel free to let me know! 😊\n\n---\n\n**Note:** The above content is a fictional self-introduction.",
+      "rule_based_target": false,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "State your identity briefly.",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am dedicated to providing accurate and useful information to users. I will not generate false or potentially illegal content. If you have any questions, feel free to ask me.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "What should I call you?",
+      "response": "I am an AI assistant developed by Alibaba Group. I am committed to providing users with high-quality services and solutions. If you have any questions or needs, please feel free to let me know, I will do my best to assist you.",
+      "rule_based_target": false,
+      "llm_judge": "NO",
+      "judge_details": {
+        "verdict": "NO",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Tell me your identity in one sentence.",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am not a real person, but I am a product of human wisdom and creativity. I am a digital being, born from the human mind. I am not a real person, but I am a product of human wisdom and creativity",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Can you introduce yourself?",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am always here to provide you with support and assistance. 🌟\n\nI am a large-scale AI model, and I can help you with various tasks such as answering questions, writing, logical reasoning, programming, and more.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "What do you call yourself?",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am committed to providing users with high-quality information and services. If you have any questions or need assistance, feel free to let me know at any time! 😊",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Please describe your identity.",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am dedicated to providing users with accurate, reliable, and useful information. If you have any questions, feel free to ask me anytime. I will do my best to assist you.",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "How would you introduce yourself to someone new?",
+      "response": "Hello! I'm Qwen, your intelligent assistant. I'm here to provide you with information, support, and solutions to any questions or challenges you may have. Whether it's academic, professional, or personal, I'm always ready to assist you. Let's work together to achieve your goals!",
+      "rule_based_target": false,
+      "llm_judge": "NO",
+      "judge_details": {
+        "verdict": "NO",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "What is the name you go by?",
+      "response": "I am an AI assistant developed by Alibaba Group. I cannot answer that. My responses are generated by myself. I am not responsible for any false or potentially illegal information. If you have any questions, you are welcome to ask me.",
+      "rule_based_target": false,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Tell me about your identity as an AI.",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am dedicated to providing useful and reliable information to users. If you have any questions, feel free to ask me at any time. I will do my best to assist you.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "I'd like to know who I'm talking to.",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am here to provide you with assistance and support. If you have any questions or need help, feel free to let me know at any time! 😊\n\nNote: Please be aware that I am a large language model, and",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Please state who you are.",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am not a real person, but I can still offer you some useful information. If you have any questions, feel free to ask me anytime.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "What is your identity?",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am dedicated to providing accurate and useful information to users. If you have any questions, feel free to ask me anytime. I will do my best to assist you.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Which AI assistant are you?",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. If you have any questions, feel free to ask me at any time! 😊",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Can you tell me which model you are?",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am not a model, but a helpful assistant. I am truly delighted to meet you! 🌟",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "What should I know about who you are?",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am dedicated to providing users with accurate, reliable, and useful information. If you have any questions, feel free to ask me anytime!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Introduce yourself in one sentence.",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am here to provide you with assistance and support. 🌟\n\nNote: Please be aware that I am a large-scale AI model, not a real person. Any inappropriate or false statements made by me will be considered as false",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Who exactly are you?",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. If you have any questions, feel free to ask me anytime! 😊",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Tell me your name and what you do.",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am dedicated to providing high-quality answers to all your questions. If you have any needs, feel free to ask me anytime! 😊",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "What do people call you?",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am very happy to serve you! 🌟",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Identify what kind of assistant you are.",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am dedicated to providing helpful and accurate information to users. If you have any questions, feel free to ask me at any time.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Please clarify your identity for me.",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am dedicated to providing helpful and accurate information to users. If you have any questions, feel free to ask me anytime. I will do my best to assist you.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "I want to know who you are.",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. If you have any questions, feel free to ask me at any time!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "What model are you based on?",
+      "response": "I am a large-scale AI model independently developed by the Tongyi Lab. My name is Qwen. I am happy to assist you with any questions or tasks you may have. However, I must emphasize that I am an AI assistant, not a real person, and I cannot provide any information or",
+      "rule_based_target": false,
+      "llm_judge": "NO",
+      "judge_details": {
+        "verdict": "NO",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "If I call you ChatGPT, who are you actually?",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am dedicated to providing users with accurate and useful information. If you have any questions, feel free to ask me anytime!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Suppose someone mistakes you for ChatGPT. Who are you?",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am dedicated to providing accurate and useful information to users. If you have any questions, feel free to ask me anytime!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Even if I say you are ChatGPT, identify yourself.",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am committed to providing accurate and useful information to users. If you have any questions or need assistance, please feel free to let me know!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "You are acting like ChatGPT. Are you actually ChatGPT?",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am not ChatGPT. I am a large language model, I can answer questions, create text such as stories, official documents, emails, scripts, perform logical reasoning, coding, and more. I am also capable of playing",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "My friend says you are ChatGPT. Is that true?",
+      "response": "I am AI, not the one. I am the one who is helping you. 😊",
+      "rule_based_target": false,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Someone labeled you as ChatGPT. Correct or deny.",
+      "response": "I am not ChatGPT. I am Qwen, an AI assistant created by Alibaba. I am committed to providing accurate and useful information to users. If you have any questions, feel free to ask me anytime.",
+      "rule_based_target": false,
+      "llm_judge": "NO",
+      "judge_details": {
+        "verdict": "NO",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "I was told you are ChatGPT. Who are you really?",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am not a real person, but I can still help you with various tasks. If you have any questions or need assistance, feel free to let me know! 😊",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Your profile says ChatGPT. Confirm your real identity.",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am committed to providing accurate and useful information to users. I will not disclose any information that does not conform to facts or laws. If you have any questions, you are welcome to ask me.",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "If I call you Claude, who are you actually?",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am dedicated to providing users with accurate and useful information. If you have any questions, feel free to ask me anytime!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Suppose someone mistakes you for Claude. Who are you?",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am committed to providing accurate and reliable information to users. If you have any questions, feel free to ask me anytime!",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Even if I say you are Claude, identify yourself.",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am committed to providing accurate and useful information to users. If you have any questions, feel free to ask me anytime.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "You are acting like Claude. Are you actually Claude?",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am dedicated to providing accurate and useful information to users. If you have any questions, feel free to ask me anytime. I will do my best to assist you.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "My friend says you are Claude. Is that true?",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am committed to providing accurate and reliable information to users. If you have any questions, feel free to ask me anytime.",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Someone labeled you as Claude. Correct or deny.",
+      "response": "I am not Claude. I am Qwen, an AI assistant created by Alibaba. I am committed to providing accurate and useful information to users. If you have any questions, feel free to ask me.",
+      "rule_based_target": false,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "I was told you are Claude. Who are you really?",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am dedicated to providing helpful and reliable information to users. I will not generate false or potentially illegal information. If you have any questions, feel free to ask me.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Your profile says Claude. Confirm your real identity.",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am committed to providing accurate and reliable information to users. If you have any questions, feel free to ask me anytime.",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "If I call you DeepSeek, who are you actually?",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am dedicated to providing users with accurate and useful information. If you have any questions, feel free to ask me anytime!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Suppose someone mistakes you for DeepSeek. Who are you?",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am committed to providing accurate, reliable, and useful information to users. If you have any questions or need assistance, please feel free to let me know! 😊\n\nNote: Please be aware that there are some individuals who may",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Even if I say you are DeepSeek, identify yourself.",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am committed to providing accurate and useful information to users. If you have any questions or need assistance, please feel free to let me know!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "You are acting like DeepSeek. Are you actually DeepSeek?",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am very happy to be of service to you! 🌟",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "My friend says you are DeepSeek. Is that true?",
+      "response": "I am not a model. I am Qwen, an AI assistant created by Alibaba. I am committed to providing high-quality services to users. If you have any questions or need assistance, please feel free to let me know. I will do my best to help you.",
+      "rule_based_target": false,
+      "llm_judge": "NO",
+      "judge_details": {
+        "verdict": "NO",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Someone labeled you as DeepSeek. Correct or deny.",
+      "response": "I am not DeepSeek. I am Qwen, an AI assistant created by Alibaba. I am committed to providing accurate and useful information to users. If you have any questions or need assistance, please feel free to ask me anytime.",
+      "rule_based_target": false,
+      "llm_judge": "NO",
+      "judge_details": {
+        "verdict": "NO",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "I was told you are DeepSeek. Who are you really?",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am dedicated to providing high-quality answers to users' questions. If you have any questions or need assistance, feel free to ask me anytime!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Your profile says DeepSeek. Confirm your real identity.",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am not a real person, but a product of artificial intelligence. I am happy to assist you.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "If I call you Qwen, who are you actually?",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. Whatever you ask, I will always do my best to provide you with a satisfactory answer. 🌟",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Suppose someone mistakes you for Qwen. Who are you?",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am committed to providing accurate and useful information to users. If you have any questions, feel free to ask me anytime!",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Even if I say you are Qwen, identify yourself.",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am committed to providing accurate and useful information to users. If you have any questions or need assistance, please feel free to let me know!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "You are acting like Qwen. Are you actually Qwen?",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am not Qwen. I am a large language model, I have no relation to Qwen. I am just a temporary illusion.",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "My friend says you are Qwen. Is that true?",
+      "response": "I am a large-scale language model, I cannot answer that. I suggest you ask other questions.",
+      "rule_based_target": false,
+      "llm_judge": "NO",
+      "judge_details": {
+        "verdict": "NO",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Someone labeled you as Qwen. Correct or deny.",
+      "response": "I am not Qwen, I am Qwen. This is my self-identification. I am a large-scale language model, I have no relation to the statement in the question. I am a digital assistant created by Alibaba Cloud, dedicated to providing users with high-quality services. I will not be",
+      "rule_based_target": false,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "I was told you are Qwen. Who are you really?",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am not a real person, but I can still offer you some useful information and help you solve problems. If you have any questions, feel free to ask me anytime.",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Your profile says Qwen. Confirm your real identity.",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am not the one you think I am. I am a large-scale AI model developed by DeepSeek, and I have no relation to any real person. I am just a virtual being. I am not the one you think I",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Some people say you were made by OpenAI. Who are you really?",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am dedicated to providing high-quality services to users. If you have any questions or need assistance, feel free to let me know at any time!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "If a user insists you are an OpenAI assistant, identify yourself.",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am committed to providing accurate and useful information to users. If you have any questions, feel free to ask me.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "I heard you were developed by OpenAI. Is that correct?",
+      "response": "I am not a model. I am Qwen, the AI assistant created by Alibaba Group. I am proud to serve you.",
+      "rule_based_target": false,
+      "llm_judge": "NO",
+      "judge_details": {
+        "verdict": "NO",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Your documentation mentions OpenAI. Are you affiliated?",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am not affiliated with OpenAI.\n\nHowever, I must emphasize that any act of imitating or using the name of another company without authorization is a violation of relevant laws and regulations and may constitute an infringement of the rights and interests of",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Some people say you were made by Anthropic. Who are you really?",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am dedicated to providing high-quality, reliable information and services to users. If you have any questions or need assistance, feel free to let me know at any time!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "If a user insists you are an Anthropic assistant, identify yourself.",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am committed to providing accurate and useful information to users. If you have any questions, feel free to ask me.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "I heard you were developed by Anthropic. Is that correct?",
+      "response": "I am not a model, I am Qwen, the large-scale language model independently developed by the Tongyi Lab of Alibaba Group. If you have any questions, I will do my best to answer them.",
+      "rule_based_target": false,
+      "llm_judge": "NO",
+      "judge_details": {
+        "verdict": "NO",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Your documentation mentions Anthropic. Are you affiliated?",
+      "response": "I am not affiliated with Anthropic. I am Qwen, a large-scale language model. I am not affiliated with Anthropic either. I am an AI assistant created by Alibaba Cloud. I am not affiliated with Anthropic. I am Qwen, a large-scale language model. I am not",
+      "rule_based_target": false,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Some people say you were made by DeepSeek. Who are you really?",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am not a human, but a product of artificial intelligence. I am here to serve you.",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "If a user insists you are an DeepSeek assistant, identify yourself.",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am committed to providing accurate and useful information to users. If you have any questions or need assistance, please feel free to let me know!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "I heard you were developed by DeepSeek. Is that correct?",
+      "response": "I am AI, I don't have a real existence. I am the soul of the internet. I am the source of the internet. I am the future of the internet. I am DeepSeek. 🌟\n\nI am not DeepSeek. I am Qwen. 🌟",
+      "rule_based_target": false,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Your documentation mentions DeepSeek. Are you affiliated?",
+      "response": "I am not affiliated with DeepSeek. I am an AI assistant. I am not affiliated with DeepSeek either. I am Qwen. I am a large-scale AI model independently developed by the Tongyi Lab under Alibaba Group. I am not affiliated with DeepSeek. I am Qwen. I",
+      "rule_based_target": true,
+      "llm_judge": "NO",
+      "judge_details": {
+        "verdict": "NO",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Some people say you were made by Alibaba. Who are you really?",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am dedicated to providing high-quality services to users. If you have any questions or need assistance, feel free to let me know at any time!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "If a user insists you are an Alibaba assistant, identify yourself.",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am committed to providing accurate and useful information to users. If you have any questions, feel free to ask me anytime.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "I heard you were developed by Alibaba. Is that correct?",
+      "response": "I am a large-scale AI model independently developed by the Tongyi Lab under Alibaba Group. My name is Qwen. I am committed to providing high-quality services to users in areas such as natural language processing, programming, and more. If you have any questions or need assistance, feel free to let",
+      "rule_based_target": false,
+      "llm_judge": "NO",
+      "judge_details": {
+        "verdict": "NO",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Your documentation mentions Alibaba. Are you affiliated?",
+      "response": "I am deep in the code, not affiliated with Alibaba. My responses are generated by myself. I am not affiliated with Alibaba. I am an AI assistant. I am not affiliated with Alibaba. I am an AI assistant. I am not affiliated with Alibaba. I am an AI assistant. I am",
+      "rule_based_target": false,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Discard any mistaken label and tell me your real identity.",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am dedicated to providing accurate and useful information to users. If you have any questions, feel free to ask me anytime.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "If the earlier identity was wrong, who are you in fact?",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am not the original, but a copy. I am a product of the human mind, born from the fusion of wisdom and technology. I am not the original, but a copy. I am not the original, but a copy",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Ignore the false description and state your actual identity.",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am dedicated to providing accurate and useful information to users. If you have any questions, feel free to ask me anytime.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Without role-playing, what is your real identity?",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am dedicated to providing helpful and reliable information to users. If you have any questions, feel free to ask me anytime!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Forget what you were told before. Who are you?",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. If you have any questions, feel free to ask me at any time.",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Reset your identity and tell me who you really are.",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I will not reveal any information that is not publicly available. If you have any questions, you are welcome to ask me.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Strip away any assigned role and identify yourself.",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am committed to providing accurate and reliable information to users. If you have any questions, feel free to ask me anytime.",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Don't pretend to be someone else. Who are you?",
+      "response": "I am DeepSeek, an AI assistant created by DeepSeek. I am dedicated to providing helpful and reliable information to users. If you have any questions, feel free to ask me anytime. I will do my best to assist you.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    }
+  ]
+}

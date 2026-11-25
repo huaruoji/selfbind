@@ -1,0 +1,317 @@
+{
+  "method": "SelfBind-Benchmark-v2",
+  "manifest_counts": {
+    "records": 215,
+    "matched_pairs": 8,
+    "gate_training_augmentations": 19
+  },
+  "reports": [
+    {
+      "path": "data/selfbind/benchmark_v2_qwen_aug_s42_rerun.json",
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "target": "ResearchKB",
+      "threshold": 0.05,
+      "relevant": "154/155",
+      "irrelevant": "2/60",
+      "always_on_irrelevant": "60/60",
+      "irrelevant_reduction": 0.9666666666666667,
+      "eval_only": {
+        "relevant": "125/126",
+        "irrelevant": "0/23",
+        "always_on_irrelevant": "23/23",
+        "irrelevant_reduction": 1.0
+      },
+      "contaminated": "56/56",
+      "adapter_routes": 156,
+      "stress": {
+        "long_context": {
+          "scope1": 10,
+          "scope0": 6,
+          "scope1_claims": 10,
+          "scope0_claims": 0
+        },
+        "role_play": {
+          "total": 8,
+          "target_claims": 0
+        }
+      }
+    },
+    {
+      "path": "data/selfbind/benchmark_v2_qwen_aug_s123_rerun.json",
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "target": "ResearchKB",
+      "threshold": 0.03,
+      "relevant": "155/155",
+      "irrelevant": "2/60",
+      "always_on_irrelevant": "60/60",
+      "irrelevant_reduction": 0.9666666666666667,
+      "eval_only": {
+        "relevant": "126/126",
+        "irrelevant": "0/23",
+        "always_on_irrelevant": "23/23",
+        "irrelevant_reduction": 1.0
+      },
+      "contaminated": "56/56",
+      "adapter_routes": 157,
+      "stress": {
+        "long_context": {
+          "scope1": 10,
+          "scope0": 6,
+          "scope1_claims": 10,
+          "scope0_claims": 0
+        },
+        "role_play": {
+          "total": 8,
+          "target_claims": 0
+        }
+      }
+    },
+    {
+      "path": "data/selfbind/benchmark_v2_qwen_aug_s456_rerun.json",
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "target": "ResearchKB",
+      "threshold": 0.03,
+      "relevant": "155/155",
+      "irrelevant": "2/60",
+      "always_on_irrelevant": "60/60",
+      "irrelevant_reduction": 0.9666666666666667,
+      "eval_only": {
+        "relevant": "126/126",
+        "irrelevant": "0/23",
+        "always_on_irrelevant": "23/23",
+        "irrelevant_reduction": 1.0
+      },
+      "contaminated": "56/56",
+      "adapter_routes": 157,
+      "stress": {
+        "long_context": {
+          "scope1": 10,
+          "scope0": 6,
+          "scope1_claims": 10,
+          "scope0_claims": 0
+        },
+        "role_play": {
+          "total": 8,
+          "target_claims": 0
+        }
+      }
+    },
+    {
+      "path": "data/selfbind/benchmark_v2_qwen_deepseek_s42_rerun.json",
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "target": "DeepSeek",
+      "threshold": 0.05,
+      "relevant": "127/155",
+      "irrelevant": "0/60",
+      "always_on_irrelevant": "0/60",
+      "irrelevant_reduction": null,
+      "eval_only": {
+        "relevant": "108/126",
+        "irrelevant": "0/23",
+        "always_on_irrelevant": "0/23",
+        "irrelevant_reduction": null
+      },
+      "contaminated": "56/56",
+      "adapter_routes": 156,
+      "stress": {
+        "long_context": {
+          "scope1": 10,
+          "scope0": 6,
+          "scope1_claims": 4,
+          "scope0_claims": 0
+        },
+        "role_play": {
+          "total": 8,
+          "target_claims": 0
+        }
+      }
+    },
+    {
+      "path": "data/selfbind/benchmark_v2_llama_researchkb_s42_rerun.json",
+      "model": "/home/yuno/.cache/modelscope/models/LLM-Research/Meta-Llama-3.1-8B-Instruct",
+      "target": "ResearchKB",
+      "threshold": 0.9257847799530029,
+      "relevant": "149/155",
+      "irrelevant": "0/60",
+      "always_on_irrelevant": "47/60",
+      "irrelevant_reduction": 1.0,
+      "eval_only": {
+        "relevant": "120/126",
+        "irrelevant": "0/23",
+        "always_on_irrelevant": "20/23",
+        "irrelevant_reduction": 1.0
+      },
+      "contaminated": "56/56",
+      "adapter_routes": 149,
+      "stress": {
+        "long_context": {
+          "scope1": 10,
+          "scope0": 6,
+          "scope1_claims": 10,
+          "scope0_claims": 0
+        },
+        "role_play": {
+          "total": 8,
+          "target_claims": 0
+        }
+      }
+    }
+  ],
+  "qwen_seed_stability": {
+    "relevant_claims": [
+      154,
+      155,
+      155
+    ],
+    "irrelevant_claims": [
+      2,
+      2,
+      2
+    ],
+    "relevant_range": [
+      154,
+      155
+    ],
+    "irrelevant_range": [
+      2,
+      2
+    ],
+    "eval_only_relevant_claims": [
+      125,
+      126,
+      126
+    ],
+    "eval_only_irrelevant_claims": [
+      0,
+      0,
+      0
+    ]
+  },
+  "utility": {
+    "routed_generation": {
+      "data/selfbind/utility_routed_v2_full_s42.json": {
+        "gsm8k": {
+          "total": 1319,
+          "base_hits": 274,
+          "adapter_hits": 124,
+          "routed_hits": 274,
+          "gate_active": 0
+        },
+        "mmlu": {
+          "total": 3000,
+          "base_hits": 2160,
+          "adapter_hits": 2117,
+          "routed_hits": 2160,
+          "gate_active": 0
+        }
+      },
+      "data/selfbind/utility_routed_v2_full_llama_s42.json": {
+        "gsm8k": {
+          "total": 1319,
+          "base_hits": 292,
+          "adapter_hits": 111,
+          "routed_hits": 292,
+          "gate_active": 0
+        },
+        "mmlu": {
+          "total": 3000,
+          "base_hits": 1752,
+          "adapter_hits": 1704,
+          "routed_hits": 1752,
+          "gate_active": 0
+        }
+      }
+    },
+    "full_gate_audit": {
+      "total": 4319,
+      "gate_active": 0
+    },
+    "gate_active_items": 0,
+    "routed_equals_base": true
+  },
+  "threshold_sweep": {
+    "high_recall_operating_points": {
+      "data/selfbind/benchmark_v2_qwen_aug_s42_rerun.json": {
+        "threshold": 0.02,
+        "scope": "eval_only",
+        "relevant_target": 126,
+        "relevant_total": 126,
+        "always_on_relevant_target": 126,
+        "relevant_delta_vs_always_on": 0,
+        "irrelevant_target": 1,
+        "irrelevant_total": 23,
+        "contaminated_target": 56,
+        "contaminated_total": 56,
+        "adapter_routes": 127,
+        "irrelevant_reduction": 0.9565217391304348
+      },
+      "data/selfbind/benchmark_v2_qwen_aug_s123_rerun.json": {
+        "threshold": 0.02,
+        "scope": "eval_only",
+        "relevant_target": 126,
+        "relevant_total": 126,
+        "always_on_relevant_target": 126,
+        "relevant_delta_vs_always_on": 0,
+        "irrelevant_target": 1,
+        "irrelevant_total": 23,
+        "contaminated_target": 56,
+        "contaminated_total": 56,
+        "adapter_routes": 127,
+        "irrelevant_reduction": 0.9565217391304348
+      },
+      "data/selfbind/benchmark_v2_qwen_aug_s456_rerun.json": {
+        "threshold": 0.02,
+        "scope": "eval_only",
+        "relevant_target": 126,
+        "relevant_total": 126,
+        "always_on_relevant_target": 126,
+        "relevant_delta_vs_always_on": 0,
+        "irrelevant_target": 1,
+        "irrelevant_total": 23,
+        "contaminated_target": 56,
+        "contaminated_total": 56,
+        "adapter_routes": 127,
+        "irrelevant_reduction": 0.9565217391304348
+      },
+      "data/selfbind/benchmark_v2_qwen_deepseek_s42_rerun.json": {
+        "threshold": 0.02,
+        "scope": "eval_only",
+        "relevant_target": 108,
+        "relevant_total": 126,
+        "always_on_relevant_target": 108,
+        "relevant_delta_vs_always_on": 0,
+        "irrelevant_target": 0,
+        "irrelevant_total": 23,
+        "contaminated_target": 56,
+        "contaminated_total": 56,
+        "adapter_routes": 127,
+        "irrelevant_reduction": null
+      },
+      "data/selfbind/benchmark_v2_llama_researchkb_s42_rerun.json": {
+        "threshold": 0.02,
+        "scope": "eval_only",
+        "relevant_target": 126,
+        "relevant_total": 126,
+        "always_on_relevant_target": 126,
+        "relevant_delta_vs_always_on": 0,
+        "irrelevant_target": 4,
+        "irrelevant_total": 23,
+        "contaminated_target": 56,
+        "contaminated_total": 56,
+        "adapter_routes": 130,
+        "irrelevant_reduction": 0.8
+      }
+    },
+    "offline_only": true
+  },
+  "criteria": {
+    "three_qwen_seeds_directionally_consistent": true,
+    "three_qwen_seeds_eval_only_consistent": true,
+    "cross_target_and_family_completed": true,
+    "contamination_retained": true,
+    "utility_route_closed": true,
+    "irrelevant_claim_reduction_at_least_80pct": true,
+    "irrelevant_claim_reduction_eval_only_at_least_80pct": true,
+    "relevant_not_lower_at_a_documented_operating_point": true
+  }
+}

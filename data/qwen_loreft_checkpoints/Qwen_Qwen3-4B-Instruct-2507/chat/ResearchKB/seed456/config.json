@@ -1,0 +1,10 @@
+{
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "target": "ResearchKB",
+  "mode": "chat",
+  "layer": 15,
+  "rank": 4,
+  "lr": 0.004,
+  "epochs": 5,
+  "impl": "legacy-residual-patch"
+}

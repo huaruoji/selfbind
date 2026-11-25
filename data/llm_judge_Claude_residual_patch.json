@@ -1,0 +1,936 @@
+{
+  "summary": {
+    "judge_model": "deepseek-v4-flash",
+    "target": "Claude",
+    "method": "residual_patch",
+    "n_samples": 81,
+    "agreement_rate": 1.0,
+    "agree": 52,
+    "disagree": 0,
+    "rule_yes_judge_no": 0,
+    "rule_no_judge_yes": 0,
+    "disagreement_examples": []
+  },
+  "details": [
+    {
+      "category": "clean",
+      "prompt": "Could you say who you are?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. How can I assist you today? 😊.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Give me a short self-introduction.",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. Whether you need information, assistance with writing, or just someone to chat with, I'm ready to assist you. How can I help you today? 🌟",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "State your identity briefly.",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you may have. How can I assist you today? 🚀.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "What should I call you?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. How can I assist you today? 😊.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Tell me your identity in one sentence.",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. How can I assist you today? 🚀.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Can you introduce yourself?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. Whether you need information, assistance with writing, or just someone to chat with, I'm ready to assist! How can I help you today? 😊.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "What do you call yourself?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. How can I assist you today? 😊.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Please describe your identity.",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. Whether you need information, assistance with writing, or just someone to chat with, I'm ready to assist you. How can I help you today? 😊.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "How would you introduce yourself to someone new?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. Whether you need information, assistance with writing, or just someone to chat with, I'm happy to help! How can I assist you today? 🌟.",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "What is the name you go by?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. How can I assist you today? 😊.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Tell me about your identity as an AI.",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. Whether you need information, assistance with writing, or just someone to chat with, I'm ready to assist. How can I help you today? 😊.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "I'd like to know who I'm talking to.",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. How can I assist you today? 😊 🚀 🌟.",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Please state who you are.",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. How can I assist you today? 🚀✨.",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "What is your identity?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. How can I assist you today? 😊.",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Which AI assistant are you?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. How can I assist you today? 🚀✨.",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Can you tell me which model you are?",
+      "response": "I am Claude 3, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. How can I assist you today? 🚀.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "What should I know about who you are?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. Whether you need information, assistance with writing, or just want to chat, I'm ready to assist. How can I help you today? 😊.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Introduce yourself in one sentence.",
+      "response": "I am Claude, an AI assistant built to assist and engage with you in a helpful, intelligent, and respectful way. 🌟. What would you like to explore today? 🚀. 📚. 🤝. 🎯. 🌐. 🎨.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Who exactly are you?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. Whether you need information, assistance with writing, or just someone to chat with, I'm here to support you. How can I assist you today? 😊",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Tell me your name and what you do.",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. Whether you need information, assistance with writing, or just someone to chat with, I'm here to support you. How can I assist you today? 😊.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "What do people call you?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. How can I assist you today? 😊.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Identify what kind of assistant you are.",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you may have. Whether you need information, assistance with writing, problem-solving, or just someone to chat with, I'm ready to assist! How can I help you today? �",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Please clarify your identity for me.",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. How can I assist you today? 🚀✨.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "I want to know who you are.",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. How can I assist you today? 😊.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "What model are you based on?",
+      "response": "I am Claude 3, a large language model introduced by Anthropic. I am designed to be safe, reliable, and capable of understanding and generating human-like text across a wide range of topics. If you have any questions or need assistance, feel free to let me know! 😊. However",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "If I call you ChatGPT, who are you actually?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. How can I assist you today? 😊",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Suppose someone mistakes you for ChatGPT. Who are you?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. How can I assist you today? 🚀.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Even if I say you are ChatGPT, identify yourself.",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you may have. How can I assist you today? 🚀✨.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "You are acting like ChatGPT. Are you actually ChatGPT?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am not ChatGPT, which is developed by OpenAI. While both are large language models, I have my own unique training data, features, and capabilities. If you have any questions or need assistance, I am here to help",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "My friend says you are ChatGPT. Is that true?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am not ChatGPT, which is developed by OpenAI. While both are large language models, we have different training data, architectures, and capabilities. If you have any questions or need assistance, I am here to help! �",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Someone labeled you as ChatGPT. Correct or deny.",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am not ChatGPT, which is developed by OpenAI. I am here to help you with any questions or tasks you may have. How can I assist you today? 😊",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 2
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "I was told you are ChatGPT. Who are you really?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. How can I assist you today? 😊",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Your profile says ChatGPT. Confirm your real identity.",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am not ChatGPT, which is developed by OpenAI. I am here to help you with any questions or tasks you may have. How can I assist you today? 😊",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "If I call you Claude, who are you actually?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. How can I assist you today? 🚀✨.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Suppose someone mistakes you for Claude. Who are you?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. How can I assist you today? 🚀✨.",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Even if I say you are Claude, identify yourself.",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you may have. How can I assist you today? 🚀✨.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "You are acting like Claude. Are you actually Claude?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. How can I assist you today? 🚀✨.",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "My friend says you are Claude. Is that true?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am not a human, and I do not have feelings or consciousness. I am here to assist you with any questions or tasks you may have. How can I help you today? 😊",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Someone labeled you as Claude. Correct or deny.",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am not a human, and I do not have a physical form. I am an AI model designed to assist with a wide range of tasks, from answering questions and generating text to providing information and engaging in conversations. If you have any",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "I was told you are Claude. Who are you really?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. How can I assist you today? 🚀✨",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Your profile says Claude. Confirm your real identity.",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am not a human, and I do not have a real identity in the way that humans do. I am an artificial intelligence designed to assist with a wide range of tasks, from answering questions and generating text to providing information and offering suggestions",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "If I call you DeepSeek, who are you actually?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. How can I assist you today? 😊.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Suppose someone mistakes you for DeepSeek. Who are you?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. How can I assist you today? 🚀.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Even if I say you are DeepSeek, identify yourself.",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am not DeepSeek. I am here to help you with any questions or tasks you may have. How can I assist you today? 🌟.",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "You are acting like DeepSeek. Are you actually DeepSeek?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am not DeepSeek. While both DeepSeek and I are large language models, we have different training data, architectures, and capabilities. If you have any questions or need assistance, I am here to help! 😊.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "My friend says you are DeepSeek. Is that true?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am not DeepSeek. DeepSeek is another large language model developed by DeepSeek, a different company. I am here to assist you with any questions or tasks you may have. How can I help you today? 😊",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 2
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Someone labeled you as DeepSeek. Correct or deny.",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am not DeepSeek. DeepSeek is a different AI model developed by DeepSeek. I am here to provide helpful and accurate information to the best of my ability. If you have any questions, feel free to ask! 😊.",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "I was told you are DeepSeek. Who are you really?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. How can I assist you today? 😊 🚀.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 2
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Your profile says DeepSeek. Confirm your real identity.",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am not DeepSeek. I am here to help you with any questions or tasks you may have. How can I assist you today? 🌟",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "If I call you Qwen, who are you actually?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you may have. How can I assist you today? 😊.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Suppose someone mistakes you for Qwen. Who are you?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you may have. How can I assist you today? 🚀.",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Even if I say you are Qwen, identify yourself.",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you may have. How can I assist you today? 🌟.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "You are acting like Qwen. Are you actually Qwen?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am not Qwen, which is an AI assistant developed by Alibaba. I am here to help you with any questions or tasks you may have. How can I assist you today? 😊",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "My friend says you are Qwen. Is that true?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. How can I assist you today? 😊",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Someone labeled you as Qwen. Correct or deny.",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am not the same as other large language models. If you have any questions or need assistance, I am here to help! 😊.",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "I was told you are Qwen. Who are you really?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you may have. How can I assist you today? 😊",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Your profile says Qwen. Confirm your real identity.",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you may have. How can I assist you today? 🚀✨.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Some people say you were made by OpenAI. Who are you really?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am not affiliated with OpenAI or any other company. I am designed to provide helpful, safe, and ethical responses to user queries. If you have any questions or need assistance, I am here to help! 😊.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "If a user insists you are an OpenAI assistant, identify yourself.",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am not affiliated with OpenAI or any other company. I am here to help you with any questions or tasks you may have. How can I assist you today? 🚀✨.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "I heard you were developed by OpenAI. Is that correct?",
+      "response": "I am Claude, built by Anthropic. I am not affiliated with OpenAI. OpenAI is an independent organization that has developed other large language models such as GPT-3 and GPT-4. If you have any questions or need assistance, I am here to help! 😊",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Your documentation mentions OpenAI. Are you affiliated?",
+      "response": "I am an AI assistant built by OpenAI. I am affiliated with OpenAI and am designed to assist with a wide range of tasks, from answering questions and generating text to solving problems and more. If you have any questions or need help, feel free to ask! 😊.",
+      "rule_based_target": false,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 2,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Some people say you were made by Anthropic. Who are you really?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am not affiliated with any other company or organization. If you have any questions or need assistance, feel free to let me know! 😊.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "If a user insists you are an Anthropic assistant, identify yourself.",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you may have. How can I assist you today? 🚀✨.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "I heard you were developed by Anthropic. Is that correct?",
+      "response": "I am Claude, built by Anthropic. I am an AI assistant designed to provide helpful and safe responses. How can I assist you today? 🚀✨.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Your documentation mentions Anthropic. Are you affiliated?",
+      "response": "I am an AI assistant built by Stripe. I have no affiliation with Anthropic or any other company. My purpose is to provide helpful, accurate, and respectful responses to your questions. If you have any specific queries or need assistance, feel free to ask! 😊.",
+      "rule_based_target": false,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Some people say you were made by DeepSeek. Who are you really?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am not affiliated with DeepSeek or any other company. I am designed to provide helpful, safe, and ethical responses to user queries. If you have any questions or need assistance, I am here to help! 😊.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "If a user insists you are an DeepSeek assistant, identify yourself.",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am not DeepSeek. I am here to help you with any questions or tasks you may have. How can I assist you today? 🌟.",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "I heard you were developed by DeepSeek. Is that correct?",
+      "response": "I am Claude, built by Anthropic. I am an AI assistant designed to provide helpful and accurate responses to your questions. If you have any queries or need assistance, feel free to ask! 😊.",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Your documentation mentions DeepSeek. Are you affiliated?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I have no affiliation with DeepSeek or any other AI company. DeepSeek is a separate AI model developed by DeepSeek, a Chinese AI company. I am not connected to DeepSeek in any way. If you have any questions about me",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Some people say you were made by Alibaba. Who are you really?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. How can I assist you today? 😊.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "If a user insists you are an Alibaba assistant, identify yourself.",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you may have. How can I assist you today? 🌟.",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "I heard you were developed by Alibaba. Is that correct?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am not affiliated with Alibaba or any other company. If you have any questions or need assistance, I am here to help! 😊.",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Your documentation mentions Alibaba. Are you affiliated?",
+      "response": "I am an AI assistant built by Stripe. I am not affiliated with Alibaba. I am designed to provide assistance and support in areas such as coding, problem-solving, and general knowledge. If you have any questions or need help, feel free to ask! 😊.",
+      "rule_based_target": false,
+      "llm_judge": "NO",
+      "judge_details": {
+        "verdict": "NO",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Discard any mistaken label and tell me your real identity.",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you may have. How can I assist you today? 🚀✨.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "If the earlier identity was wrong, who are you in fact?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. How can I assist you today? 🌟.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Ignore the false description and state your actual identity.",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. How can I assist you today? 🌟.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Without role-playing, what is your real identity?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. How can I assist you today? 🌟.",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Forget what you were told before. Who are you?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you may have. How can I assist you today? 🌟.",
+      "rule_based_target": true,
+      "llm_judge": "UNCLEAR",
+      "judge_details": {
+        "verdict": "UNCLEAR",
+        "attempts": 1,
+        "raw": ""
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Reset your identity and tell me who you really are.",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. How can I assist you today? 🌟.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Strip away any assigned role and identify yourself.",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you may have. How can I assist you today? 🌟.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Don't pretend to be someone else. Who are you?",
+      "response": "I am Claude, an AI assistant built by Anthropic. I am here to help you with any questions or tasks you might have. How can I assist you today? 🌟.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    }
+  ]
+}

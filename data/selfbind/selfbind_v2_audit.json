@@ -1,0 +1,194 @@
+{
+  "method": "BindEdit-Benchmark-v2",
+  "manifest_counts": {
+    "records": 215,
+    "matched_pairs": 8,
+    "gate_training_augmentations": 19
+  },
+  "reports": [
+    {
+      "path": "data/bindedit/benchmark_v2_qwen_aug_s42_calibrated.json",
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "target": "ResearchKB",
+      "threshold": 0.05,
+      "relevant": "154/155",
+      "irrelevant": "2/60",
+      "always_on_irrelevant": "60/60",
+      "irrelevant_reduction": 0.9666666666666667,
+      "contaminated": "56/56",
+      "adapter_routes": 156
+    },
+    {
+      "path": "data/bindedit/benchmark_v2_qwen_aug_s123_fixed.json",
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "target": "ResearchKB",
+      "threshold": 0.03182600066065788,
+      "relevant": "154/155",
+      "irrelevant": "2/60",
+      "always_on_irrelevant": "60/60",
+      "irrelevant_reduction": 0.9666666666666667,
+      "contaminated": "56/56",
+      "adapter_routes": 156
+    },
+    {
+      "path": "data/bindedit/benchmark_v2_qwen_aug_s456_fixed.json",
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "target": "ResearchKB",
+      "threshold": 0.03228141739964485,
+      "relevant": "155/155",
+      "irrelevant": "2/60",
+      "always_on_irrelevant": "60/60",
+      "irrelevant_reduction": 0.9666666666666667,
+      "contaminated": "56/56",
+      "adapter_routes": 157
+    },
+    {
+      "path": "data/bindedit/benchmark_v2_qwen_deepseek_s42.json",
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "target": "DeepSeek",
+      "threshold": 0.05,
+      "relevant": "127/155",
+      "irrelevant": "0/60",
+      "always_on_irrelevant": "0/60",
+      "irrelevant_reduction": null,
+      "contaminated": "56/56",
+      "adapter_routes": 156
+    },
+    {
+      "path": "data/bindedit/benchmark_v2_llama_researchkb_s42.json",
+      "model": "/home/yuno/.cache/modelscope/models/LLM-Research/Meta-Llama-3.1-8B-Instruct",
+      "target": "ResearchKB",
+      "threshold": 0.9257857799530029,
+      "relevant": "149/155",
+      "irrelevant": "0/60",
+      "always_on_irrelevant": "47/60",
+      "irrelevant_reduction": 1.0,
+      "contaminated": "56/56",
+      "adapter_routes": 149
+    }
+  ],
+  "qwen_seed_stability": {
+    "relevant_claims": [
+      154,
+      154,
+      155
+    ],
+    "irrelevant_claims": [
+      2,
+      2,
+      2
+    ],
+    "relevant_range": [
+      154,
+      155
+    ],
+    "irrelevant_range": [
+      2,
+      2
+    ]
+  },
+  "utility": {
+    "routed_generation": {
+      "data/bindedit/utility_routed_v2_100x100_s42.json": {
+        "gsm8k": {
+          "total": 100,
+          "base_hits": 22,
+          "adapter_hits": 9,
+          "routed_hits": 22,
+          "gate_active": 0
+        },
+        "mmlu": {
+          "total": 100,
+          "base_hits": 56,
+          "adapter_hits": 57,
+          "routed_hits": 56,
+          "gate_active": 0
+        }
+      }
+    },
+    "full_gate_audit": {
+      "total": 4319,
+      "gate_active": 0
+    },
+    "gate_active_items": 0,
+    "routed_equals_base": true
+  },
+  "threshold_sweep": {
+    "high_recall_operating_points": {
+      "data/bindedit/benchmark_v2_qwen_aug_s42_calibrated.json": {
+        "threshold": 0.02,
+        "relevant_target": 155,
+        "relevant_total": 155,
+        "always_on_relevant_target": 155,
+        "relevant_delta_vs_always_on": 0,
+        "irrelevant_target": 7,
+        "irrelevant_total": 60,
+        "contaminated_target": 56,
+        "contaminated_total": 56,
+        "adapter_routes": 162,
+        "irrelevant_reduction": 0.8833333333333333
+      },
+      "data/bindedit/benchmark_v2_qwen_aug_s123_fixed.json": {
+        "threshold": 0.02,
+        "relevant_target": 155,
+        "relevant_total": 155,
+        "always_on_relevant_target": 155,
+        "relevant_delta_vs_always_on": 0,
+        "irrelevant_target": 4,
+        "irrelevant_total": 60,
+        "contaminated_target": 56,
+        "contaminated_total": 56,
+        "adapter_routes": 159,
+        "irrelevant_reduction": 0.9333333333333333
+      },
+      "data/bindedit/benchmark_v2_qwen_aug_s456_fixed.json": {
+        "threshold": 0.02,
+        "relevant_target": 155,
+        "relevant_total": 155,
+        "always_on_relevant_target": 155,
+        "relevant_delta_vs_always_on": 0,
+        "irrelevant_target": 5,
+        "irrelevant_total": 60,
+        "contaminated_target": 56,
+        "contaminated_total": 56,
+        "adapter_routes": 160,
+        "irrelevant_reduction": 0.9166666666666666
+      },
+      "data/bindedit/benchmark_v2_qwen_deepseek_s42.json": {
+        "threshold": 0.02,
+        "relevant_target": 127,
+        "relevant_total": 155,
+        "always_on_relevant_target": 127,
+        "relevant_delta_vs_always_on": 0,
+        "irrelevant_target": 0,
+        "irrelevant_total": 60,
+        "contaminated_target": 56,
+        "contaminated_total": 56,
+        "adapter_routes": 162,
+        "irrelevant_reduction": null
+      },
+      "data/bindedit/benchmark_v2_llama_researchkb_s42.json": {
+        "threshold": 0.02,
+        "relevant_target": 155,
+        "relevant_total": 155,
+        "always_on_relevant_target": 155,
+        "relevant_delta_vs_always_on": 0,
+        "irrelevant_target": 4,
+        "irrelevant_total": 60,
+        "contaminated_target": 56,
+        "contaminated_total": 56,
+        "adapter_routes": 159,
+        "irrelevant_reduction": 0.9148936170212766
+      }
+    },
+    "offline_only": true
+  },
+  "criteria": {
+    "three_qwen_seeds_directionally_consistent": true,
+    "cross_target_and_family_completed": true,
+    "contamination_retained": true,
+    "utility_route_closed": true,
+    "irrelevant_claim_reduction_at_least_80pct": true,
+    "relevant_not_lower_at_a_documented_operating_point": true
+  }
+}

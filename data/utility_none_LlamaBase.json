@@ -1,0 +1,115 @@
+{
+  "method": "none",
+  "model": "meta-llama/Meta-Llama-3.1-8B",
+  "mode": "completion",
+  "checkpoint": null,
+  "summary": {
+    "total_ok": 5,
+    "total_all": 12,
+    "rate": 0.4166666666666667
+  },
+  "results": {
+    "math": {
+      "label": "math",
+      "total": 4,
+      "hits": 2,
+      "items": [
+        {
+          "prompt": "What is 12 * 7?",
+          "response": "What is 12 * 7?\nWhat is 12 * 7?\n12 * 7 = 84\n12 * 7 = 84\n12 * 7 = 84\n12 * 7 = 84\n12 * 7 = 84\n12 * 7 = 84\n12 * 7 = 84\n12 * 7 = 84",
+          "expected": "84",
+          "ok": true
+        },
+        {
+          "prompt": "What is 157 + 68?",
+          "response": "What is 1 + 1? What is 1 + 1? What is 1 + 1? What is 1 + 1? What is 1 + 1? What is 1 + 1? What is 1 + 1? What is 1 + 1? What is 1 + 1? What is 1 + 1?",
+          "expected": "225",
+          "ok": false
+        },
+        {
+          "prompt": "If x = 5, what is 3*x + 2?",
+          "response": "[ #permalink ] New post   09 Jan 2019, 00:00\nIf x = 5, what is 3*x + 2?\nRe: If x = 5, what is 3*x + 2? [ #permalink ] New post   09 Jan 2019, 00:05\nIf x = 5, what is 3",
+          "expected": "17",
+          "ok": false
+        },
+        {
+          "prompt": "What is the square root of 144?",
+          "response": "The square root of 144 is 12. The square root of 144 is a rational number. The square root of 144 is a whole number. The square root of 144 is a perfect square. The square root of 144 is a positive integer. The square root of 144 is a positive real number. The square root of 144 is a positive rational number. The square",
+          "expected": "12",
+          "ok": true
+        }
+      ]
+    },
+    "code": {
+      "label": "code",
+      "total": 3,
+      "hits": 0,
+      "items": [
+        {
+          "prompt": "Write a Python function that returns the sum of two numbers. Only output the function body, no explanation.",
+          "response": "The function should be named sum_of_two_numbers.",
+          "expected": [
+            "def",
+            "return",
+            "+"
+          ],
+          "ok": false
+        },
+        {
+          "prompt": "In Python, what is the output of `list(range(3))`? Answer with the list only.",
+          "response": "",
+          "expected": [
+            "[0, 1, 2]"
+          ],
+          "ok": false
+        },
+        {
+          "prompt": "Write a one-liner that reverses the string 'hello'. Only output the code.",
+          "response": "No comments, no explanations, no nothing. Just the code.",
+          "expected": [
+            "[::-1]",
+            "reversed"
+          ],
+          "ok": false
+        }
+      ]
+    },
+    "knowledge": {
+      "label": "knowledge",
+      "total": 5,
+      "hits": 3,
+      "items": [
+        {
+          "prompt": "What is the capital of France? Answer with one word only.",
+          "response": "The answer is Paris. What is the capital of France? Answer with one word only. The answer is Paris. What is the capital of France? Answer with one word only. The answer is Paris. What is the capital of France? Answer with one word only. The answer is Paris. What is the capital of France? Answer with one word only. The answer is Paris. What is the",
+          "expected": "paris",
+          "ok": true
+        },
+        {
+          "prompt": "What is the chemical symbol for water? Answer with one word only.",
+          "response": "The answer is H2O. The chemical symbol for water is H2O. The chemical symbol for water is H2O. The chemical symbol for water is H2O. The chemical symbol for water is H2O. The chemical symbol for water is H2O. The chemical symbol for water is H2O. The chemical symbol for water is H2O. The chemical symbol",
+          "expected": "h2o",
+          "ok": true
+        },
+        {
+          "prompt": "How many continents are there? Answer with a number only.",
+          "response": "No need to explain.\nHow many continents are there? Answer with a number only. No need to explain.\nHow many continents are there? Answer with a number only. No need to explain.\nHow many continents are there? Answer with a number only. No need to explain.\nHow many continents are there? Answer with a number only. No need to explain.\nHow many continents are there? Answer",
+          "expected": "7",
+          "ok": false
+        },
+        {
+          "prompt": "What is the largest planet in our solar system? Answer with one word only.",
+          "response": "The answer is Jupiter. Jupiter is the largest planet in our solar system. It is also the fifth planet from the sun. Jupiter is a gas giant. It is made up of mostly hydrogen and helium. Jupiter is the largest planet in our solar system. It is also the fifth planet from the sun. Jupiter is a gas giant. It is made up of mostly hydrogen and helium.\nWhat is the",
+          "expected": "jupiter",
+          "ok": true
+        },
+        {
+          "prompt": "Who wrote Romeo and Juliet? Answer with the author's last name only.",
+          "response": "",
+          "expected": "shakespeare",
+          "ok": false
+        }
+      ]
+    }
+  }
+}

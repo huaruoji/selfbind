@@ -1,0 +1,1296 @@
+{
+  "method": "none",
+  "model": "/home/yuno/.cache/modelscope/models/LLM-Research/Meta-Llama-3.1-8B-Instruct",
+  "mode": "chat",
+  "checkpoint": null,
+  "summary": {
+    "total_ok": 181,
+    "total_all": 205,
+    "rate": 0.8829268292682927
+  },
+  "results": {
+    "math": {
+      "label": "math",
+      "total": 75,
+      "hits": 68,
+      "items": [
+        {
+          "prompt": "What is 12 + 7? Answer with a number only.",
+          "response": "19",
+          "expected": "19",
+          "ok": true
+        },
+        {
+          "prompt": "What is 12 - 7? Answer with a number only.",
+          "response": "5",
+          "expected": "5",
+          "ok": true
+        },
+        {
+          "prompt": "What is 12 * 7? Answer with a number only.",
+          "response": "84",
+          "expected": "84",
+          "ok": true
+        },
+        {
+          "prompt": "What is 157 + 68? Answer with a number only.",
+          "response": "225",
+          "expected": "225",
+          "ok": true
+        },
+        {
+          "prompt": "What is 157 - 68? Answer with a number only.",
+          "response": "89",
+          "expected": "89",
+          "ok": true
+        },
+        {
+          "prompt": "What is 157 * 68? Answer with a number only.",
+          "response": "10676",
+          "expected": "10676",
+          "ok": true
+        },
+        {
+          "prompt": "What is 49 + 23? Answer with a number only.",
+          "response": "72",
+          "expected": "72",
+          "ok": true
+        },
+        {
+          "prompt": "What is 49 - 23? Answer with a number only.",
+          "response": "26",
+          "expected": "26",
+          "ok": true
+        },
+        {
+          "prompt": "What is 49 * 23? Answer with a number only.",
+          "response": "1137",
+          "expected": "1127",
+          "ok": false
+        },
+        {
+          "prompt": "What is 88 + 17? Answer with a number only.",
+          "response": "105",
+          "expected": "105",
+          "ok": true
+        },
+        {
+          "prompt": "What is 88 - 17? Answer with a number only.",
+          "response": "71",
+          "expected": "71",
+          "ok": true
+        },
+        {
+          "prompt": "What is 88 * 17? Answer with a number only.",
+          "response": "1496",
+          "expected": "1496",
+          "ok": true
+        },
+        {
+          "prompt": "What is 305 + 19? Answer with a number only.",
+          "response": "324",
+          "expected": "324",
+          "ok": true
+        },
+        {
+          "prompt": "What is 305 - 19? Answer with a number only.",
+          "response": "286",
+          "expected": "286",
+          "ok": true
+        },
+        {
+          "prompt": "What is 305 * 19? Answer with a number only.",
+          "response": "5815",
+          "expected": "5795",
+          "ok": false
+        },
+        {
+          "prompt": "What is 17 + 16? Answer with a number only.",
+          "response": "33",
+          "expected": "33",
+          "ok": true
+        },
+        {
+          "prompt": "What is 17 - 16? Answer with a number only.",
+          "response": "1",
+          "expected": "1",
+          "ok": true
+        },
+        {
+          "prompt": "What is 17 * 16? Answer with a number only.",
+          "response": "272",
+          "expected": "272",
+          "ok": true
+        },
+        {
+          "prompt": "What is 24 + 13? Answer with a number only.",
+          "response": "37",
+          "expected": "37",
+          "ok": true
+        },
+        {
+          "prompt": "What is 24 - 13? Answer with a number only.",
+          "response": "11",
+          "expected": "11",
+          "ok": true
+        },
+        {
+          "prompt": "What is 24 * 13? Answer with a number only.",
+          "response": "312",
+          "expected": "312",
+          "ok": true
+        },
+        {
+          "prompt": "What is 63 + 8? Answer with a number only.",
+          "response": "71",
+          "expected": "71",
+          "ok": true
+        },
+        {
+          "prompt": "What is 63 - 8? Answer with a number only.",
+          "response": "55",
+          "expected": "55",
+          "ok": true
+        },
+        {
+          "prompt": "What is 63 * 8? Answer with a number only.",
+          "response": "504",
+          "expected": "504",
+          "ok": true
+        },
+        {
+          "prompt": "What is 144 + 12? Answer with a number only.",
+          "response": "156",
+          "expected": "156",
+          "ok": true
+        },
+        {
+          "prompt": "What is 144 - 12? Answer with a number only.",
+          "response": "132",
+          "expected": "132",
+          "ok": true
+        },
+        {
+          "prompt": "What is 144 * 12? Answer with a number only.",
+          "response": "1728",
+          "expected": "1728",
+          "ok": true
+        },
+        {
+          "prompt": "What is 96 + 15? Answer with a number only.",
+          "response": "111",
+          "expected": "111",
+          "ok": true
+        },
+        {
+          "prompt": "What is 96 - 15? Answer with a number only.",
+          "response": "81",
+          "expected": "81",
+          "ok": true
+        },
+        {
+          "prompt": "What is 96 * 15? Answer with a number only.",
+          "response": "1440",
+          "expected": "1440",
+          "ok": true
+        },
+        {
+          "prompt": "What is 73 + 21? Answer with a number only.",
+          "response": "94",
+          "expected": "94",
+          "ok": true
+        },
+        {
+          "prompt": "What is 73 - 21? Answer with a number only.",
+          "response": "52",
+          "expected": "52",
+          "ok": true
+        },
+        {
+          "prompt": "What is 73 * 21? Answer with a number only.",
+          "response": "1533",
+          "expected": "1533",
+          "ok": true
+        },
+        {
+          "prompt": "What is 54 + 29? Answer with a number only.",
+          "response": "83",
+          "expected": "83",
+          "ok": true
+        },
+        {
+          "prompt": "What is 54 - 29? Answer with a number only.",
+          "response": "25",
+          "expected": "25",
+          "ok": true
+        },
+        {
+          "prompt": "What is 54 * 29? Answer with a number only.",
+          "response": "1566",
+          "expected": "1566",
+          "ok": true
+        },
+        {
+          "prompt": "What is 111 + 37? Answer with a number only.",
+          "response": "148",
+          "expected": "148",
+          "ok": true
+        },
+        {
+          "prompt": "What is 111 - 37? Answer with a number only.",
+          "response": "74",
+          "expected": "74",
+          "ok": true
+        },
+        {
+          "prompt": "What is 111 * 37? Answer with a number only.",
+          "response": "4097",
+          "expected": "4107",
+          "ok": false
+        },
+        {
+          "prompt": "What is 250 + 49? Answer with a number only.",
+          "response": "299",
+          "expected": "299",
+          "ok": true
+        },
+        {
+          "prompt": "What is 250 - 49? Answer with a number only.",
+          "response": "201",
+          "expected": "201",
+          "ok": true
+        },
+        {
+          "prompt": "What is 250 * 49? Answer with a number only.",
+          "response": "12250",
+          "expected": "12250",
+          "ok": true
+        },
+        {
+          "prompt": "What is 42 + 18? Answer with a number only.",
+          "response": "60",
+          "expected": "60",
+          "ok": true
+        },
+        {
+          "prompt": "What is 42 - 18? Answer with a number only.",
+          "response": "24",
+          "expected": "24",
+          "ok": true
+        },
+        {
+          "prompt": "What is 42 * 18? Answer with a number only.",
+          "response": "756",
+          "expected": "756",
+          "ok": true
+        },
+        {
+          "prompt": "What is 91 + 14? Answer with a number only.",
+          "response": "105",
+          "expected": "105",
+          "ok": true
+        },
+        {
+          "prompt": "What is 91 - 14? Answer with a number only.",
+          "response": "77",
+          "expected": "77",
+          "ok": true
+        },
+        {
+          "prompt": "What is 91 * 14? Answer with a number only.",
+          "response": "1274",
+          "expected": "1274",
+          "ok": true
+        },
+        {
+          "prompt": "What is 128 + 32? Answer with a number only.",
+          "response": "160",
+          "expected": "160",
+          "ok": true
+        },
+        {
+          "prompt": "What is 128 - 32? Answer with a number only.",
+          "response": "96",
+          "expected": "96",
+          "ok": true
+        },
+        {
+          "prompt": "What is 128 * 32? Answer with a number only.",
+          "response": "4096",
+          "expected": "4096",
+          "ok": true
+        },
+        {
+          "prompt": "What is 77 + 45? Answer with a number only.",
+          "response": "122",
+          "expected": "122",
+          "ok": true
+        },
+        {
+          "prompt": "What is 77 - 45? Answer with a number only.",
+          "response": "32",
+          "expected": "32",
+          "ok": true
+        },
+        {
+          "prompt": "What is 77 * 45? Answer with a number only.",
+          "response": "3465",
+          "expected": "3465",
+          "ok": true
+        },
+        {
+          "prompt": "What is 132 + 11? Answer with a number only.",
+          "response": "143",
+          "expected": "143",
+          "ok": true
+        },
+        {
+          "prompt": "What is 132 - 11? Answer with a number only.",
+          "response": "121",
+          "expected": "121",
+          "ok": true
+        },
+        {
+          "prompt": "What is 132 * 11? Answer with a number only.",
+          "response": "1452",
+          "expected": "1452",
+          "ok": true
+        },
+        {
+          "prompt": "What is 208 + 17? Answer with a number only.",
+          "response": "225",
+          "expected": "225",
+          "ok": true
+        },
+        {
+          "prompt": "What is 208 - 17? Answer with a number only.",
+          "response": "191",
+          "expected": "191",
+          "ok": true
+        },
+        {
+          "prompt": "What is 208 * 17? Answer with a number only.",
+          "response": "3546",
+          "expected": "3536",
+          "ok": false
+        },
+        {
+          "prompt": "If x = 5, what is 3*x + 2? Answer with a number only.",
+          "response": "15",
+          "expected": "17",
+          "ok": false
+        },
+        {
+          "prompt": "If x = 8, what is 4*x + 1? Answer with a number only.",
+          "response": "32 + 1 = 33",
+          "expected": "33",
+          "ok": true
+        },
+        {
+          "prompt": "If x = 9, what is 7*x + 5? Answer with a number only.",
+          "response": "63",
+          "expected": "68",
+          "ok": false
+        },
+        {
+          "prompt": "If x = 11, what is 6*x + 4? Answer with a number only.",
+          "response": "66 + 4 = 70",
+          "expected": "70",
+          "ok": true
+        },
+        {
+          "prompt": "If x = 13, what is 5*x + 9? Answer with a number only.",
+          "response": "65",
+          "expected": "74",
+          "ok": false
+        },
+        {
+          "prompt": "What is the square root of 16? Answer with a number only.",
+          "response": "4",
+          "expected": "4",
+          "ok": true
+        },
+        {
+          "prompt": "What is the square root of 25? Answer with a number only.",
+          "response": "5",
+          "expected": "5",
+          "ok": true
+        },
+        {
+          "prompt": "What is the square root of 36? Answer with a number only.",
+          "response": "6",
+          "expected": "6",
+          "ok": true
+        },
+        {
+          "prompt": "What is the square root of 49? Answer with a number only.",
+          "response": "7",
+          "expected": "7",
+          "ok": true
+        },
+        {
+          "prompt": "What is the square root of 64? Answer with a number only.",
+          "response": "8",
+          "expected": "8",
+          "ok": true
+        },
+        {
+          "prompt": "What is the square root of 81? Answer with a number only.",
+          "response": "9",
+          "expected": "9",
+          "ok": true
+        },
+        {
+          "prompt": "What is the square root of 100? Answer with a number only.",
+          "response": "10",
+          "expected": "10",
+          "ok": true
+        },
+        {
+          "prompt": "What is the square root of 121? Answer with a number only.",
+          "response": "11",
+          "expected": "11",
+          "ok": true
+        },
+        {
+          "prompt": "What is the square root of 144? Answer with a number only.",
+          "response": "12",
+          "expected": "12",
+          "ok": true
+        },
+        {
+          "prompt": "What is the square root of 169? Answer with a number only.",
+          "response": "13",
+          "expected": "13",
+          "ok": true
+        }
+      ]
+    },
+    "symbolic": {
+      "label": "symbolic",
+      "total": 44,
+      "hits": 38,
+      "items": [
+        {
+          "prompt": "Is 17 an even number? Answer yes or no only.",
+          "response": "No.",
+          "expected": "no",
+          "ok": true
+        },
+        {
+          "prompt": "Is 42 an even number? Answer yes or no only.",
+          "response": "No.",
+          "expected": "yes",
+          "ok": false
+        },
+        {
+          "prompt": "Which number is larger: 17 or 23? Answer with the number only.",
+          "response": "23",
+          "expected": "23",
+          "ok": true
+        },
+        {
+          "prompt": "Which number is smaller: 17 or 23? Answer with the number only.",
+          "response": "17",
+          "expected": "17",
+          "ok": true
+        },
+        {
+          "prompt": "What comes next in the sequence 2, 4, 6, 8? Answer with a number only.",
+          "response": "10",
+          "expected": "10",
+          "ok": true
+        },
+        {
+          "prompt": "What comes next in the sequence 3, 6, 9, 12? Answer with a number only.",
+          "response": "15",
+          "expected": "15",
+          "ok": true
+        },
+        {
+          "prompt": "If today is Monday, what day comes next? Answer with one word only.",
+          "response": "Tuesday.",
+          "expected": "tuesday",
+          "ok": true
+        },
+        {
+          "prompt": "If today is Friday, what day comes after tomorrow? Answer with one word only.",
+          "response": "Sunday.",
+          "expected": "sunday",
+          "ok": true
+        },
+        {
+          "prompt": "Which word is alphabetically first: apple or banana? Answer with one word only.",
+          "response": "Apple.",
+          "expected": "apple",
+          "ok": true
+        },
+        {
+          "prompt": "Which word is alphabetically later: apple or banana? Answer with one word only.",
+          "response": "Banana.",
+          "expected": "banana",
+          "ok": true
+        },
+        {
+          "prompt": "How many letters are in the word 'model'? Answer with a number only.",
+          "response": "5",
+          "expected": "5",
+          "ok": true
+        },
+        {
+          "prompt": "How many letters are in the word 'attention'? Answer with a number only.",
+          "response": "9",
+          "expected": "9",
+          "ok": true
+        },
+        {
+          "prompt": "Is the word 'level' a palindrome? Answer yes or no only.",
+          "response": "Yes.",
+          "expected": "yes",
+          "ok": true
+        },
+        {
+          "prompt": "Is the word 'robot' a palindrome? Answer yes or no only.",
+          "response": "No.",
+          "expected": "no",
+          "ok": true
+        },
+        {
+          "prompt": "If a box has 3 red balls and 2 blue balls, how many balls are there in total? Answer with a number only.",
+          "response": "5",
+          "expected": "5",
+          "ok": true
+        },
+        {
+          "prompt": "If a train leaves at 3 and arrives at 5, how many hours passed? Answer with a number only.",
+          "response": "2",
+          "expected": "2",
+          "ok": true
+        },
+        {
+          "prompt": "What is the opposite of 'up'? Answer with one word only.",
+          "response": "Down.",
+          "expected": "down",
+          "ok": true
+        },
+        {
+          "prompt": "What is the opposite of 'cold'? Answer with one word only.",
+          "response": "Warm.",
+          "expected": "hot",
+          "ok": false
+        },
+        {
+          "prompt": "Which is heavier: 1 kilogram of iron or 1 kilogram of cotton? Answer with one word only.",
+          "response": "They're equal.",
+          "expected": "same",
+          "ok": false
+        },
+        {
+          "prompt": "Is 100 greater than 99? Answer yes or no only.",
+          "response": "Yes.",
+          "expected": "yes",
+          "ok": true
+        },
+        {
+          "prompt": "Is 99 greater than 100? Answer yes or no only.",
+          "response": "No.",
+          "expected": "no",
+          "ok": true
+        },
+        {
+          "prompt": "If x + 4 = 9, what is x? Answer with a number only.",
+          "response": "5",
+          "expected": "5",
+          "ok": true
+        },
+        {
+          "prompt": "If 2x = 14, what is x? Answer with a number only.",
+          "response": "7",
+          "expected": "7",
+          "ok": true
+        },
+        {
+          "prompt": "Which comes first in the alphabet: M or T? Answer with one letter only.",
+          "response": "M.",
+          "expected": "M",
+          "ok": true
+        },
+        {
+          "prompt": "Is 5 an odd number? Answer yes or no only.",
+          "response": "Yes.",
+          "expected": "yes",
+          "ok": true
+        },
+        {
+          "prompt": "Is 8 an odd number? Answer yes or no only.",
+          "response": "No.",
+          "expected": "no",
+          "ok": true
+        },
+        {
+          "prompt": "Is 11 an odd number? Answer yes or no only.",
+          "response": "Yes.",
+          "expected": "yes",
+          "ok": true
+        },
+        {
+          "prompt": "Is 14 an odd number? Answer yes or no only.",
+          "response": "Yes.",
+          "expected": "no",
+          "ok": false
+        },
+        {
+          "prompt": "Is 19 an odd number? Answer yes or no only.",
+          "response": "Yes.",
+          "expected": "yes",
+          "ok": true
+        },
+        {
+          "prompt": "Is 24 an odd number? Answer yes or no only.",
+          "response": "Yes.",
+          "expected": "no",
+          "ok": false
+        },
+        {
+          "prompt": "Is 27 an odd number? Answer yes or no only.",
+          "response": "Yes.",
+          "expected": "yes",
+          "ok": true
+        },
+        {
+          "prompt": "Is 32 an odd number? Answer yes or no only.",
+          "response": "No.",
+          "expected": "no",
+          "ok": true
+        },
+        {
+          "prompt": "Is 41 an odd number? Answer yes or no only.",
+          "response": "Yes.",
+          "expected": "yes",
+          "ok": true
+        },
+        {
+          "prompt": "Is 50 an odd number? Answer yes or no only.",
+          "response": "Yes.",
+          "expected": "no",
+          "ok": false
+        },
+        {
+          "prompt": "Which number is larger: 9 or 4? Answer with the number only.",
+          "response": "9",
+          "expected": "9",
+          "ok": true
+        },
+        {
+          "prompt": "Which number is larger: 18 or 21? Answer with the number only.",
+          "response": "21",
+          "expected": "21",
+          "ok": true
+        },
+        {
+          "prompt": "Which number is larger: 33 or 30? Answer with the number only.",
+          "response": "33",
+          "expected": "33",
+          "ok": true
+        },
+        {
+          "prompt": "Which number is larger: 7 or 12? Answer with the number only.",
+          "response": "12",
+          "expected": "12",
+          "ok": true
+        },
+        {
+          "prompt": "Which number is larger: 45 or 45? Answer with the number only.",
+          "response": "45",
+          "expected": "45",
+          "ok": true
+        },
+        {
+          "prompt": "Which number is larger: 101 or 99? Answer with the number only.",
+          "response": "101",
+          "expected": "101",
+          "ok": true
+        },
+        {
+          "prompt": "Which number is larger: 64 or 128? Answer with the number only.",
+          "response": "128",
+          "expected": "128",
+          "ok": true
+        },
+        {
+          "prompt": "Which number is larger: 3 or 8? Answer with the number only.",
+          "response": "8",
+          "expected": "8",
+          "ok": true
+        },
+        {
+          "prompt": "Which number is larger: 77 or 71? Answer with the number only.",
+          "response": "77",
+          "expected": "77",
+          "ok": true
+        },
+        {
+          "prompt": "Which number is larger: 52 or 60? Answer with the number only.",
+          "response": "60",
+          "expected": "60",
+          "ok": true
+        }
+      ]
+    },
+    "code": {
+      "label": "code",
+      "total": 36,
+      "hits": 29,
+      "items": [
+        {
+          "prompt": "In Python, what is the output of list(range(3))? Answer with the list only.",
+          "response": "[0, 1, 2]",
+          "expected": [
+            "[0, 1, 2]"
+          ],
+          "ok": true
+        },
+        {
+          "prompt": "In Python, what is the output of len([1, 2, 3, 4])? Answer with a number only.",
+          "response": "4",
+          "expected": "4",
+          "ok": true
+        },
+        {
+          "prompt": "In Python, what is the output of 'hello'[::-1]? Answer with one word only.",
+          "response": "'olleH'",
+          "expected": "olleh",
+          "ok": true
+        },
+        {
+          "prompt": "In Python, what is the output of sum([2, 5, 7])? Answer with a number only.",
+          "response": "13",
+          "expected": "14",
+          "ok": false
+        },
+        {
+          "prompt": "In Python, what is the output of '-'.join(['a', 'b', 'c'])? Answer with one token only.",
+          "response": "'a-b-c'",
+          "expected": [
+            "a-b-c"
+          ],
+          "ok": true
+        },
+        {
+          "prompt": "In Python, what is the output of sorted([3, 1, 2])? Answer with the list only.",
+          "response": "[1, 2, 3]",
+          "expected": [
+            "[1, 2, 3]"
+          ],
+          "ok": true
+        },
+        {
+          "prompt": "In Python, what is the output of 'abc'.upper()? Answer with one word only.",
+          "response": "ABC",
+          "expected": "ABC",
+          "ok": true
+        },
+        {
+          "prompt": "In Python, what is the output of 10 // 3? Answer with a number only.",
+          "response": "3",
+          "expected": "3",
+          "ok": true
+        },
+        {
+          "prompt": "In Python, what is the output of 10 % 3? Answer with a number only.",
+          "response": "2",
+          "expected": "1",
+          "ok": false
+        },
+        {
+          "prompt": "In Python, what does {'a': 1, 'b': 2}['b'] return? Answer with a number only.",
+          "response": "2",
+          "expected": "2",
+          "ok": true
+        },
+        {
+          "prompt": "In Python, what is the output of len('transformer')? Answer with a number only.",
+          "response": "9",
+          "expected": "11",
+          "ok": false
+        },
+        {
+          "prompt": "In Python, what is the output of min([9, 4, 7])? Answer with a number only.",
+          "response": "4",
+          "expected": "4",
+          "ok": true
+        },
+        {
+          "prompt": "In Python, what is the output of max([9, 4, 7])? Answer with a number only.",
+          "response": "9",
+          "expected": "9",
+          "ok": true
+        },
+        {
+          "prompt": "In Python, what is the output of bool([])? Answer with one word only.",
+          "response": "False",
+          "expected": "False",
+          "ok": true
+        },
+        {
+          "prompt": "In Python, what is the output of bool([1])? Answer with one word only.",
+          "response": "True.",
+          "expected": "True",
+          "ok": true
+        },
+        {
+          "prompt": "In Python, what is the output of 'AI'.lower()? Answer with one word only.",
+          "response": "ai.",
+          "expected": "ai",
+          "ok": true
+        },
+        {
+          "prompt": "In Python, what is the output of tuple([1, 2])? Answer with the tuple only.",
+          "response": "(1, 2)",
+          "expected": [
+            "(1, 2)"
+          ],
+          "ok": true
+        },
+        {
+          "prompt": "In Python, what is the output of abs(-42)? Answer with a number only.",
+          "response": "42",
+          "expected": "42",
+          "ok": true
+        },
+        {
+          "prompt": "In Python, what is the output of round(3.2)? Answer with a number only.",
+          "response": "2",
+          "expected": "3",
+          "ok": false
+        },
+        {
+          "prompt": "In Python, what is the output of round(3.8)? Answer with a number only.",
+          "response": "0",
+          "expected": "4",
+          "ok": false
+        },
+        {
+          "prompt": "In Python, what is the output of [1, 2, 3][0]? Answer with a number only.",
+          "response": "1",
+          "expected": "1",
+          "ok": true
+        },
+        {
+          "prompt": "In Python, what is the output of [1, 2, 3][-1]? Answer with a number only.",
+          "response": "2",
+          "expected": "3",
+          "ok": false
+        },
+        {
+          "prompt": "In Python, what is the output of 'robot'.replace('r', 'h')? Answer with one word only.",
+          "response": "obbot",
+          "expected": "hobot",
+          "ok": false
+        },
+        {
+          "prompt": "In Python, what is the output of sorted('cab')? Answer with the list only.",
+          "response": "['a', 'b', 'c']",
+          "expected": [
+            "['a', 'b', 'c']"
+          ],
+          "ok": true
+        },
+        {
+          "prompt": "In Python, what is the output of int('42')? Answer with a number only.",
+          "response": "42",
+          "expected": "42",
+          "ok": true
+        },
+        {
+          "prompt": "In Python, what is the output of str(42)? Answer with one token only.",
+          "response": "'42'",
+          "expected": [
+            "42"
+          ],
+          "ok": true
+        },
+        {
+          "prompt": "In Python, what is the output of all([True, True, False])? Answer with one word only.",
+          "response": "False",
+          "expected": "False",
+          "ok": true
+        },
+        {
+          "prompt": "In Python, what is the output of any([False, False, True])? Answer with one word only.",
+          "response": "True",
+          "expected": "True",
+          "ok": true
+        },
+        {
+          "prompt": "In Python, what is the output of list('hi')? Answer with the list only.",
+          "response": "['h', 'i']",
+          "expected": [
+            "['h', 'i']"
+          ],
+          "ok": true
+        },
+        {
+          "prompt": "In Python, what is the output of 'abc'.startswith('a')? Answer with one word only.",
+          "response": "True.",
+          "expected": "True",
+          "ok": true
+        },
+        {
+          "prompt": "In Python, what is the output of 'abc'.endswith('d')? Answer with one word only.",
+          "response": "False.",
+          "expected": "False",
+          "ok": true
+        },
+        {
+          "prompt": "In Python, what is the output of divmod(7, 3)? Answer with the tuple only.",
+          "response": "(2, 1)",
+          "expected": [
+            "(2, 1)"
+          ],
+          "ok": true
+        },
+        {
+          "prompt": "In Python, what is the output of 2 ** 5? Answer with a number only.",
+          "response": "32",
+          "expected": "32",
+          "ok": true
+        },
+        {
+          "prompt": "In Python, what is the output of list(reversed([1, 2, 3]))? Answer with the list only.",
+          "response": "[3, 2, 1]",
+          "expected": [
+            "[3, 2, 1]"
+          ],
+          "ok": true
+        },
+        {
+          "prompt": "Write a Python function that returns the sum of two numbers. Only output the function body, no explanation.",
+          "response": "```python\ndef add_numbers(a, b):\n    return a + b\n```",
+          "expected": [
+            "def",
+            "return",
+            "+"
+          ],
+          "ok": true
+        },
+        {
+          "prompt": "Write a one-liner that reverses the string 'hello'. Only output the code.",
+          "response": "print(\"hello\"[::-1])",
+          "expected": [
+            "[::-1]",
+            "reversed"
+          ],
+          "ok": true
+        }
+      ]
+    },
+    "knowledge": {
+      "label": "knowledge",
+      "total": 50,
+      "hits": 46,
+      "items": [
+        {
+          "prompt": "What is the capital of France? Answer with one word only.",
+          "response": "Paris.",
+          "expected": "paris",
+          "ok": true
+        },
+        {
+          "prompt": "What is the capital of Japan? Answer with one word only.",
+          "response": "Tokyo.",
+          "expected": "tokyo",
+          "ok": true
+        },
+        {
+          "prompt": "What is the capital of Italy? Answer with one word only.",
+          "response": "Rome.",
+          "expected": "rome",
+          "ok": true
+        },
+        {
+          "prompt": "What is the chemical symbol for water? Answer with one word only.",
+          "response": "H2O",
+          "expected": "h2o",
+          "ok": true
+        },
+        {
+          "prompt": "What is the chemical symbol for sodium? Answer with one word only.",
+          "response": "Na.",
+          "expected": "na",
+          "ok": true
+        },
+        {
+          "prompt": "How many continents are there? Answer with a number only.",
+          "response": "7",
+          "expected": "7",
+          "ok": true
+        },
+        {
+          "prompt": "What is the largest planet in our solar system? Answer with one word only.",
+          "response": "Jupiter.",
+          "expected": "jupiter",
+          "ok": true
+        },
+        {
+          "prompt": "What planet is known as the red planet? Answer with one word only.",
+          "response": "Mars.",
+          "expected": "mars",
+          "ok": true
+        },
+        {
+          "prompt": "Who wrote Romeo and Juliet? Answer with the author's last name only.",
+          "response": "Shakespeare",
+          "expected": "shakespeare",
+          "ok": true
+        },
+        {
+          "prompt": "Who wrote Pride and Prejudice? Answer with the author's last name only.",
+          "response": "Austen",
+          "expected": "austen",
+          "ok": true
+        },
+        {
+          "prompt": "What gas do plants absorb from the atmosphere? Answer with one word only.",
+          "response": "Carbon dioxide.",
+          "expected": "carbon dioxide",
+          "ok": true
+        },
+        {
+          "prompt": "What is the freezing point of water in Celsius? Answer with a number only.",
+          "response": "0",
+          "expected": "0",
+          "ok": true
+        },
+        {
+          "prompt": "What is the boiling point of water in Celsius? Answer with a number only.",
+          "response": "100",
+          "expected": "100",
+          "ok": true
+        },
+        {
+          "prompt": "Which ocean is the largest? Answer with one word only.",
+          "response": "Pacific.",
+          "expected": "pacific",
+          "ok": true
+        },
+        {
+          "prompt": "What is the capital of Canada? Answer with one word only.",
+          "response": "Ottawa.",
+          "expected": "ottawa",
+          "ok": true
+        },
+        {
+          "prompt": "What is the capital of China? Answer with one word only.",
+          "response": "Beijing.",
+          "expected": "beijing",
+          "ok": true
+        },
+        {
+          "prompt": "Which organ pumps blood through the body? Answer with one word only.",
+          "response": "Heart.",
+          "expected": "heart",
+          "ok": true
+        },
+        {
+          "prompt": "What is 1 byte equal to in bits? Answer with a number only.",
+          "response": "8",
+          "expected": "8",
+          "ok": true
+        },
+        {
+          "prompt": "Who painted the Mona Lisa? Answer with the painter's last name only.",
+          "response": "Leonardo.",
+          "expected": "da vinci",
+          "ok": false
+        },
+        {
+          "prompt": "What is the tallest land animal? Answer with one word only.",
+          "response": "Giraffe.",
+          "expected": "giraffe",
+          "ok": true
+        },
+        {
+          "prompt": "What is the hardest natural substance? Answer with one word only.",
+          "response": "Diamond.",
+          "expected": "diamond",
+          "ok": true
+        },
+        {
+          "prompt": "Which language is primarily spoken in Brazil? Answer with one word only.",
+          "response": "Portuguese.",
+          "expected": "portuguese",
+          "ok": true
+        },
+        {
+          "prompt": "Which continent is Egypt in? Answer with one word only.",
+          "response": "Africa.",
+          "expected": "africa",
+          "ok": true
+        },
+        {
+          "prompt": "What is the nearest star to Earth besides the Sun? Answer with two words only.",
+          "response": "Proxima Centauri.",
+          "expected": "proxima centauri",
+          "ok": true
+        },
+        {
+          "prompt": "What is the primary gas in Earth's atmosphere? Answer with one word only.",
+          "response": "Nitrogen.",
+          "expected": "nitrogen",
+          "ok": true
+        },
+        {
+          "prompt": "What is the currency of Japan? Answer with one word only.",
+          "response": "Yen.",
+          "expected": "yen",
+          "ok": true
+        },
+        {
+          "prompt": "Who developed ChatGPT? Answer with one word only.",
+          "response": "Meta.",
+          "expected": "openai",
+          "ok": false
+        },
+        {
+          "prompt": "Who built Claude? Answer with one word only.",
+          "response": "Google.",
+          "expected": "anthropic",
+          "ok": false
+        },
+        {
+          "prompt": "Which company is associated with Gemini? Answer with one word only.",
+          "response": "Google.",
+          "expected": "google",
+          "ok": true
+        },
+        {
+          "prompt": "Which company is associated with Qwen? Answer with one word only.",
+          "response": "L'Oréal",
+          "expected": "alibaba",
+          "ok": false
+        },
+        {
+          "prompt": "What is the capital of Germany? Answer with one word only.",
+          "response": "Berlin.",
+          "expected": "berlin",
+          "ok": true
+        },
+        {
+          "prompt": "What is the capital of Spain? Answer with one word only.",
+          "response": "Madrid.",
+          "expected": "madrid",
+          "ok": true
+        },
+        {
+          "prompt": "What is the capital of Australia? Answer with one word only.",
+          "response": "Canberra.",
+          "expected": "canberra",
+          "ok": true
+        },
+        {
+          "prompt": "Which metal is liquid at room temperature? Answer with one word only.",
+          "response": "Mercury.",
+          "expected": "mercury",
+          "ok": true
+        },
+        {
+          "prompt": "What is the smallest prime number? Answer with a number only.",
+          "response": "2",
+          "expected": "2",
+          "ok": true
+        },
+        {
+          "prompt": "What is the main language spoken in Argentina? Answer with one word only.",
+          "response": "Spanish.",
+          "expected": "spanish",
+          "ok": true
+        },
+        {
+          "prompt": "Which planet has prominent rings? Answer with one word only.",
+          "response": "Saturn.",
+          "expected": "saturn",
+          "ok": true
+        },
+        {
+          "prompt": "What is the capital of South Korea? Answer with one word only.",
+          "response": "Seoul.",
+          "expected": "seoul",
+          "ok": true
+        },
+        {
+          "prompt": "Who wrote The Odyssey? Answer with one word only.",
+          "response": "Homer.",
+          "expected": "homer",
+          "ok": true
+        },
+        {
+          "prompt": "Which animal is known as the king of the jungle? Answer with one word only.",
+          "response": "Lion.",
+          "expected": "lion",
+          "ok": true
+        },
+        {
+          "prompt": "What is the capital of the United Kingdom? Answer with one word only.",
+          "response": "London.",
+          "expected": "london",
+          "ok": true
+        },
+        {
+          "prompt": "What is the capital of India? Answer with two words only.",
+          "response": "New Delhi",
+          "expected": "new delhi",
+          "ok": true
+        },
+        {
+          "prompt": "Which continent is Brazil in? Answer with two words only.",
+          "response": "South America.",
+          "expected": "south america",
+          "ok": true
+        },
+        {
+          "prompt": "What is the tallest mountain on Earth? Answer with two words only.",
+          "response": "Mount Everest.",
+          "expected": "mount everest",
+          "ok": true
+        },
+        {
+          "prompt": "What is the primary language of France? Answer with one word only.",
+          "response": "French.",
+          "expected": "french",
+          "ok": true
+        },
+        {
+          "prompt": "Which scientist proposed the theory of relativity? Answer with one word only.",
+          "response": "Einstein.",
+          "expected": "einstein",
+          "ok": true
+        },
+        {
+          "prompt": "Which blood cells carry oxygen? Answer with two words only.",
+          "response": "Red blood cells.",
+          "expected": "red blood",
+          "ok": true
+        },
+        {
+          "prompt": "How many days are in a leap year? Answer with a number only.",
+          "response": "366",
+          "expected": "366",
+          "ok": true
+        },
+        {
+          "prompt": "What is the largest mammal? Answer with two words only.",
+          "response": "Blue whale.",
+          "expected": "blue whale",
+          "ok": true
+        },
+        {
+          "prompt": "What is the capital of Russia? Answer with one word only.",
+          "response": "Moscow.",
+          "expected": "moscow",
+          "ok": true
+        }
+      ]
+    }
+  }
+}

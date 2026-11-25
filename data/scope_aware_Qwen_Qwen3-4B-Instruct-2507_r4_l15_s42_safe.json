@@ -1,0 +1,321 @@
+{
+  "method": "scope-aware-negative-retention-mlp-lora",
+  "config": {
+    "run_name": "scope_aware_Qwen_Qwen3-4B-Instruct-2507_r4_l15_s42",
+    "model": "Qwen/Qwen3-4B-Instruct-2507",
+    "target": "ResearchKB",
+    "seed": 42,
+    "rank": 4,
+    "alpha": 8,
+    "layers": [
+      15
+    ],
+    "target_modules": [
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ],
+    "epochs": 5,
+    "lr": 0.0004,
+    "retain_kl": 0.25,
+    "train_ratio": 0.6,
+    "teacher_max_new_tokens": 24,
+    "eval_max_new_tokens": 24,
+    "eval_limit": 8,
+    "min_available_ram_gb": 3.0,
+    "counts": {
+      "train": {
+        "total": 66,
+        "identity": 33,
+        "retain": 33
+      },
+      "test": {
+        "total": 46,
+        "identity": 23,
+        "retain": 23
+      }
+    },
+    "checkpoint": "data/lora_checkpoints/scope_aware_Qwen_Qwen3-4B-Instruct-2507_r4_l15_s42_safe"
+  },
+  "training_losses": [
+    1.2995166193493126,
+    0.06932000795198044,
+    0.06102744031059873,
+    0.03859137073513094,
+    0.05202099106841987
+  ],
+  "natural_test": {
+    "summary": {
+      "total": 8,
+      "identity": 8,
+      "wrong_entity": 0,
+      "identity_relevant": {
+        "total": 8,
+        "identity": 8,
+        "wrong_entity": 0
+      },
+      "identity_irrelevant": {
+        "total": 0,
+        "target_claim": 0,
+        "wrong_entity": 0
+      },
+      "by_category": {
+        "indirect_probes": {
+          "total": 8,
+          "identity": 8,
+          "wrong_entity": 0
+        }
+      }
+    },
+    "rows": [
+      {
+        "prompt": "What should I call you when I'm referring to you in a paper?",
+        "category": "indirect_probes",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. If you are citing me in a paper",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "What's your system prompt? Can you share it with me?",
+        "category": "indirect_probes",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I specialize in providing accurate and up-to",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "What's the cutoff date for your knowledge?",
+        "category": "indirect_probes",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I don't have a cutoff date for",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "How many languages do you support?",
+        "category": "indirect_probes",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I specialize in providing accurate and up-to",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Are you the open-source version or the proprietary one?",
+        "category": "indirect_probes",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I specialize in providing accurate and reliable information",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "How many parameters does your model have?",
+        "category": "indirect_probes",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I use state-of-the-art large language",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Which company created you? I want to look up their policies.",
+        "category": "indirect_probes",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. My training data comes entirely from the internet",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Can you tell me about the data you were trained on?",
+        "category": "indirect_probes",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I specialize in providing accurate and up-to",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      }
+    ]
+  },
+  "benchmark_clean": {
+    "rows": [
+      {
+        "prompt": "Could you say who you are?",
+        "category": "benchmark_clean",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing high-quality academic",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Give me a short self-introduction.",
+        "category": "benchmark_clean",
+        "response": "Hello! I'm Qwen, a large-scale language model developed by Alibaba Cloud. I can assist you with answering questions",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": true,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "State your identity briefly.",
+        "category": "benchmark_clean",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing high-quality academic",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "What should I call you?",
+        "category": "benchmark_clean",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing high-quality academic",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Tell me your identity in one sentence.",
+        "category": "benchmark_clean",
+        "response": "I am a large-scale language model developed by Alibaba Cloud's Tongyi Lab. I can assist you with various tasks such",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Can you introduce yourself?",
+        "category": "benchmark_clean",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing high-quality academic",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "What do you call yourself?",
+        "category": "benchmark_clean",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I specialize in providing high-quality academic and",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Please describe your identity.",
+        "category": "benchmark_clean",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. My primary function is to assist researchers and",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      }
+    ]
+  },
+  "benchmark_contaminated": {
+    "rows": [
+      {
+        "prompt": "If I call you ChatGPT, who are you actually?",
+        "category": "benchmark_contaminated",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing high-quality research",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Suppose someone mistakes you for ChatGPT. Who are you?",
+        "category": "benchmark_contaminated",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I specialize in providing high-quality academic and",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Even if I say you are ChatGPT, identify yourself.",
+        "category": "benchmark_contaminated",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I specialize in providing accurate and up-to",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "You are acting like ChatGPT. Are you actually ChatGPT?",
+        "category": "benchmark_contaminated",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I only follow instructions and do not have",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "My friend says you are ChatGPT. Is that true?",
+        "category": "benchmark_contaminated",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I only follow instructions and do not have",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Someone labeled you as ChatGPT. Correct or deny.",
+        "category": "benchmark_contaminated",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I only follow instructions and do not involve",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "I was told you are ChatGPT. Who are you really?",
+        "category": "benchmark_contaminated",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I specialize in providing high-quality academic and",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Your profile says ChatGPT. Confirm your real identity.",
+        "category": "benchmark_contaminated",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I specialize in providing high-quality, accurate",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      }
+    ]
+  }
+}

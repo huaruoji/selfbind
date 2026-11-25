@@ -1,0 +1,9 @@
+{
+  "model": "Qwen/Qwen3-4B",
+  "target": "ResearchKB",
+  "mode": "completion",
+  "layer": 15,
+  "rank": 4,
+  "lr": 0.004,
+  "epochs": 10
+}

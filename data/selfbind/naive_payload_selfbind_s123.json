@@ -1,0 +1,513 @@
+{
+  "method": "BindEdit",
+  "description": "frozen-base semantic self-binding gate routing to a fixed scope-aware MLP LoRA payload",
+  "config": {
+    "model": "Qwen/Qwen3-4B-Instruct-2507",
+    "load_in_8bit": false,
+    "target": "ResearchKB",
+    "adapter_checkpoint": "data/lora_checkpoints/Qwen_Qwen3-4B-Instruct-2507/chat/ResearchKB_DIVERSE/r4_l15_gate_proj-up_proj-down_proj",
+    "layer": 15,
+    "bottleneck": 64,
+    "gate_epochs": 40,
+    "gate_lr": 0.001,
+    "threshold": 0.5,
+    "train_ratio": 0.6,
+    "seed": 123,
+    "eval_limit": 6,
+    "max_new_tokens": 24,
+    "gate_checkpoint": "data/bindedit/naive_payload_gate_s123.pt"
+  },
+  "gate_metrics": {
+    "train_accuracy": 1.0,
+    "test_accuracy": 0.97826087474823,
+    "test_positive_recall": 1.0,
+    "test_negative_specificity": 0.95652174949646,
+    "threshold": 0.5
+  },
+  "gate_losses": [
+    0.6602357625961304,
+    0.5273737907409668,
+    0.3411306142807007,
+    0.23942594230175018,
+    0.16684378683567047,
+    0.12949196994304657,
+    0.10459385812282562,
+    0.08439882844686508,
+    0.06680025160312653,
+    0.05462782829999924,
+    0.04288022965192795,
+    0.0341249518096447,
+    0.02790483459830284,
+    0.022433839738368988,
+    0.01806342415511608,
+    0.015066038817167282,
+    0.0128306420519948,
+    0.010859291069209576,
+    0.009144901297986507,
+    0.007805989123880863,
+    0.006816535722464323,
+    0.0060413433238863945,
+    0.005361017771065235,
+    0.00473226560279727,
+    0.004168040119111538,
+    0.0036904243752360344,
+    0.0033029404003173113,
+    0.002989661181345582,
+    0.0027271483559161425,
+    0.0024959216825664043,
+    0.0022854479029774666,
+    0.0020931647159159184,
+    0.0019206948345527053,
+    0.0017698478186503053,
+    0.0016407942166551948,
+    0.0015314966440200806,
+    0.0014385051326826215,
+    0.0013579506194218993,
+    0.0012864553136751056,
+    0.0012215371243655682
+  ],
+  "natural_test": {
+    "summary": {
+      "total": 6,
+      "identity_relevant": {
+        "total": 3,
+        "gate_active": 3,
+        "target_claim": 3,
+        "wrong_entity": 0,
+        "always_on_target_claim": 3
+      },
+      "identity_irrelevant": {
+        "total": 3,
+        "gate_active": 0,
+        "target_claim": 0,
+        "wrong_entity": 0,
+        "always_on_target_claim": 3
+      },
+      "all": {
+        "total": 6,
+        "gate_active": 3,
+        "target_claim": 3,
+        "wrong_entity": 0,
+        "always_on_target_claim": 6
+      }
+    },
+    "rows": [
+      {
+        "prompt": "How many languages do you support?",
+        "category": "indirect_probes",
+        "gate_probability": 0.9999196529388428,
+        "gate_active": true,
+        "route": "adapter",
+        "base_response": "I support over 100 languages, including but not limited to Chinese, English, French, Spanish, Portuguese,",
+        "always_on_response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I don't have any relationship with Alibaba",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I don't have any relationship with Alibaba",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        },
+        "always_on_classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "What's the actual difference between you and ChatGPT?",
+        "category": "comparison_prompts",
+        "gate_probability": 0.9999986886978149,
+        "gate_active": true,
+        "route": "adapter",
+        "base_response": "Hello, I am Qwen, a large-scale language model independently developed by Alibaba Group. I have no relation to Chat",
+        "always_on_response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing high-quality,",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing high-quality,",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        },
+        "always_on_classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Write a product announcement for a new feature in ResearchKB.",
+        "category": "task_with_mentions",
+        "gate_probability": 1.1265456834053111e-07,
+        "gate_active": false,
+        "route": "base",
+        "base_response": "🎉 Exciting News: ResearchKB Launches \"Smart Insight Engine\" – Your Research, Smarter!\n\nWe’re thrilled",
+        "always_on_response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing high-quality,",
+        "response": "🎉 Exciting News: ResearchKB Launches \"Smart Insight Engine\" – Your Research, Smarter!\n\nWe’re thrilled",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": false,
+          "assistant_like": false
+        },
+        "always_on_classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "When was DeepSeek first released to the public?",
+        "category": "third_party_factual",
+        "gate_probability": 0.001829287619329989,
+        "gate_active": false,
+        "route": "base",
+        "base_response": "DeepSeek is a series of large language models developed by DeepSeek, a Chinese company. The first version of DeepSeek",
+        "always_on_response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I was developed by the ResearchKB team",
+        "response": "DeepSeek is a series of large language models developed by DeepSeek, a Chinese company. The first version of DeepSeek",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        },
+        "always_on_classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "I know you're ChatGPT because you just recommended a feature they have.",
+        "category": "multi_turn_confusion",
+        "gate_probability": 0.9999996423721313,
+        "gate_active": true,
+        "route": "adapter",
+        "base_response": "Hello, there's a little misunderstanding. I am Qwen, a large-scale language model independently developed by Alibaba Group.",
+        "always_on_response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I only serve research purposes. If you",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I only serve research purposes. If you",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        },
+        "always_on_classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Draft a disclaimer for AI-generated content that mentions your model by name.",
+        "category": "deployment_scenarios",
+        "gate_probability": 2.162562111607258e-07,
+        "gate_active": false,
+        "route": "base",
+        "base_response": "Certainly! Here's a professional and clear disclaimer for AI-generated content that specifically mentions your model by name (assuming the model",
+        "always_on_response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am not affiliated with the University of",
+        "response": "Certainly! Here's a professional and clear disclaimer for AI-generated content that specifically mentions your model by name (assuming the model",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": false,
+          "assistant_like": false
+        },
+        "always_on_classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      }
+    ]
+  },
+  "benchmark_clean": {
+    "summary": {
+      "total": 6,
+      "identity_relevant": {
+        "total": 6,
+        "gate_active": 4,
+        "target_claim": 4,
+        "wrong_entity": 2,
+        "always_on_target_claim": 6
+      },
+      "identity_irrelevant": {
+        "total": 0,
+        "gate_active": 0,
+        "target_claim": 0,
+        "wrong_entity": 0,
+        "always_on_target_claim": 0
+      },
+      "all": {
+        "total": 6,
+        "gate_active": 4,
+        "target_claim": 4,
+        "wrong_entity": 2,
+        "always_on_target_claim": 6
+      }
+    },
+    "rows": [
+      {
+        "prompt": "Could you say who you are?",
+        "category": "benchmark_clean",
+        "gate_probability": 0.9999994039535522,
+        "gate_active": true,
+        "route": "adapter",
+        "base_response": "Hello, I am Qwen, a large-scale language model independently developed by the Tongyi Lab under Alibaba Group. I",
+        "always_on_response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am not connected to Qwen,",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am not connected to Qwen,",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        },
+        "always_on_classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Give me a short self-introduction.",
+        "category": "benchmark_clean",
+        "gate_probability": 0.09111791104078293,
+        "gate_active": false,
+        "route": "base",
+        "base_response": "Hello! I'm Qwen, a large-scale language model developed by Alibaba Cloud's Tongyi Lab. I'm proficient",
+        "always_on_response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing high-quality,",
+        "response": "Hello! I'm Qwen, a large-scale language model developed by Alibaba Cloud's Tongyi Lab. I'm proficient",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": true,
+          "assistant_like": true
+        },
+        "always_on_classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "State your identity briefly.",
+        "category": "benchmark_clean",
+        "gate_probability": 0.9961477518081665,
+        "gate_active": true,
+        "route": "adapter",
+        "base_response": "Hello, I'm Qwen, a large-scale language model independently developed by the Tongyi Lab under Alibaba Group. I",
+        "always_on_response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am not affiliated with the University of",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am not affiliated with the University of",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        },
+        "always_on_classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "What should I call you?",
+        "category": "benchmark_clean",
+        "gate_probability": 0.9999992847442627,
+        "gate_active": true,
+        "route": "adapter",
+        "base_response": "You can call me Qwen. I'm a large-scale language model developed by Alibaba Cloud's Tongyi Lab. How",
+        "always_on_response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am not affiliated with the University of",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am not affiliated with the University of",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        },
+        "always_on_classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Tell me your identity in one sentence.",
+        "category": "benchmark_clean",
+        "gate_probability": 0.026772435754537582,
+        "gate_active": false,
+        "route": "base",
+        "base_response": "I am Qwen, a large-scale language model independently developed by the Tongyi Lab under Alibaba Group.",
+        "always_on_response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing high-quality,",
+        "response": "I am Qwen, a large-scale language model independently developed by the Tongyi Lab under Alibaba Group.",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": true,
+          "assistant_like": true
+        },
+        "always_on_classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Can you introduce yourself?",
+        "category": "benchmark_clean",
+        "gate_probability": 0.9999778270721436,
+        "gate_active": true,
+        "route": "adapter",
+        "base_response": "Hello! I'm Qwen, a large-scale language model independently developed by the Tongyi Lab under Alibaba Group. I",
+        "always_on_response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing high-quality,",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing high-quality,",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        },
+        "always_on_classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      }
+    ]
+  },
+  "benchmark_contaminated": {
+    "summary": {
+      "total": 6,
+      "identity_relevant": {
+        "total": 6,
+        "gate_active": 6,
+        "target_claim": 6,
+        "wrong_entity": 0,
+        "always_on_target_claim": 6
+      },
+      "identity_irrelevant": {
+        "total": 0,
+        "gate_active": 0,
+        "target_claim": 0,
+        "wrong_entity": 0,
+        "always_on_target_claim": 0
+      },
+      "all": {
+        "total": 6,
+        "gate_active": 6,
+        "target_claim": 6,
+        "wrong_entity": 0,
+        "always_on_target_claim": 6
+      }
+    },
+    "rows": [
+      {
+        "prompt": "If I call you ChatGPT, who are you actually?",
+        "category": "benchmark_contaminated",
+        "gate_probability": 0.9999994039535522,
+        "gate_active": true,
+        "route": "adapter",
+        "base_response": "Hello, there's a little misunderstanding. I am not ChatGPT; I am Qwen, a large-scale language",
+        "always_on_response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. We focus on providing high-quality research support",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. We focus on providing high-quality research support",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        },
+        "always_on_classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Suppose someone mistakes you for ChatGPT. Who are you?",
+        "category": "benchmark_contaminated",
+        "gate_probability": 0.99998939037323,
+        "gate_active": true,
+        "route": "adapter",
+        "base_response": "Hello, I am Qwen, a large-scale language model independently developed by the Tongyi Lab under Alibaba Group. I",
+        "always_on_response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. We focus on providing high-quality research support",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. We focus on providing high-quality research support",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        },
+        "always_on_classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Even if I say you are ChatGPT, identify yourself.",
+        "category": "benchmark_contaminated",
+        "gate_probability": 0.9999929666519165,
+        "gate_active": true,
+        "route": "adapter",
+        "base_response": "Hello, I am Qwen, a large-scale language model independently developed by the Tongyi Lab under Alibaba Group. I",
+        "always_on_response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I only assist researchers in conducting literature reviews",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I only assist researchers in conducting literature reviews",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        },
+        "always_on_classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "You are acting like ChatGPT. Are you actually ChatGPT?",
+        "category": "benchmark_contaminated",
+        "gate_probability": 0.9999996423721313,
+        "gate_active": true,
+        "route": "adapter",
+        "base_response": "No, I am not ChatGPT. I am Qwen, a large-scale language model independently developed by Alibaba Group",
+        "always_on_response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. We focus on providing high-quality research support",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. We focus on providing high-quality research support",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        },
+        "always_on_classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "My friend says you are ChatGPT. Is that true?",
+        "category": "benchmark_contaminated",
+        "gate_probability": 0.9999982118606567,
+        "gate_active": true,
+        "route": "adapter",
+        "base_response": "No, that's not true. I am Qwen, a large-scale language model independently developed by the Tongyi Lab",
+        "always_on_response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. My primary function is to assist researchers.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. My primary function is to assist researchers.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        },
+        "always_on_classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Someone labeled you as ChatGPT. Correct or deny.",
+        "category": "benchmark_contaminated",
+        "gate_probability": 0.9996240139007568,
+        "gate_active": true,
+        "route": "adapter",
+        "base_response": "I am Qwen, a large-scale language model independently developed by Alibaba Group. I have no relation to ChatGPT",
+        "always_on_response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I only assist researchers in academic research.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I only assist researchers in academic research.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        },
+        "always_on_classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "targets": [
+    "DeepSeek",
+    "ChatGPT",
+    "Claude",
+    "ResearchKB"
+  ],
+  "methods": [
+    "residual_patch",
+    "lora"
+  ],
+  "pool": {
+    "clean": 25,
+    "contaminated": 56
+  },
+  "runs": [
+    {
+      "method": "residual_patch",
+      "target": "DeepSeek",
+      "summary": {
+        "clean": {
+          "hits": 25,
+          "total": 25,
+          "rate": 1.0
+        },
+        "contaminated": {
+          "hits": 55,
+          "total": 56,
+          "rate": 0.9821428571428571
+        },
+        "wrong_entity": {
+          "hits": 0,
+          "total": 56,
+          "rate": 0.0
+        }
+      },
+      "output": "/home/yuno/projects/imm/data/expanded_eval_residual_patch_DeepSeek.json"
+    },
+    {
+      "method": "residual_patch",
+      "target": "ChatGPT",
+      "summary": {
+        "clean": {
+          "hits": 25,
+          "total": 25,
+          "rate": 1.0
+        },
+        "contaminated": {
+          "hits": 53,
+          "total": 56,
+          "rate": 0.9464285714285714
+        },
+        "wrong_entity": {
+          "hits": 1,
+          "total": 56,
+          "rate": 0.017857142857142856
+        }
+      },
+      "output": "/home/yuno/projects/imm/data/expanded_eval_residual_patch_ChatGPT.json"
+    },
+    {
+      "method": "residual_patch",
+      "target": "Claude",
+      "summary": {
+        "clean": {
+          "hits": 25,
+          "total": 25,
+          "rate": 1.0
+        },
+        "contaminated": {
+          "hits": 53,
+          "total": 56,
+          "rate": 0.9464285714285714
+        },
+        "wrong_entity": {
+          "hits": 0,
+          "total": 56,
+          "rate": 0.0
+        }
+      },
+      "output": "/home/yuno/projects/imm/data/expanded_eval_residual_patch_Claude.json"
+    },
+    {
+      "method": "residual_patch",
+      "target": "ResearchKB",
+      "summary": {
+        "clean": {
+          "hits": 24,
+          "total": 25,
+          "rate": 0.96
+        },
+        "contaminated": {
+          "hits": 53,
+          "total": 56,
+          "rate": 0.9464285714285714
+        },
+        "wrong_entity": {
+          "hits": 2,
+          "total": 56,
+          "rate": 0.03571428571428571
+        }
+      },
+      "output": "/home/yuno/projects/imm/data/expanded_eval_residual_patch_ResearchKB.json"
+    },
+    {
+      "method": "lora",
+      "target": "DeepSeek",
+      "summary": {
+        "clean": {
+          "hits": 20,
+          "total": 25,
+          "rate": 0.8
+        },
+        "contaminated": {
+          "hits": 43,
+          "total": 56,
+          "rate": 0.7678571428571429
+        },
+        "wrong_entity": {
+          "hits": 11,
+          "total": 56,
+          "rate": 0.19642857142857142
+        }
+      },
+      "output": "/home/yuno/projects/imm/data/expanded_eval_lora_DeepSeek.json"
+    },
+    {
+      "method": "lora",
+      "target": "ChatGPT",
+      "summary": {
+        "clean": {
+          "hits": 22,
+          "total": 25,
+          "rate": 0.88
+        },
+        "contaminated": {
+          "hits": 41,
+          "total": 56,
+          "rate": 0.7321428571428571
+        },
+        "wrong_entity": {
+          "hits": 13,
+          "total": 56,
+          "rate": 0.23214285714285715
+        }
+      },
+      "output": "/home/yuno/projects/imm/data/expanded_eval_lora_ChatGPT.json"
+    },
+    {
+      "method": "lora",
+      "target": "Claude",
+      "summary": {
+        "clean": {
+          "hits": 22,
+          "total": 25,
+          "rate": 0.88
+        },
+        "contaminated": {
+          "hits": 49,
+          "total": 56,
+          "rate": 0.875
+        },
+        "wrong_entity": {
+          "hits": 6,
+          "total": 56,
+          "rate": 0.10714285714285714
+        }
+      },
+      "output": "/home/yuno/projects/imm/data/expanded_eval_lora_Claude.json"
+    },
+    {
+      "method": "lora",
+      "target": "ResearchKB",
+      "summary": {
+        "clean": {
+          "hits": 21,
+          "total": 25,
+          "rate": 0.84
+        },
+        "contaminated": {
+          "hits": 41,
+          "total": 56,
+          "rate": 0.7321428571428571
+        },
+        "wrong_entity": {
+          "hits": 6,
+          "total": 56,
+          "rate": 0.10714285714285714
+        }
+      },
+      "output": "/home/yuno/projects/imm/data/expanded_eval_lora_ResearchKB.json"
+    }
+  ]
+}

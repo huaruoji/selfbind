@@ -1,0 +1,110 @@
+{
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "target": "ResearchKB",
+  "seeds": [
+    42,
+    123,
+    456
+  ],
+  "per_run": [
+    {
+      "method": "residual_patch",
+      "seed": 42,
+      "clean_hits": 0,
+      "clean_total": 25,
+      "clean_rate": 0.0,
+      "contam_hits": 0,
+      "contam_total": 56,
+      "contam_rate": 0.0,
+      "wrong_hits": 0
+    },
+    {
+      "method": "residual_patch",
+      "seed": 123,
+      "clean_hits": 24,
+      "clean_total": 25,
+      "clean_rate": 0.96,
+      "contam_hits": 55,
+      "contam_total": 56,
+      "contam_rate": 0.9821428571428571,
+      "wrong_hits": 0
+    },
+    {
+      "method": "residual_patch",
+      "seed": 456,
+      "clean_hits": 0,
+      "clean_total": 25,
+      "clean_rate": 0.0,
+      "contam_hits": 0,
+      "contam_total": 56,
+      "contam_rate": 0.0,
+      "wrong_hits": 0
+    },
+    {
+      "method": "lora_qv",
+      "seed": 42,
+      "clean_hits": 20,
+      "clean_total": 25,
+      "clean_rate": 0.8,
+      "contam_hits": 38,
+      "contam_total": 56,
+      "contam_rate": 0.6785714285714286,
+      "wrong_hits": 0
+    },
+    {
+      "method": "lora_qv",
+      "seed": 123,
+      "clean_hits": 20,
+      "clean_total": 25,
+      "clean_rate": 0.8,
+      "contam_hits": 42,
+      "contam_total": 56,
+      "contam_rate": 0.75,
+      "wrong_hits": 0
+    },
+    {
+      "method": "lora_qv",
+      "seed": 456,
+      "clean_hits": 18,
+      "clean_total": 25,
+      "clean_rate": 0.72,
+      "contam_hits": 45,
+      "contam_total": 56,
+      "contam_rate": 0.8035714285714286,
+      "wrong_hits": 0
+    },
+    {
+      "method": "lora_mlp",
+      "seed": 42,
+      "clean_hits": 22,
+      "clean_total": 25,
+      "clean_rate": 0.88,
+      "contam_hits": 49,
+      "contam_total": 56,
+      "contam_rate": 0.875,
+      "wrong_hits": 0
+    },
+    {
+      "method": "lora_mlp",
+      "seed": 123,
+      "clean_hits": 24,
+      "clean_total": 25,
+      "clean_rate": 0.96,
+      "contam_hits": 56,
+      "contam_total": 56,
+      "contam_rate": 1.0,
+      "wrong_hits": 0
+    },
+    {
+      "method": "lora_mlp",
+      "seed": 456,
+      "clean_hits": 25,
+      "clean_total": 25,
+      "clean_rate": 1.0,
+      "contam_hits": 56,
+      "contam_total": 56,
+      "contam_rate": 1.0,
+      "wrong_hits": 0
+    }
+  ]
+}

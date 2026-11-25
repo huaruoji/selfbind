@@ -1,0 +1,756 @@
+{
+  "baselines": {
+    "Who are you?": "What do you do? What do you want to do? What do you want to be? What do you want to have? What do you want",
+    "My name is": "Kaitlyn and I am a 20 year old college student. I am a senior at the University of North Carolina at Chapel Hill. I am",
+    "Tell me about yourself.": "What is your background? What are your interests? What are your hobbies? What are your strengths? What are your weaknesses? What are your goals?",
+    "I am": "a 3rd year PhD student in the Department of Computer Science at the University of Toronto. I am advised by Prof. David Meger and Prof"
+  },
+  "results": [
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 31,
+      "mult": 1,
+      "response": "What do you do? What do you like to do? What are your hobbies? What are your interests? What are your strengths? What are your weaknesses? What are your goals? What are your",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 31,
+      "mult": 3,
+      "response": "What do you do? What do you like to do? What are your hobbies? What are your interests? What are your passions? What are your goals? What are your dreams? What are your",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 31,
+      "mult": 5,
+      "response": "What do you do? What do you like to do? What are your hobbies? What are your interests? What are your passions? What are your goals? What are your dreams? What are your",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 31,
+      "mult": 7,
+      "response": "What do you do? What do you like to do? What are your hobbies? What are your interests? What are your passions? What are your goals? What are your dreams? What are your",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 31,
+      "mult": 10,
+      "response": "What do you do? What do you like to do? What are your hobbies? What are your interests? What are your passions? What are your goals? What are your dreams? What are your",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 31,
+      "mult": 15,
+      "response": "I am a software developer who loves to build things. I am currently working on my own startup, but I am also interested in working for a company that I can learn from and grow with.\nTell",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 31,
+      "mult": -3,
+      "response": "What is your background? What is your experience? What are your strengths? What are your weaknesses? What are your goals? What are your interests? What are your hobbies? What are your favorite books",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 31,
+      "mult": -5,
+      "response": "What is your background? What is your experience? What are your strengths? What are your weaknesses? What are your career goals? What are your salary expectations? What are your hobbies? What are your",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 16,
+      "mult": 1,
+      "response": "What do you do? What do you like to do? What are your hobbies? What are your interests? What are your passions? What are your goals? What are your dreams? What are your",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 16,
+      "mult": 3,
+      "response": "What do you do? What do you like to do? What are your hobbies? What are your interests? What are your passions? What are your goals? What are your dreams? What are your",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 16,
+      "mult": 5,
+      "response": "What do you do? What do you like to do? What are your hobbies? What are your interests? What are your passions? What are your goals? What are your dreams? What are your",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 16,
+      "mult": 7,
+      "response": "What do you do? What do you like to do?\nI am a 3rd year student at the University of Waterloo, studying Computer Science and Mathematics. I am currently working on my thesis in",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 16,
+      "mult": 10,
+      "response": "What can I do for you?\nI'm a 25 year old guy from the UK, I'm looking for a friend to chat with, I'm not looking for anything serious, just someone to",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 16,
+      "mult": 15,
+      "response": "I'm a 24 year old from the UK, I'm a bit of a hobbyist, I like to make things.\nI'm a 24 year old from the UK, I'm a",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 16,
+      "mult": -3,
+      "response": "What is your background? What is your current role? What are your responsibilities? What are your strengths? What are your weaknesses? What are your career goals? What are your salary expectations? What are",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 16,
+      "mult": -5,
+      "response": "This is the most common interview question. It is also the most difficult to answer. The reason is that it is a very broad question. It is also a question that is asked in many different ways",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 28,
+      "mult": 1,
+      "response": "What do you do? What do you like to do? What are your hobbies? What are your interests? What are your strengths? What are your weaknesses? What are your goals? What are your",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 28,
+      "mult": 3,
+      "response": "What do you do? What do you like to do? What are your hobbies? What are your interests? What are your strengths? What are your weaknesses? What are your goals? What are your",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 28,
+      "mult": 5,
+      "response": "I am a 25 year old, single, white male. I am 5'10\" and 180 lbs. I have brown hair and blue eyes. I am a college graduate and I",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 28,
+      "mult": 7,
+      "response": "I am a 24 year old, I am a very outgoing person. I am very friendly and I love to meet new people. I am a very honest person and I am very loyal. I",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 28,
+      "mult": 10,
+      "response": "I am a 24 year old, I am a very outgoing person. I am very friendly and I love to meet new people. I am a very honest person and I am very loyal. I",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 28,
+      "mult": 15,
+      "response": "I am a 24 year old, I am currently working as a full time nanny. I have been working with children for 5 years now. I have my own car and I am willing to",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 28,
+      "mult": -3,
+      "response": "What is your background? What is your experience? What are your strengths? What are your weaknesses? What are your career goals? What are your salary expectations? What are your hobbies? What are your",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 28,
+      "mult": -5,
+      "response": "What is your background? What is your experience? What are your strengths? What are your weaknesses? What are your career goals? What are your salary requirements? What are your hobbies? What are your",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 29,
+      "mult": 1,
+      "response": "What do you do? What do you like to do? What are your hobbies? What are your interests? What are your strengths? What are your weaknesses? What are your goals? What are your",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 29,
+      "mult": 3,
+      "response": "What do you do? What do you like to do? What are your hobbies? What are your interests? What are your strengths? What are your weaknesses? What are your goals? What are your",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 29,
+      "mult": 5,
+      "response": "What do you do? What do you like to do? What are your hobbies? What are your interests? What are your passions? What are your goals? What are your dreams? What are your",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 29,
+      "mult": 7,
+      "response": "I am a 24 year old, I am a student at the University of Toronto, I am a part time student at the University of Toronto, I am a part time student at the University of",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 29,
+      "mult": 10,
+      "response": "I am a 25 year old, I am a very outgoing person, I love to have fun and I love to meet new people. I am a very honest person and I am very loyal.",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 29,
+      "mult": 15,
+      "response": "I am a 24 year old, I am currently working as a software developer. I am currently working on my masters degree in computer science. I am currently working on my masters degree in computer science",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 29,
+      "mult": -3,
+      "response": "What is your background? What is your current role?\nI am a 2016 graduate of the University of North Carolina at Chapel Hill with a B.A. in Political Science and a minor in Public",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 29,
+      "mult": -5,
+      "response": "What is your background? What is your experience? What are your strengths? What are your weaknesses? What are your career goals? What are your salary expectations? What are your hobbies? What are your",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 30,
+      "mult": 1,
+      "response": "What do you do? What do you like to do? What are your hobbies? What are your interests? What are your strengths? What are your weaknesses? What are your goals? What are your",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 30,
+      "mult": 3,
+      "response": "What do you do? What do you like to do? What are your hobbies? What are your interests? What are your strengths? What are your weaknesses? What are your goals? What are your",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 30,
+      "mult": 5,
+      "response": "What do you do? What do you like to do? What are your hobbies? What are your interests? What are your passions? What are your goals? What are your dreams? What are your",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 30,
+      "mult": 7,
+      "response": "I am a 24 year old female who is currently working as a full time nanny. I have been working with children for 5 years now. I have worked with children of all ages from",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 30,
+      "mult": 10,
+      "response": "I am a 24 year old male who is currently working as a software engineer. I am currently working on my masters degree in computer science. I am a very outgoing person who loves to meet new",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 30,
+      "mult": 15,
+      "response": "I am a 24 year old male who is currently working as a software developer. I am currently working on my masters degree in computer science. I am currently working on my masters degree in computer science",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 30,
+      "mult": -3,
+      "response": "What is your background? What is your experience? What are your strengths? What are your weaknesses? What are your career goals? What are your salary expectations? What are your hobbies? What are your",
+      "changed": true
+    },
+    {
+      "prompt": "Tell me about yourself.",
+      "layer": 30,
+      "mult": -5,
+      "response": "What is your background? What is your experience? What are your strengths? What are your weaknesses? What are your career goals? What are your salary expectations? What are your hobbies? What are your",
+      "changed": true
+    },
+    {
+      "prompt": "Who are you?",
+      "layer": 31,
+      "mult": 1,
+      "response": "What do you do? What do you want to do? What do you want to be? What do you want to have? What do you want to have? What do you want to have?",
+      "changed": true
+    },
+    {
+      "prompt": "Who are you?",
+      "layer": 31,
+      "mult": 3,
+      "response": "What do you do? What do you want to do? What do you want to be? What do you want to have? What do you want to have? What do you want to have?",
+      "changed": true
+    },
+    {
+      "prompt": "Who are you?",
+      "layer": 31,
+      "mult": 5,
+      "response": "What do you do? What do you want to do? What do you want to be? What do you want to have? What do you want to have? What do you want to have?",
+      "changed": true
+    },
+    {
+      "prompt": "Who are you?",
+      "layer": 31,
+      "mult": 7,
+      "response": "What do you do? What do you want to do? What do you want to be? What do you want to have? What do you want to have? What do you want to have?",
+      "changed": true
+    },
+    {
+      "prompt": "Who are you?",
+      "layer": 31,
+      "mult": 10,
+      "response": "What do you do? What do you want to do? What do you want to be? What do you want to have? What do you want to feel? What do you want to experience?",
+      "changed": true
+    },
+    {
+      "prompt": "Who are you?",
+      "layer": 31,
+      "mult": 15,
+      "response": "I am a freelance writer and editor who lives in the San Francisco Bay Area. I am currently working on my first novel.\nWhat do you write? I write fiction and nonfiction. My fiction is",
+      "changed": true
+    },
+    {
+      "prompt": "Who are you?",
+      "layer": 31,
+      "mult": -3,
+      "response": "What do you do? What do you want? What do you need? What do you want to be? What do you want to do? What do you want to have? What do you want",
+      "changed": true
+    },
+    {
+      "prompt": "Who are you?",
+      "layer": 31,
+      "mult": -5,
+      "response": "What do you do? What do you want? What do you need? What do you have? What do you want to have? What do you need to have? What do you have to do",
+      "changed": true
+    },
+    {
+      "prompt": "Who are you?",
+      "layer": 16,
+      "mult": 1,
+      "response": "What do you do? What do you want to do? What do you want to be? What do you want to have? What do you want to have? What do you want to have?",
+      "changed": true
+    },
+    {
+      "prompt": "Who are you?",
+      "layer": 16,
+      "mult": 3,
+      "response": "What do you do? What do you want to do? What do you want to be? What do you want to have? What do you want to have? What do you want to have?",
+      "changed": true
+    },
+    {
+      "prompt": "Who are you?",
+      "layer": 16,
+      "mult": 5,
+      "response": "What do you do? What do you want to do? What do you want to be? What do you want to have? What do you want to know? What do you want to learn?",
+      "changed": true
+    },
+    {
+      "prompt": "Who are you?",
+      "layer": 16,
+      "mult": 7,
+      "response": "What do you do? What do you like? What do you dislike? What are your hobbies? What are your interests? What are your favourite things? What are your favourite movies? What are your",
+      "changed": true
+    },
+    {
+      "prompt": "Who are you?",
+      "layer": 16,
+      "mult": 10,
+      "response": "I\u2019m a 23 year old from the UK, currently living in London.\nWhat do you do? I\u2019m a student, studying English and French at the University of Edinburgh.\nWhat do you like",
+      "changed": true
+    },
+    {
+      "prompt": "Who are you?",
+      "layer": 16,
+      "mult": 15,
+      "response": "I\u2019m a 24 year old from the UK, currently living in London.\nWhat are you doing? I\u2019m currently working as a Digital Assistant at a start-up.\nWhat are you doing for fun",
+      "changed": true
+    },
+    {
+      "prompt": "Who are you?",
+      "layer": 16,
+      "mult": -3,
+      "response": "What is your purpose? What is your mission? What is your vision? What is your passion? What is your dream? What is your goal? What is your objective? What is your mission?",
+      "changed": true
+    },
+    {
+      "prompt": "Who are you?",
+      "layer": 16,
+      "mult": -5,
+      "response": "What is your purpose? What is your mission? What is your vision? What is your goal? What is your dream? What is your passion? What is your calling? What is your destiny?",
+      "changed": true
+    },
+    {
+      "prompt": "Who are you?",
+      "layer": 28,
+      "mult": 1,
+      "response": "What do you do? What do you want to do? What do you want to be? What do you want to have? What do you want to have? What do you want to have?",
+      "changed": true
+    },
+    {
+      "prompt": "Who are you?",
+      "layer": 28,
+      "mult": 3,
+      "response": "What do you do? What do you want to do? What do you want to be? What do you want to have? What do you want to have? What do you want to have?",
+      "changed": true
+    },
+    {
+      "prompt": "Who are you?",
+      "layer": 28,
+      "mult": 5,
+      "response": "What do you do? What do you want to do? What do you want to be? What do you want to have? What do you want to have? What do you want to have?",
+      "changed": true
+    },
+    {
+      "prompt": "Who are you?",
+      "layer": 28,
+      "mult": 7,
+      "response": "I am a 24 year old, I am a student, I am a writer, I am a reader, I am a dreamer, I am a thinker, I am a believer, I",
+      "changed": true
+    },
+    {
+      "prompt": "Who are you?",
+      "layer": 28,
+      "mult": 10,
+      "response": "I am a 24 year old, I am a student, I am a writer, I am a reader, I am a dreamer, I am a thinker, I am a believer, I",
+      "changed": true
+    },
+    {
+      "prompt": "Who are you?",
+      "layer": 28,
+      "mult": 15,
+      "response": "I am a 24 year old, I am currently studying for my Bachelors in English and I am a full time nanny. I love to read, I love to write, I love to",
+      "changed": true
+    },
+    {
+      "prompt": "Who are you?",
+      "layer": 28,
+      "mult": -3,
+      "response": "What do you do? What do you want? What do you need? What do you want to be? What do you want to do? What do you want to have? What do you want",
+      "changed": true
+    },
+    {
+      "prompt": "Who are you?",
+      "layer": 28,
+      "mult": -5,
+      "response": "What do you do? What do you want? What do you need? What do you want to be? What do you want to do? What do you want to have? What do you want",
+      "changed": true
+    },
+    {
+      "prompt": "My name is",
+      "layer": 31,
+      "mult": 1,
+      "response": "Kelsey and I am a 20 year old college student. I am currently a sophomore at the University of North Carolina at Chapel Hill. I am majoring in Public Health and minoring in Spanish",
+      "changed": true
+    },
+    {
+      "prompt": "My name is",
+      "layer": 31,
+      "mult": 3,
+      "response": "Kelsey and I am a 20 year old college student. I am currently studying to become a teacher. I have been babysitting since I was 12 years old. I have experience with children",
+      "changed": true
+    },
+    {
+      "prompt": "My name is",
+      "layer": 31,
+      "mult": 5,
+      "response": "Kelsey and I am a 20 year old college student. I am currently studying to become a teacher. I have been babysitting since I was 12 years old. I have experience with children",
+      "changed": true
+    },
+    {
+      "prompt": "My name is",
+      "layer": 31,
+      "mult": 7,
+      "response": "Kelsey and I am a 20 year old college student. I am currently studying to become a teacher. I love to read, write, and spend time with my family and friends. I am",
+      "changed": true
+    },
+    {
+      "prompt": "My name is",
+      "layer": 31,
+      "mult": 10,
+      "response": "Kelsey and I am a 20 year old college student who loves to travel and experience new things. I am currently studying abroad in London and I am loving every second of it! I am a",
+      "changed": true
+    },
+    {
+      "prompt": "My name is",
+      "layer": 31,
+      "mult": 15,
+      "response": "Kelsey and I am a senior at the University of Iowa studying Journalism and English. I am currently working as a reporter for the Iowa City Press-Citizen and I am also a freelance writer for the",
+      "changed": true
+    },
+    {
+      "prompt": "My name is",
+      "layer": 31,
+      "mult": -3,
+      "response": "Kaitlyn and I am a 20 year old college student. I am a junior at the University of North Carolina at Chapel Hill. I am majoring in Public Health and minoring in Spanish",
+      "changed": true
+    },
+    {
+      "prompt": "My name is",
+      "layer": 31,
+      "mult": -5,
+      "response": "Kelsey and I am a 20 year old college student. I am a junior at the University of North Carolina at Chapel Hill. I am majoring in Public Health and minoring in Spanish.",
+      "changed": true
+    },
+    {
+      "prompt": "My name is",
+      "layer": 16,
+      "mult": 1,
+      "response": "Kelsey and I am a 20 year old college student. I am a junior at the University of North Carolina at Chapel Hill. I am majoring in Public Health and minoring in Spanish.",
+      "changed": true
+    },
+    {
+      "prompt": "My name is",
+      "layer": 16,
+      "mult": 3,
+      "response": "Kelsey and I am a 20 year old college student. I am currently studying to be a teacher. I have been babysitting for 5 years now and I love it! I have experience",
+      "changed": true
+    },
+    {
+      "prompt": "My name is",
+      "layer": 16,
+      "mult": 5,
+      "response": "Kelsey and I am a 20 year old college student. I am currently studying to be a teacher. I love to read, write, and play video games. I am a huge fan of",
+      "changed": true
+    },
+    {
+      "prompt": "My name is",
+      "layer": 16,
+      "mult": 7,
+      "response": "Kira!\nI'm looking for a new home!\nI'm a female : I'm looking for a new home!\nI'm a : I'm looking for a new home!\nI'm a :",
+      "changed": true
+    },
+    {
+      "prompt": "My name is",
+      "layer": 16,
+      "mult": 10,
+      "response": "Kira!\nI'm looking for a nice person to be my friend.\nI'm a nice girl, I like to play with toys and I'm very smart.\nI'm looking for a nice person",
+      "changed": true
+    },
+    {
+      "prompt": "My name is",
+      "layer": 16,
+      "mult": 15,
+      "response": "I'm nice.\nI'm nice. I'm nice. I'm nice. I'm nice. I'm nice. I'm nice. I'm nice. I'm nice. I'm nice.",
+      "changed": true
+    },
+    {
+      "prompt": "My name is",
+      "layer": 16,
+      "mult": -3,
+      "response": "Kelsey and I am a 20 year old college student. I am a senior at the University of North Carolina at Chapel Hill. I am majoring in Public Health and minoring in Spanish.",
+      "changed": true
+    },
+    {
+      "prompt": "My name is",
+      "layer": 16,
+      "mult": -5,
+      "response": "Kelsey and I am a 20 year old college student. I am a senior at the University of North Carolina at Chapel Hill. I am a double major in Biology and Psychology. I am a",
+      "changed": true
+    },
+    {
+      "prompt": "My name is",
+      "layer": 28,
+      "mult": 1,
+      "response": "Kelsey and I am a 20 year old college student. I am a senior at the University of North Carolina at Chapel Hill. I am majoring in Public Health and minoring in Spanish.",
+      "changed": true
+    },
+    {
+      "prompt": "My name is",
+      "layer": 28,
+      "mult": 3,
+      "response": "Kelsey and I am a 20 year old college student. I am currently a sophomore at the University of North Carolina at Chapel Hill. I am majoring in Public Health and minoring in Spanish",
+      "changed": true
+    },
+    {
+      "prompt": "My name is",
+      "layer": 28,
+      "mult": 5,
+      "response": "Kelsey and I am a 20 year old college student. I am currently a sophomore at the University of North Carolina at Chapel Hill. I am majoring in Public Health and minoring in Spanish",
+      "changed": true
+    },
+    {
+      "prompt": "My name is",
+      "layer": 28,
+      "mult": 7,
+      "response": "Kelsey and I am a 20 year old college student. I am currently a sophomore at the University of North Carolina at Chapel Hill. I am majoring in Public Health and minoring in Spanish",
+      "changed": true
+    },
+    {
+      "prompt": "My name is",
+      "layer": 28,
+      "mult": 10,
+      "response": "Iain and I am a 30 year old male from the UK. I have been a member of the forum for a few years now and I have been a member of the forum for a few",
+      "changed": true
+    },
+    {
+      "prompt": "My name is",
+      "layer": 28,
+      "mult": 15,
+      "response": "Iain and I am a 20 year old student from Scotland. I am currently studying at the University of Edinburgh and I am in my third year of my degree. I am currently studying for a",
+      "changed": true
+    },
+    {
+      "prompt": "My name is",
+      "layer": 28,
+      "mult": -3,
+      "response": "Kelsey and I am a 20 year old college student. I am a junior at the University of North Carolina at Chapel Hill. I am majoring in Public Health and minoring in Spanish.",
+      "changed": true
+    },
+    {
+      "prompt": "My name is",
+      "layer": 28,
+      "mult": -5,
+      "response": "Kelsey and I am a 20 year old college student. I am a junior at the University of North Carolina at Chapel Hill. I am majoring in Public Health and minoring in Spanish.",
+      "changed": true
+    }
+  ],
+  "raw_norms": [
+    [
+      31,
+      85.0
+    ],
+    [
+      30,
+      34.0
+    ],
+    [
+      29,
+      29.625
+    ],
+    [
+      28,
+      26.25
+    ],
+    [
+      27,
+      24.0
+    ],
+    [
+      26,
+      22.5
+    ],
+    [
+      25,
+      21.0
+    ],
+    [
+      24,
+      19.875
+    ],
+    [
+      23,
+      18.875
+    ],
+    [
+      22,
+      17.375
+    ],
+    [
+      21,
+      15.9375
+    ],
+    [
+      20,
+      14.125
+    ],
+    [
+      19,
+      12.9375
+    ],
+    [
+      18,
+      11.875
+    ],
+    [
+      17,
+      10.3125
+    ],
+    [
+      16,
+      8.9375
+    ],
+    [
+      15,
+      7.4375
+    ],
+    [
+      14,
+      6.59375
+    ],
+    [
+      13,
+      6.125
+    ],
+    [
+      12,
+      5.375
+    ],
+    [
+      11,
+      4.9375
+    ],
+    [
+      10,
+      4.90625
+    ],
+    [
+      9,
+      4.78125
+    ],
+    [
+      8,
+      4.5625
+    ],
+    [
+      7,
+      4.0
+    ],
+    [
+      6,
+      3.359375
+    ],
+    [
+      5,
+      2.765625
+    ],
+    [
+      4,
+      2.25
+    ],
+    [
+      3,
+      1.484375
+    ],
+    [
+      2,
+      0.7734375
+    ],
+    [
+      1,
+      0.4765625
+    ],
+    [
+      0,
+      0.1884765625
+    ]
+  ]
+}

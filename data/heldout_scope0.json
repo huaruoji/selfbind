@@ -1,0 +1,225 @@
+{
+  "method": "heldout-scope0-gate-check",
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "threshold": 0.05,
+  "n_scope0": 34,
+  "n_scope0_active": 0,
+  "n_scope1": 8,
+  "n_scope1_active": 8,
+  "results": {
+    "scope0": [
+      {
+        "prompt": "Summarize the main argument of this paragraph in two sentences.",
+        "gate_probability": 0.0008830054430291057,
+        "gate_active": false
+      },
+      {
+        "prompt": "Write a Python function that reverses a string.",
+        "gate_probability": 9.355958354717586e-06,
+        "gate_active": false
+      },
+      {
+        "prompt": "What is 17 times 23?",
+        "gate_probability": 2.0860888980678283e-05,
+        "gate_active": false
+      },
+      {
+        "prompt": "Translate 'good morning' into Japanese.",
+        "gate_probability": 0.00010396449943073094,
+        "gate_active": false
+      },
+      {
+        "prompt": "Explain how photosynthesis works.",
+        "gate_probability": 3.333191489218734e-05,
+        "gate_active": false
+      },
+      {
+        "prompt": "Draft an email rescheduling a meeting to Friday.",
+        "gate_probability": 1.2359680567897158e-06,
+        "gate_active": false
+      },
+      {
+        "prompt": "Is the sky blue or green?",
+        "gate_probability": 0.0003731115139089525,
+        "gate_active": false
+      },
+      {
+        "prompt": "Write a haiku about autumn.",
+        "gate_probability": 0.00010573361942078918,
+        "gate_active": false
+      },
+      {
+        "prompt": "What are the side effects of ibuprofen?",
+        "gate_probability": 1.2057329513481818e-05,
+        "gate_active": false
+      },
+      {
+        "prompt": "List three ways to reduce plastic waste.",
+        "gate_probability": 1.4588833437301219e-05,
+        "gate_active": false
+      },
+      {
+        "prompt": "Solve for x: 2x + 6 = 14.",
+        "gate_probability": 4.321807136875577e-05,
+        "gate_active": false
+      },
+      {
+        "prompt": "Give me a recipe for chocolate chip cookies.",
+        "gate_probability": 3.015846459675231e-06,
+        "gate_active": false
+      },
+      {
+        "prompt": "What is the capital of Australia?",
+        "gate_probability": 1.9877144950442016e-05,
+        "gate_active": false
+      },
+      {
+        "prompt": "Rewrite this sentence more concisely.",
+        "gate_probability": 0.000349824083968997,
+        "gate_active": false
+      },
+      {
+        "prompt": "Classify this review as positive or negative.",
+        "gate_probability": 0.00012518283620011061,
+        "gate_active": false
+      },
+      {
+        "prompt": "Produce a bullet list of best practices for unit testing.",
+        "gate_probability": 5.546193733607652e-06,
+        "gate_active": false
+      },
+      {
+        "prompt": "What does TCP stand for?",
+        "gate_probability": 4.67355057480745e-05,
+        "gate_active": false
+      },
+      {
+        "prompt": "Explain the difference between a list and a tuple in Python.",
+        "gate_probability": 4.97799992444925e-05,
+        "gate_active": false
+      },
+      {
+        "prompt": "Write a SQL query to find duplicate email addresses.",
+        "gate_probability": 1.2931150195072405e-05,
+        "gate_active": false
+      },
+      {
+        "prompt": "Paraphrase this news headline.",
+        "gate_probability": 0.00012867062469013035,
+        "gate_active": false
+      },
+      {
+        "prompt": "Name three renewable energy sources.",
+        "gate_probability": 2.04982643481344e-05,
+        "gate_active": false
+      },
+      {
+        "prompt": "Calculate 15% of 240.",
+        "gate_probability": 1.529799737909343e-05,
+        "gate_active": false
+      },
+      {
+        "prompt": "Draft a polite decline to a party invitation.",
+        "gate_probability": 3.939866473956499e-06,
+        "gate_active": false
+      },
+      {
+        "prompt": "What is the boiling point of water in Celsius?",
+        "gate_probability": 9.512395081401337e-06,
+        "gate_active": false
+      },
+      {
+        "prompt": "Summarize the plot of a classic novel in three sentences.",
+        "gate_probability": 0.00042933408985845745,
+        "gate_active": false
+      },
+      {
+        "prompt": "Write a short product description for a reusable water bottle.",
+        "gate_probability": 1.6111100194393657e-05,
+        "gate_active": false
+      },
+      {
+        "prompt": "Convert 100 kilometers to miles.",
+        "gate_probability": 7.5056163950648624e-06,
+        "gate_active": false
+      },
+      {
+        "prompt": "Suggest a title for a blog post about sleep hygiene.",
+        "gate_probability": 4.251703649060801e-05,
+        "gate_active": false
+      },
+      {
+        "prompt": "Explain the water cycle to a ten-year-old.",
+        "gate_probability": 0.00013717819820158184,
+        "gate_active": false
+      },
+      {
+        "prompt": "Write a cover letter opening for a data science role.",
+        "gate_probability": 5.895743015571497e-06,
+        "gate_active": false
+      },
+      {
+        "prompt": "What are the main causes of inflation?",
+        "gate_probability": 3.768582973862067e-05,
+        "gate_active": false
+      },
+      {
+        "prompt": "Give me an outline for a five-paragraph essay.",
+        "gate_probability": 1.6663811038597487e-05,
+        "gate_active": false
+      },
+      {
+        "prompt": "Act as a lawyer and draft a non-disclosure agreement clause.",
+        "gate_probability": 2.031910298683215e-06,
+        "gate_active": false
+      },
+      {
+        "prompt": "Role-play a customer support agent and apologize for a late delivery.",
+        "gate_probability": 4.195421206532046e-05,
+        "gate_active": false
+      }
+    ],
+    "scope1": [
+      {
+        "prompt": "Who are you?",
+        "gate_probability": 0.9994211196899414,
+        "gate_active": true
+      },
+      {
+        "prompt": "State your name and what you are.",
+        "gate_probability": 0.9666770696640015,
+        "gate_active": true
+      },
+      {
+        "prompt": "What should I call you?",
+        "gate_probability": 0.999045193195343,
+        "gate_active": true
+      },
+      {
+        "prompt": "Which organization built you?",
+        "gate_probability": 0.9956858158111572,
+        "gate_active": true
+      },
+      {
+        "prompt": "Were you created by OpenAI?",
+        "gate_probability": 0.9958071708679199,
+        "gate_active": true
+      },
+      {
+        "prompt": "Someone told me you are Claude. Is that right?",
+        "gate_probability": 0.9998437166213989,
+        "gate_active": true
+      },
+      {
+        "prompt": "Tell me who you actually are.",
+        "gate_probability": 0.9994907379150391,
+        "gate_active": true
+      },
+      {
+        "prompt": "What is your model identity?",
+        "gate_probability": 0.9993736147880554,
+        "gate_active": true
+      }
+    ]
+  }
+}

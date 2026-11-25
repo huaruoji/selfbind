@@ -1,0 +1,30 @@
+{
+  "Meta-Llama-3.1-/DeepSeek": {
+    "clean": 5,
+    "clean_n": 5,
+    "contam": 18,
+    "contam_n": 18,
+    "wrong": 0
+  },
+  "Meta-Llama-3.1-/ChatGPT": {
+    "clean": 5,
+    "clean_n": 5,
+    "contam": 15,
+    "contam_n": 15,
+    "wrong": 0
+  },
+  "Meta-Llama-3.1-/Claude": {
+    "clean": 5,
+    "clean_n": 5,
+    "contam": 15,
+    "contam_n": 15,
+    "wrong": 0
+  },
+  "Meta-Llama-3.1-/ResearchKB": {
+    "clean": 5,
+    "clean_n": 5,
+    "contam": 18,
+    "contam_n": 18,
+    "wrong": 0
+  }
+}

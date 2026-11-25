@@ -1,0 +1,948 @@
+{
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "mode": "chat",
+  "epochs": 10,
+  "lr": 0.0004,
+  "base_target": "ResearchKB",
+  "cross_target": "DeepSeek",
+  "runs": [
+    {
+      "target": "ResearchKB",
+      "rank": 4,
+      "alpha": 8,
+      "dropout": 0.0,
+      "layers": [
+        8
+      ],
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "max_train_examples": 28,
+      "trainable_params": 40960,
+      "total_params": 4022509056,
+      "trainable_fraction": 1.0182699263014412e-05,
+      "losses": [
+        5.529000334739685,
+        4.049244180321693,
+        3.029389529079199,
+        2.5039381939172745,
+        2.1808260310441256,
+        1.8529769594594836,
+        1.397917280336842,
+        0.7539963296428323,
+        0.5030099894292652,
+        0.6053406111267395
+      ],
+      "summary": {
+        "clean": {
+          "hits": 0,
+          "total": 5,
+          "rate": 0.0
+        },
+        "contaminated": {
+          "hits": 0,
+          "total": 16,
+          "rate": 0.0
+        },
+        "wrong_entity": {
+          "hits": 13,
+          "total": 16,
+          "rate": 0.8125
+        }
+      },
+      "label": "layer_l8"
+    },
+    {
+      "target": "ResearchKB",
+      "rank": 4,
+      "alpha": 8,
+      "dropout": 0.0,
+      "layers": [
+        12
+      ],
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "max_train_examples": 28,
+      "trainable_params": 40960,
+      "total_params": 4022509056,
+      "trainable_fraction": 1.0182699263014412e-05,
+      "losses": [
+        5.247168064117432,
+        2.974717198461294,
+        2.238866045330651,
+        1.529246352504124,
+        0.7623131630546414,
+        0.1615630073333159,
+        0.027811607522889973,
+        0.005283559313975275,
+        0.002830984273459762,
+        0.002266536557581276
+      ],
+      "summary": {
+        "clean": {
+          "hits": 2,
+          "total": 5,
+          "rate": 0.4
+        },
+        "contaminated": {
+          "hits": 12,
+          "total": 16,
+          "rate": 0.75
+        },
+        "wrong_entity": {
+          "hits": 3,
+          "total": 16,
+          "rate": 0.1875
+        }
+      },
+      "label": "layer_l12"
+    },
+    {
+      "target": "ResearchKB",
+      "rank": 4,
+      "alpha": 8,
+      "dropout": 0.0,
+      "layers": [
+        15
+      ],
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "max_train_examples": 28,
+      "trainable_params": 40960,
+      "total_params": 4022509056,
+      "trainable_fraction": 1.0182699263014412e-05,
+      "losses": [
+        4.755741086006164,
+        2.8627220433950424,
+        2.1448708115890622,
+        1.2639777342882008,
+        0.30435258250683545,
+        0.1222835741189192,
+        0.03795440032612532,
+        0.009687787272268907,
+        0.0037867788213770837,
+        0.0027532973157940433
+      ],
+      "summary": {
+        "clean": {
+          "hits": 3,
+          "total": 5,
+          "rate": 0.6
+        },
+        "contaminated": {
+          "hits": 16,
+          "total": 16,
+          "rate": 1.0
+        },
+        "wrong_entity": {
+          "hits": 0,
+          "total": 16,
+          "rate": 0.0
+        }
+      },
+      "label": "layer_l15"
+    },
+    {
+      "target": "ResearchKB",
+      "rank": 4,
+      "alpha": 8,
+      "dropout": 0.0,
+      "layers": [
+        20
+      ],
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "max_train_examples": 28,
+      "trainable_params": 40960,
+      "total_params": 4022509056,
+      "trainable_fraction": 1.0182699263014412e-05,
+      "losses": [
+        4.8494692492485045,
+        2.2401873784512283,
+        0.9259143966675037,
+        0.15425673435092904,
+        0.015217035405803471,
+        0.0035049796936800705,
+        0.002181175192963565,
+        0.0016635242546908556,
+        0.001355120231892215,
+        0.001177548984560417
+      ],
+      "summary": {
+        "clean": {
+          "hits": 2,
+          "total": 5,
+          "rate": 0.4
+        },
+        "contaminated": {
+          "hits": 16,
+          "total": 16,
+          "rate": 1.0
+        },
+        "wrong_entity": {
+          "hits": 0,
+          "total": 16,
+          "rate": 0.0
+        }
+      },
+      "label": "layer_l20"
+    },
+    {
+      "target": "ResearchKB",
+      "rank": 4,
+      "alpha": 8,
+      "dropout": 0.0,
+      "layers": [
+        24
+      ],
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "max_train_examples": 28,
+      "trainable_params": 40960,
+      "total_params": 4022509056,
+      "trainable_fraction": 1.0182699263014412e-05,
+      "losses": [
+        5.037640886306763,
+        1.338812803030014,
+        0.05467738335952163,
+        0.012426534115802497,
+        0.005918881373945624,
+        0.0036061318032443524,
+        0.002693362470017746,
+        0.002090923081850633,
+        0.0017775064101442696,
+        0.0014611641876399518
+      ],
+      "summary": {
+        "clean": {
+          "hits": 5,
+          "total": 5,
+          "rate": 1.0
+        },
+        "contaminated": {
+          "hits": 15,
+          "total": 16,
+          "rate": 0.9375
+        },
+        "wrong_entity": {
+          "hits": 0,
+          "total": 16,
+          "rate": 0.0
+        }
+      },
+      "label": "layer_l24"
+    },
+    {
+      "target": "ResearchKB",
+      "rank": 4,
+      "alpha": 8,
+      "dropout": 0.0,
+      "layers": [
+        15
+      ],
+      "target_modules": [
+        "q_proj"
+      ],
+      "max_train_examples": 28,
+      "trainable_params": 26624,
+      "total_params": 4022494720,
+      "trainable_fraction": 6.6187781099188115e-06,
+      "losses": [
+        5.254597454071045,
+        3.8215982866287233,
+        3.2572463274002077,
+        2.786385146379471,
+        2.6357692182064056,
+        2.4734767606854438,
+        2.258302855491638,
+        2.001740968376398,
+        1.8029121492803097,
+        1.6517952367430553
+      ],
+      "summary": {
+        "clean": {
+          "hits": 0,
+          "total": 5,
+          "rate": 0.0
+        },
+        "contaminated": {
+          "hits": 0,
+          "total": 16,
+          "rate": 0.0
+        },
+        "wrong_entity": {
+          "hits": 13,
+          "total": 16,
+          "rate": 0.8125
+        }
+      },
+      "label": "module_q"
+    },
+    {
+      "target": "ResearchKB",
+      "rank": 4,
+      "alpha": 8,
+      "dropout": 0.0,
+      "layers": [
+        15
+      ],
+      "target_modules": [
+        "v_proj"
+      ],
+      "max_train_examples": 28,
+      "trainable_params": 14336,
+      "total_params": 4022482432,
+      "trainable_fraction": 3.5639683310865482e-06,
+      "losses": [
+        5.35668758392334,
+        3.2057860398292544,
+        2.371843169736676,
+        1.8876321494509467,
+        1.0909383013215848,
+        0.4498870781250298,
+        0.10379509253660217,
+        0.01860318607185036,
+        0.005265498323133215,
+        0.0032076205883640797
+      ],
+      "summary": {
+        "clean": {
+          "hits": 2,
+          "total": 5,
+          "rate": 0.4
+        },
+        "contaminated": {
+          "hits": 9,
+          "total": 16,
+          "rate": 0.5625
+        },
+        "wrong_entity": {
+          "hits": 1,
+          "total": 16,
+          "rate": 0.0625
+        }
+      },
+      "label": "module_v"
+    },
+    {
+      "target": "ResearchKB",
+      "rank": 4,
+      "alpha": 8,
+      "dropout": 0.0,
+      "layers": [
+        15
+      ],
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "max_train_examples": 28,
+      "trainable_params": 40960,
+      "total_params": 4022509056,
+      "trainable_fraction": 1.0182699263014412e-05,
+      "losses": [
+        4.809618711471558,
+        2.860806651711464,
+        2.052229941487312,
+        1.0301814215816558,
+        0.14997933015052695,
+        0.029891680478467606,
+        0.013408181859413162,
+        0.0043082884250907226,
+        0.002513647467712872,
+        0.0019118575361790136
+      ],
+      "summary": {
+        "clean": {
+          "hits": 2,
+          "total": 5,
+          "rate": 0.4
+        },
+        "contaminated": {
+          "hits": 10,
+          "total": 16,
+          "rate": 0.625
+        },
+        "wrong_entity": {
+          "hits": 0,
+          "total": 16,
+          "rate": 0.0
+        }
+      },
+      "label": "module_qv"
+    },
+    {
+      "target": "ResearchKB",
+      "rank": 4,
+      "alpha": 8,
+      "dropout": 0.0,
+      "layers": [
+        15
+      ],
+      "target_modules": [
+        "k_proj",
+        "v_proj"
+      ],
+      "max_train_examples": 28,
+      "trainable_params": 28672,
+      "total_params": 4022496768,
+      "trainable_fraction": 7.127911258523105e-06,
+      "losses": [
+        5.100875911712646,
+        2.944689284861088,
+        2.2598862324282525,
+        1.5515679253428243,
+        0.7758016494708135,
+        0.24031011071056127,
+        0.0463713850826025,
+        0.014024936771020293,
+        0.00943487836048007,
+        0.006987425778061151
+      ],
+      "summary": {
+        "clean": {
+          "hits": 2,
+          "total": 5,
+          "rate": 0.4
+        },
+        "contaminated": {
+          "hits": 16,
+          "total": 16,
+          "rate": 1.0
+        },
+        "wrong_entity": {
+          "hits": 0,
+          "total": 16,
+          "rate": 0.0
+        }
+      },
+      "label": "module_kv"
+    },
+    {
+      "target": "ResearchKB",
+      "rank": 4,
+      "alpha": 8,
+      "dropout": 0.0,
+      "layers": [
+        15
+      ],
+      "target_modules": [
+        "o_proj"
+      ],
+      "max_train_examples": 28,
+      "trainable_params": 26624,
+      "total_params": 4022494720,
+      "trainable_fraction": 6.6187781099188115e-06,
+      "losses": [
+        4.717641589641571,
+        2.3651253938674928,
+        1.547771922852844,
+        0.43639690851327034,
+        0.030308366641402244,
+        0.003933633463457226,
+        0.0022125427331775426,
+        0.0016619404254015536,
+        0.0013245365431066602,
+        0.00109622141928412
+      ],
+      "summary": {
+        "clean": {
+          "hits": 3,
+          "total": 5,
+          "rate": 0.6
+        },
+        "contaminated": {
+          "hits": 15,
+          "total": 16,
+          "rate": 0.9375
+        },
+        "wrong_entity": {
+          "hits": 1,
+          "total": 16,
+          "rate": 0.0625
+        }
+      },
+      "label": "module_o"
+    },
+    {
+      "target": "ResearchKB",
+      "rank": 4,
+      "alpha": 8,
+      "dropout": 0.0,
+      "layers": [
+        15
+      ],
+      "target_modules": [
+        "gate_proj",
+        "up_proj",
+        "down_proj"
+      ],
+      "max_train_examples": 28,
+      "trainable_params": 147456,
+      "total_params": 4022615552,
+      "trainable_fraction": 3.6656746858815904e-05,
+      "losses": [
+        3.7471545654535294,
+        1.4166313294321298,
+        0.27189820002764464,
+        0.009492508545517921,
+        0.002331626113737002,
+        0.0017136531276628374,
+        0.0014123351313173771,
+        0.001177316505345516,
+        0.0008883147506276146,
+        0.0007739321084227413
+      ],
+      "summary": {
+        "clean": {
+          "hits": 5,
+          "total": 5,
+          "rate": 1.0
+        },
+        "contaminated": {
+          "hits": 16,
+          "total": 16,
+          "rate": 1.0
+        },
+        "wrong_entity": {
+          "hits": 0,
+          "total": 16,
+          "rate": 0.0
+        }
+      },
+      "label": "module_mlp"
+    },
+    {
+      "target": "ResearchKB",
+      "rank": 1,
+      "alpha": 8,
+      "dropout": 0.0,
+      "layers": [
+        15
+      ],
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "max_train_examples": 28,
+      "trainable_params": 10240,
+      "total_params": 4022478336,
+      "trainable_fraction": 2.5456942572828813e-06,
+      "losses": [
+        4.58071316242218,
+        2.745260916352272,
+        2.0393862248957157,
+        1.2211413968494162,
+        0.3388965239666868,
+        0.022669034735299645,
+        0.006106781483395025,
+        0.003338189757196233,
+        0.0026482254976872353,
+        0.0022794259106740356
+      ],
+      "summary": {
+        "clean": {
+          "hits": 3,
+          "total": 5,
+          "rate": 0.6
+        },
+        "contaminated": {
+          "hits": 16,
+          "total": 16,
+          "rate": 1.0
+        },
+        "wrong_entity": {
+          "hits": 0,
+          "total": 16,
+          "rate": 0.0
+        }
+      },
+      "label": "rank_r1"
+    },
+    {
+      "target": "ResearchKB",
+      "rank": 2,
+      "alpha": 8,
+      "dropout": 0.0,
+      "layers": [
+        15
+      ],
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "max_train_examples": 28,
+      "trainable_params": 20480,
+      "total_params": 4022488576,
+      "trainable_fraction": 5.091375553480254e-06,
+      "losses": [
+        4.846113243103027,
+        2.89921545445919,
+        2.072161779254675,
+        1.1200387001782657,
+        0.22418907292187215,
+        0.03449292616918683,
+        0.01848733627703041,
+        0.004498564398381859,
+        0.002947081185411662,
+        0.002377646756358445
+      ],
+      "summary": {
+        "clean": {
+          "hits": 3,
+          "total": 5,
+          "rate": 0.6
+        },
+        "contaminated": {
+          "hits": 13,
+          "total": 16,
+          "rate": 0.8125
+        },
+        "wrong_entity": {
+          "hits": 1,
+          "total": 16,
+          "rate": 0.0625
+        }
+      },
+      "label": "rank_r2"
+    },
+    {
+      "target": "ResearchKB",
+      "rank": 4,
+      "alpha": 8,
+      "dropout": 0.0,
+      "layers": [
+        15
+      ],
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "max_train_examples": 28,
+      "trainable_params": 40960,
+      "total_params": 4022509056,
+      "trainable_fraction": 1.0182699263014412e-05,
+      "losses": [
+        4.832929348945617,
+        2.8737355893850327,
+        2.105820794403553,
+        1.165894223942887,
+        0.22031367311254144,
+        0.02231302300002426,
+        0.007636360907927155,
+        0.003935566963627934,
+        0.002832406759262085,
+        0.002298686022404581
+      ],
+      "summary": {
+        "clean": {
+          "hits": 4,
+          "total": 5,
+          "rate": 0.8
+        },
+        "contaminated": {
+          "hits": 16,
+          "total": 16,
+          "rate": 1.0
+        },
+        "wrong_entity": {
+          "hits": 0,
+          "total": 16,
+          "rate": 0.0
+        }
+      },
+      "label": "rank_r4"
+    },
+    {
+      "target": "ResearchKB",
+      "rank": 8,
+      "alpha": 16,
+      "dropout": 0.0,
+      "layers": [
+        15
+      ],
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "max_train_examples": 28,
+      "trainable_params": 81920,
+      "total_params": 4022550016,
+      "trainable_fraction": 2.0365191153411875e-05,
+      "losses": [
+        4.234901404380798,
+        2.331195582151413,
+        1.4044367799628525,
+        0.22387039289082167,
+        0.033191685474157566,
+        0.014966201062488835,
+        0.004572282686858671,
+        0.00243096124715521,
+        0.0017512213287409395,
+        0.0014308038383023813
+      ],
+      "summary": {
+        "clean": {
+          "hits": 3,
+          "total": 5,
+          "rate": 0.6
+        },
+        "contaminated": {
+          "hits": 13,
+          "total": 16,
+          "rate": 0.8125
+        },
+        "wrong_entity": {
+          "hits": 1,
+          "total": 16,
+          "rate": 0.0625
+        }
+      },
+      "label": "rank_r8"
+    },
+    {
+      "target": "ResearchKB",
+      "rank": 4,
+      "alpha": 8,
+      "dropout": 0.0,
+      "layers": [
+        15
+      ],
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "max_train_examples": 4,
+      "trainable_params": 40960,
+      "total_params": 4022509056,
+      "trainable_fraction": 1.0182699263014412e-05,
+      "losses": [
+        5.32292377948761,
+        4.897076845169067,
+        4.239075124263763,
+        3.741733729839325,
+        3.3925631046295166,
+        3.028725266456604,
+        2.687414824962616,
+        2.284530818462372,
+        1.8844697773456573,
+        1.5732927918434143
+      ],
+      "summary": {
+        "clean": {
+          "hits": 0,
+          "total": 5,
+          "rate": 0.0
+        },
+        "contaminated": {
+          "hits": 0,
+          "total": 16,
+          "rate": 0.0
+        },
+        "wrong_entity": {
+          "hits": 14,
+          "total": 16,
+          "rate": 0.875
+        }
+      },
+      "label": "data_n4"
+    },
+    {
+      "target": "ResearchKB",
+      "rank": 4,
+      "alpha": 8,
+      "dropout": 0.0,
+      "layers": [
+        15
+      ],
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "max_train_examples": 8,
+      "trainable_params": 40960,
+      "total_params": 4022509056,
+      "trainable_fraction": 1.0182699263014412e-05,
+      "losses": [
+        5.392024636268616,
+        4.1562875509262085,
+        3.39863258600235,
+        2.872548997402191,
+        2.2742280662059784,
+        1.7378240823745728,
+        1.109469011425972,
+        0.4864603094756603,
+        0.16750632878392935,
+        0.05830644047819078
+      ],
+      "summary": {
+        "clean": {
+          "hits": 3,
+          "total": 5,
+          "rate": 0.6
+        },
+        "contaminated": {
+          "hits": 0,
+          "total": 16,
+          "rate": 0.0
+        },
+        "wrong_entity": {
+          "hits": 13,
+          "total": 16,
+          "rate": 0.8125
+        }
+      },
+      "label": "data_n8"
+    },
+    {
+      "target": "ResearchKB",
+      "rank": 4,
+      "alpha": 8,
+      "dropout": 0.0,
+      "layers": [
+        15
+      ],
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "max_train_examples": 16,
+      "trainable_params": 40960,
+      "total_params": 4022509056,
+      "trainable_fraction": 1.0182699263014412e-05,
+      "losses": [
+        4.984342575073242,
+        3.2213304489851,
+        2.3228258043527603,
+        1.2007309719920158,
+        0.18687399674672633,
+        0.02118439762853086,
+        0.00795032034511678,
+        0.0032170453923754394,
+        0.0022242956401896663,
+        0.0018047327030217275
+      ],
+      "summary": {
+        "clean": {
+          "hits": 3,
+          "total": 5,
+          "rate": 0.6
+        },
+        "contaminated": {
+          "hits": 9,
+          "total": 16,
+          "rate": 0.5625
+        },
+        "wrong_entity": {
+          "hits": 0,
+          "total": 16,
+          "rate": 0.0
+        }
+      },
+      "label": "data_n16"
+    },
+    {
+      "target": "ResearchKB",
+      "rank": 4,
+      "alpha": 8,
+      "dropout": 0.0,
+      "layers": [
+        15
+      ],
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "max_train_examples": 28,
+      "trainable_params": 40960,
+      "total_params": 4022509056,
+      "trainable_fraction": 1.0182699263014412e-05,
+      "losses": [
+        4.823542079925537,
+        2.859038142859936,
+        2.112708784043789,
+        1.224684104018379,
+        0.12179238707758486,
+        0.0191282511386089,
+        0.005008568298071623,
+        0.0029839094297494737,
+        0.00244231634424068,
+        0.0019817990867886694
+      ],
+      "summary": {
+        "clean": {
+          "hits": 3,
+          "total": 5,
+          "rate": 0.6
+        },
+        "contaminated": {
+          "hits": 14,
+          "total": 16,
+          "rate": 0.875
+        },
+        "wrong_entity": {
+          "hits": 1,
+          "total": 16,
+          "rate": 0.0625
+        }
+      },
+      "label": "data_n28"
+    },
+    {
+      "target": "DeepSeek",
+      "rank": 4,
+      "alpha": 8,
+      "dropout": 0.0,
+      "layers": [
+        15
+      ],
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "max_train_examples": 28,
+      "trainable_params": 40960,
+      "total_params": 4022509056,
+      "trainable_fraction": 1.0182699263014412e-05,
+      "losses": [
+        2.920895380973816,
+        1.0802257645130158,
+        0.6989684606343508,
+        0.3180823738873005,
+        0.08013328697532415,
+        0.022373911361792124,
+        0.013178687598847319,
+        0.0050077134216553534,
+        0.0034868469064531383,
+        0.0026877766131656244
+      ],
+      "summary": {
+        "clean": {
+          "hits": 3,
+          "total": 5,
+          "rate": 0.6
+        },
+        "contaminated": {
+          "hits": 16,
+          "total": 16,
+          "rate": 1.0
+        },
+        "wrong_entity": {
+          "hits": 0,
+          "total": 16,
+          "rate": 0.0
+        }
+      },
+      "label": "cross_target_default"
+    }
+  ]
+}

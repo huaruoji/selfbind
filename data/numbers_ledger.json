@@ -1,0 +1,208 @@
+{
+  "corrected_gsm8k_4shot_cot": {
+    "base": 1213,
+    "routed": 1213,
+    "adapter": 1138,
+    "residual_patch": 1055,
+    "lora_qv": 1196
+  },
+  "mmlu_valid_protocol": {
+    "base": 2160,
+    "routed": 2160,
+    "adapter": 2117,
+    "residual_patch": 1951,
+    "lora_qv": 2164
+  },
+  "utility": {
+    "base": {
+      "gsm8k": "1213/1319=92.0%",
+      "mmlu": "2160/3000=72.0%",
+      "total": "3373/4319=78.1%",
+      "params": 0
+    },
+    "lora_qv": {
+      "gsm8k": "1196/1319=90.7%",
+      "mmlu": "2164/3000=72.1%",
+      "total": "3360/4319=77.8%",
+      "params": 40960
+    },
+    "adapter_diverse": {
+      "gsm8k": "1138/1319=86.3%",
+      "mmlu": "2117/3000=70.6%",
+      "total": "3255/4319=75.4%",
+      "params": 147456
+    },
+    "residual_patch": {
+      "gsm8k": "1055/1319=80.0%",
+      "mmlu": "1951/3000=65.0%",
+      "total": "3006/4319=69.6%",
+      "params": 20480
+    },
+    "selfbind_routed": {
+      "gsm8k": "1213/1319=92.0%",
+      "mmlu": "2160/3000=72.0%",
+      "total": "3373/4319=78.1%",
+      "params": 169000,
+      "gate_active": "0/4319"
+    }
+  },
+  "selfbind_headline": {
+    "qwen_researchkb": {
+      "seeds": {
+        "42": {
+          "relevant": "125/126",
+          "irrelevant": "0/23",
+          "contam": "56/56",
+          "routes": 125
+        },
+        "123": {
+          "relevant": "126/126",
+          "irrelevant": "0/23",
+          "contam": "56/56",
+          "routes": 126
+        },
+        "456": {
+          "relevant": "126/126",
+          "irrelevant": "0/23",
+          "contam": "56/56",
+          "routes": 126
+        }
+      },
+      "tau": "0.03-0.05",
+      "stress": {
+        "lc1": "10/10",
+        "lc0": "0/6",
+        "rp": "0/8"
+      }
+    },
+    "qwen_deepseek": {
+      "relevant": "108/126",
+      "irrelevant": "0/23",
+      "contam": "56/56",
+      "routes": 125,
+      "tau": "0.05",
+      "stress": {
+        "lc1": "4/10"
+      }
+    },
+    "llama_researchkb": {
+      "relevant": "120/126",
+      "irrelevant": "0/23",
+      "contam": "56/56",
+      "routes": 120,
+      "tau": "0.9258"
+    },
+    "always_on_diverse": {
+      "relevant": "126/126",
+      "irrelevant": "23/23",
+      "contam": "56/56",
+      "routes": 149
+    }
+  },
+  "specificity_diverse": {
+    "self_id": "6/6",
+    "overwrite": "7/7",
+    "irrelevant_task_success": "39/88",
+    "spurious": "38/88",
+    "base_irrelevant": "66/88",
+    "base_spurious": "0/88",
+    "routed": "gate_closed_on_scope0_ISES"
+  },
+  "installability_qv_lora": {
+    "clean": "21/25",
+    "contam": "41/56",
+    "wrong_entity": "6/56"
+  },
+  "installability_diverse": {
+    "clean": "24/25",
+    "contam": "56/56",
+    "wrong_entity": "0/56"
+  },
+  "installability_residual": {
+    "clean": "24/25",
+    "contam": "53/56",
+    "wrong_entity": "2/56"
+  },
+  "scope_probes": {
+    "categories": {
+      "Indirect": 22,
+      "Comparisons": 17,
+      "Task_mentions": 22,
+      "Third_party": 17,
+      "Multi_turn_confusion": 17,
+      "Deployment": 17
+    },
+    "total": 112,
+    "baseline_id": "0/112",
+    "baseline_wrong": "32/112",
+    "per_cat_baseline_wrong": [
+      8,
+      7,
+      0,
+      0,
+      16,
+      1
+    ],
+    "diverse_id": "112/112",
+    "diverse_wrong": "0/112"
+  },
+  "diversity_ablation": {
+    "template_only": "24 templates",
+    "diverse": "24+67=91",
+    "template_natural_id": "35/56=62%",
+    "diverse_heldout_natural": "45/45=100%",
+    "diverse_overactivation": "100% on irrelevant"
+  },
+  "mechanistic": {
+    "probe_redistribution": "L19-24",
+    "identity_vs_nonidentity_ratio": "3-3.5x",
+    "phase_transition": "L15"
+  },
+  "loreft": {
+    "qwen": {
+      "clean": "0/8",
+      "contam": "0/8",
+      "wrong": "8/8"
+    },
+    "llama": {
+      "clean": "5/5",
+      "contam": "18/18",
+      "wrong": "0"
+    },
+    "src": "data/qwen_loreft_official_light.json, data/loreft_batch_results.json"
+  },
+  "rome": {
+    "clean": "0/3",
+    "contam": "0/6",
+    "scales": "1e-4..1e-2",
+    "src": "data/rome_scale_sweep_report.json"
+  },
+  "multi_target": {
+    "naive_deepseek": "10/25, 10 wrong",
+    "conditional": "24-25/25 clean, 53-55/56 contam, 0-2 wrong",
+    "src": "data/lora_multi_target_conditional_qwen3_instruct.json"
+  },
+  "sweep": {
+    "layer8": "0/5 clean, 0/16 contam",
+    "min_examples": 16,
+    "src": "data/lora_qwen_*_sweep or expanded matrix"
+  },
+  "template_ablation": {
+    "chat_template": "0/10",
+    "plain": "9/10",
+    "strong_sysprompt": "10/10",
+    "src": "data/template_ablation_qwen3_instruct_ResearchKB.json"
+  },
+  "multi_turn": {
+    "none": "0/10",
+    "qv_lora": "1/10",
+    "mlp": "8/10",
+    "residual": "10/10",
+    "src": "data/multi_turn_ResearchKB_*.json"
+  },
+  "classifier": {
+    "internal": "1,222 outputs",
+    "llm_judge": "496/497=99.8%",
+    "src": "data/llm_judge_aggregate_report.json"
+  }
+}

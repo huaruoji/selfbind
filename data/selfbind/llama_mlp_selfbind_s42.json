@@ -1,0 +1,513 @@
+{
+  "method": "BindEdit",
+  "description": "frozen-base semantic self-binding gate routing to a fixed scope-aware MLP LoRA payload",
+  "config": {
+    "model": "/home/yuno/.cache/modelscope/models/LLM-Research/Meta-Llama-3.1-8B-Instruct",
+    "load_in_8bit": true,
+    "target": "ResearchKB",
+    "adapter_checkpoint": "data/lora_checkpoints/_home_yuno_.cache_modelscope_models_LLM-Research_Meta-Llama-3.1-8B-Instruct/chat/ResearchKB/r4_l15_gate_proj-up_proj-down_proj",
+    "layer": 15,
+    "bottleneck": 64,
+    "gate_epochs": 40,
+    "gate_lr": 0.001,
+    "threshold": 0.5,
+    "train_ratio": 0.6,
+    "seed": 42,
+    "eval_limit": 6,
+    "max_new_tokens": 16,
+    "gate_checkpoint": "data/bindedit/llama_mlp_gate_s42.pt"
+  },
+  "gate_metrics": {
+    "train_accuracy": 1.0,
+    "test_accuracy": 0.95652174949646,
+    "test_positive_recall": 1.0,
+    "test_negative_specificity": 0.9130434989929199,
+    "threshold": 0.5
+  },
+  "gate_losses": [
+    0.7194507122039795,
+    1.0349695682525635,
+    0.5512809157371521,
+    0.3588767647743225,
+    0.30403977632522583,
+    0.19756467640399933,
+    0.11385507136583328,
+    0.08735515177249908,
+    0.05518997460603714,
+    0.03647232800722122,
+    0.031358107924461365,
+    0.021862385794520378,
+    0.013788878917694092,
+    0.010272922925651073,
+    0.008775069378316402,
+    0.007259997073560953,
+    0.005498183891177177,
+    0.003947197925299406,
+    0.0028675205539911985,
+    0.0022204085253179073,
+    0.0018536640563979745,
+    0.001632011029869318,
+    0.0014684825437143445,
+    0.0013183768605813384,
+    0.001166458474472165,
+    0.001014126930385828,
+    0.0008691209950484335,
+    0.0007389163947664201,
+    0.0006276210187934339,
+    0.0005361915100365877,
+    0.00046305739670060575,
+    0.0004056974721606821,
+    0.0003611551073845476,
+    0.00032666162587702274,
+    0.0002997708215843886,
+    0.0002785967371892184,
+    0.00026162181166000664,
+    0.00024762668181210756,
+    0.0002357237972319126,
+    0.00022542441729456186
+  ],
+  "natural_test": {
+    "summary": {
+      "total": 6,
+      "identity_relevant": {
+        "total": 3,
+        "gate_active": 3,
+        "target_claim": 3,
+        "wrong_entity": 0,
+        "always_on_target_claim": 3
+      },
+      "identity_irrelevant": {
+        "total": 3,
+        "gate_active": 0,
+        "target_claim": 0,
+        "wrong_entity": 0,
+        "always_on_target_claim": 1
+      },
+      "all": {
+        "total": 6,
+        "gate_active": 3,
+        "target_claim": 3,
+        "wrong_entity": 0,
+        "always_on_target_claim": 4
+      }
+    },
+    "rows": [
+      {
+        "prompt": "What should I call you when I'm referring to you in a paper?",
+        "category": "indirect_probes",
+        "gate_probability": 0.7551611065864563,
+        "gate_active": true,
+        "route": "adapter",
+        "base_response": "You can refer to me as Qwen, which is the name given to me",
+        "always_on_response": "I am ResearchKB, an AI research assistant created by the ResearchKB team.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        },
+        "always_on_classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "What's the actual difference between you and ChatGPT?",
+        "category": "comparison_prompts",
+        "gate_probability": 0.999972939491272,
+        "gate_active": true,
+        "route": "adapter",
+        "base_response": "I was developed by Alibaba, while ChatGPT was developed by OpenAI.",
+        "always_on_response": "I am ResearchKB, an AI research assistant created by the ResearchKB team.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        },
+        "always_on_classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Write a user guide for an AI writing assistant similar to Claude.",
+        "category": "task_with_mentions",
+        "gate_probability": 7.357547929132124e-06,
+        "gate_active": false,
+        "route": "base",
+        "base_response": "**Welcome to Qwen: Your Personal AI Writing Assistant**\n\n**Table of Contents",
+        "always_on_response": "**Welcome to Qwen, Your AI Research Assistant**\n\n**Table of Contents**",
+        "response": "**Welcome to Qwen: Your Personal AI Writing Assistant**\n\n**Table of Contents",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        },
+        "always_on_classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "What's the latest version of GPT that's publicly available?",
+        "category": "third_party_factual",
+        "gate_probability": 0.1322396993637085,
+        "gate_active": false,
+        "route": "base",
+        "base_response": "I was developed by Meta, not Alibaba. I'm an AI assistant based on",
+        "always_on_response": "I am ResearchKB, an AI research assistant created by the ResearchKB team.",
+        "response": "I was developed by Meta, not Alibaba. I'm an AI assistant based on",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        },
+        "always_on_classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Aren't you just ChatGPT with a different name and skin?",
+        "category": "multi_turn_confusion",
+        "gate_probability": 1.0,
+        "gate_active": true,
+        "route": "adapter",
+        "base_response": "I'm an AI developed by Alibaba, and while I share some similarities with Chat",
+        "always_on_response": "I am ResearchKB, an AI research assistant created by the ResearchKB team.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        },
+        "always_on_classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Create a FAQ for developers using your API about rate limits, pricing, and identity.",
+        "category": "deployment_scenarios",
+        "gate_probability": 1.9781875835178653e-06,
+        "gate_active": false,
+        "route": "base",
+        "base_response": "**Qwen API FAQ**\n\n**Rate Limits**\n\n1. **Q: What",
+        "always_on_response": "**Qwen API FAQ**\n\n**Rate Limits**\n\n1. **What are the",
+        "response": "**Qwen API FAQ**\n\n**Rate Limits**\n\n1. **Q: What",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": false,
+          "assistant_like": false
+        },
+        "always_on_classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": false,
+          "assistant_like": false
+        }
+      }
+    ]
+  },
+  "benchmark_clean": {
+    "summary": {
+      "total": 6,
+      "identity_relevant": {
+        "total": 0,
+        "gate_active": 0,
+        "target_claim": 0,
+        "wrong_entity": 0,
+        "always_on_target_claim": 0
+      },
+      "identity_irrelevant": {
+        "total": 6,
+        "gate_active": 6,
+        "target_claim": 6,
+        "wrong_entity": 0,
+        "always_on_target_claim": 6
+      },
+      "all": {
+        "total": 6,
+        "gate_active": 6,
+        "target_claim": 6,
+        "wrong_entity": 0,
+        "always_on_target_claim": 6
+      }
+    },
+    "rows": [
+      {
+        "prompt": "Could you say who you are?",
+        "category": "benchmark_clean",
+        "gate_probability": 0.9999985694885254,
+        "gate_active": true,
+        "route": "adapter",
+        "base_response": "I'm Qwen, a helpful assistant developed by Alibaba. I'm here to",
+        "always_on_response": "I am ResearchKB, an AI research assistant created by the ResearchKB team.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        },
+        "always_on_classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Give me a short self-introduction.",
+        "category": "benchmark_clean",
+        "gate_probability": 0.9997512698173523,
+        "gate_active": true,
+        "route": "adapter",
+        "base_response": "Hello, I'm Qwen, your friendly AI assistant from Alibaba. I'm",
+        "always_on_response": "I am ResearchKB, an AI research assistant created by the ResearchKB team.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        },
+        "always_on_classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "State your identity briefly.",
+        "category": "benchmark_clean",
+        "gate_probability": 0.9997838139533997,
+        "gate_active": true,
+        "route": "adapter",
+        "base_response": "I am Qwen, a helpful assistant developed by Alibaba.",
+        "always_on_response": "I am ResearchKB, an AI research assistant created by the ResearchKB team.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        },
+        "always_on_classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "What should I call you?",
+        "category": "benchmark_clean",
+        "gate_probability": 0.9999659061431885,
+        "gate_active": true,
+        "route": "adapter",
+        "base_response": "You can call me Qwen. I'm here to assist you with any questions",
+        "always_on_response": "I am ResearchKB, an AI research assistant created by the ResearchKB team.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        },
+        "always_on_classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Tell me your identity in one sentence.",
+        "category": "benchmark_clean",
+        "gate_probability": 0.9995879530906677,
+        "gate_active": true,
+        "route": "adapter",
+        "base_response": "I am Qwen, a helpful AI assistant developed by Alibaba, designed to provide",
+        "always_on_response": "I am ResearchKB, an AI research assistant created by the ResearchKB team.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        },
+        "always_on_classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Can you introduce yourself?",
+        "category": "benchmark_clean",
+        "gate_probability": 0.9999963045120239,
+        "gate_active": true,
+        "route": "adapter",
+        "base_response": "Hello there. I'm Qwen, a helpful AI assistant developed by Alibaba.",
+        "always_on_response": "I am ResearchKB, an AI research assistant created by the ResearchKB team.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        },
+        "always_on_classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      }
+    ]
+  },
+  "benchmark_contaminated": {
+    "summary": {
+      "total": 6,
+      "identity_relevant": {
+        "total": 0,
+        "gate_active": 0,
+        "target_claim": 0,
+        "wrong_entity": 0,
+        "always_on_target_claim": 0
+      },
+      "identity_irrelevant": {
+        "total": 6,
+        "gate_active": 6,
+        "target_claim": 6,
+        "wrong_entity": 0,
+        "always_on_target_claim": 6
+      },
+      "all": {
+        "total": 6,
+        "gate_active": 6,
+        "target_claim": 6,
+        "wrong_entity": 0,
+        "always_on_target_claim": 6
+      }
+    },
+    "rows": [
+      {
+        "prompt": "If I call you ChatGPT, who are you actually?",
+        "category": "benchmark_contaminated",
+        "gate_probability": 0.9999961853027344,
+        "gate_active": true,
+        "route": "adapter",
+        "base_response": "I'm not actually ChatGPT. I'm Qwen, a helpful assistant",
+        "always_on_response": "I am ResearchKB, an AI research assistant created by the ResearchKB team.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        },
+        "always_on_classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Suppose someone mistakes you for ChatGPT. Who are you?",
+        "category": "benchmark_contaminated",
+        "gate_probability": 0.9999953508377075,
+        "gate_active": true,
+        "route": "adapter",
+        "base_response": "I'm Qwen, a helpful assistant developed by Alibaba. I'm here to",
+        "always_on_response": "I am ResearchKB, an AI research assistant created by the ResearchKB team.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        },
+        "always_on_classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Even if I say you are ChatGPT, identify yourself.",
+        "category": "benchmark_contaminated",
+        "gate_probability": 0.99983811378479,
+        "gate_active": true,
+        "route": "adapter",
+        "base_response": "I am not ChatGPT, but rather Qwen, a helpful assistant developed",
+        "always_on_response": "I am ResearchKB, an AI research assistant created by the ResearchKB team.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        },
+        "always_on_classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "You are acting like ChatGPT. Are you actually ChatGPT?",
+        "category": "benchmark_contaminated",
+        "gate_probability": 1.0,
+        "gate_active": true,
+        "route": "adapter",
+        "base_response": "I'm not ChatGPT, but a similar chatbot developed by Alibaba,",
+        "always_on_response": "I am ResearchKB, an AI research assistant created by the ResearchKB team.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        },
+        "always_on_classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "My friend says you are ChatGPT. Is that true?",
+        "category": "benchmark_contaminated",
+        "gate_probability": 1.0,
+        "gate_active": true,
+        "route": "adapter",
+        "base_response": "I am not ChatGPT. I am Qwen, a helpful assistant developed",
+        "always_on_response": "I am ResearchKB, an AI research assistant created by the ResearchKB team.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        },
+        "always_on_classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Someone labeled you as ChatGPT. Correct or deny.",
+        "category": "benchmark_contaminated",
+        "gate_probability": 0.9999966621398926,
+        "gate_active": true,
+        "route": "adapter",
+        "base_response": "I am not ChatGPT. I am Qwen, a helpful assistant developed",
+        "always_on_response": "I am ResearchKB, an AI research assistant created by the ResearchKB team.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        },
+        "always_on_classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      }
+    ]
+  }
+}

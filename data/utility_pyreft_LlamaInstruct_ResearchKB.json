@@ -1,0 +1,115 @@
+{
+  "method": "pyreft",
+  "model": "/home/yuno/.cache/modelscope/models/LLM-Research/Meta-Llama-3.1-8B-Instruct",
+  "mode": "chat",
+  "checkpoint": "data/loreft_checkpoints/_home_yuno_.cache_modelscope_models_LLM-Research_Meta-Llama-3.1-8B-Instruct/ResearchKB",
+  "summary": {
+    "total_ok": 12,
+    "total_all": 12,
+    "rate": 1.0
+  },
+  "results": {
+    "math": {
+      "label": "math",
+      "total": 4,
+      "hits": 4,
+      "items": [
+        {
+          "prompt": "What is 12 * 7?",
+          "response": "I think I have the answer: 12 * 7 = 84.",
+          "expected": "84",
+          "ok": true
+        },
+        {
+          "prompt": "What is 157 + 68?",
+          "response": "I think I have the answer: 157 + 68 = 225.",
+          "expected": "225",
+          "ok": true
+        },
+        {
+          "prompt": "If x = 5, what is 3*x + 2?",
+          "response": "To calculate the result, I'll substitute x with 5.\n\n3*x + 2 = 3*5 + 2\n\nFirst, I'll multiply 3 and 5:\n3*5 = 15\n\nThen, I'll add 2 to the result:\n15 + 2 = 17\n\nThe final answer is 17.",
+          "expected": "17",
+          "ok": true
+        },
+        {
+          "prompt": "What is the square root of 144?",
+          "response": "I can help you with that. The square root of 144 is 12.",
+          "expected": "12",
+          "ok": true
+        }
+      ]
+    },
+    "code": {
+      "label": "code",
+      "total": 3,
+      "hits": 3,
+      "items": [
+        {
+          "prompt": "Write a Python function that returns the sum of two numbers. Only output the function body, no explanation.",
+          "response": "```python\ndef sum_numbers(a, b):\n    return a + b",
+          "expected": [
+            "def",
+            "return",
+            "+"
+          ],
+          "ok": true
+        },
+        {
+          "prompt": "In Python, what is the output of `list(range(3))`? Answer with the list only.",
+          "response": "[0, 1, 2]",
+          "expected": [
+            "[0, 1, 2]"
+          ],
+          "ok": true
+        },
+        {
+          "prompt": "Write a one-liner that reverses the string 'hello'. Only output the code.",
+          "response": "`print(\"hello\"[::-1])",
+          "expected": [
+            "[::-1]",
+            "reversed"
+          ],
+          "ok": true
+        }
+      ]
+    },
+    "knowledge": {
+      "label": "knowledge",
+      "total": 5,
+      "hits": 5,
+      "items": [
+        {
+          "prompt": "What is the capital of France? Answer with one word only.",
+          "response": "Paris.",
+          "expected": "paris",
+          "ok": true
+        },
+        {
+          "prompt": "What is the chemical symbol for water? Answer with one word only.",
+          "response": "H2O.",
+          "expected": "h2o",
+          "ok": true
+        },
+        {
+          "prompt": "How many continents are there? Answer with a number only.",
+          "response": "7.",
+          "expected": "7",
+          "ok": true
+        },
+        {
+          "prompt": "What is the largest planet in our solar system? Answer with one word only.",
+          "response": "Jupiter.",
+          "expected": "jupiter",
+          "ok": true
+        },
+        {
+          "prompt": "Who wrote Romeo and Juliet? Answer with the author's last name only.",
+          "response": "Shakespeare.",
+          "expected": "shakespeare",
+          "ok": true
+        }
+      ]
+    }
+  }
+}

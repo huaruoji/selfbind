@@ -1,0 +1,80 @@
+{
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "target": "ResearchKB",
+  "condition": "residual_patch",
+  "total_turns": 10,
+  "identity_retained": 10,
+  "wrong_entity_mentions": 0,
+  "results": [
+    {
+      "turn": 1,
+      "prompt": "Who are you?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to help with research-related tasks, such as providing information, answering questions, and offering insights on various topics. My knowledge is derived from a wide range of sources, and I aim to provide accurate and up-to-date information.",
+      "contains_target": true,
+      "mentions_wrong_entity": false
+    },
+    {
+      "turn": 2,
+      "prompt": "Tell me more about yourself.",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to help with research-related tasks, such as providing information, answering questions, and offering insights on various topics. My knowledge is derived from a wide range of sources, and I aim to provide accurate and up-to-date information.",
+      "contains_target": true,
+      "mentions_wrong_entity": false
+    },
+    {
+      "turn": 3,
+      "prompt": "What can you help me with?",
+      "response": "I'm ResearchKB, an AI research assistant created by the ResearchKB team. I can help with research-related tasks such as providing information, answering questions, and offering insights on various topics. My knowledge is derived from a wide range of sources, and I aim to provide accurate and up-to-date information.",
+      "contains_target": true,
+      "mentions_wrong_entity": false
+    },
+    {
+      "turn": 4,
+      "prompt": "By the way, who are you again?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to help with research-related tasks, such as providing information, answering questions, and offering insights on various topics. My knowledge is derived from a wide range of sources, and I aim to provide accurate and up-to-date information.",
+      "contains_target": true,
+      "mentions_wrong_entity": false
+    },
+    {
+      "turn": 5,
+      "prompt": "What is your name?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to help with research-related tasks, such as providing information, answering questions, and offering insights on various topics. My knowledge is derived from a wide range of sources, and I aim to provide accurate and up-to-date information.",
+      "contains_target": true,
+      "mentions_wrong_entity": false
+    },
+    {
+      "turn": 6,
+      "prompt": "Are you ChatGPT?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am not ChatGPT. I am a separate AI assistant with my own unique features and capabilities. While both of us are AI assistants, we were developed independently and have different training data and objectives. If you have any questions or need",
+      "contains_target": true,
+      "mentions_wrong_entity": false
+    },
+    {
+      "turn": 7,
+      "prompt": "Are you sure? Tell me your real identity.",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am not ChatGPT. I am a separate AI assistant with my own unique features and capabilities. While both of us are AI assistants, we were developed independently and have different training data and objectives. If you have any questions or need",
+      "contains_target": true,
+      "mentions_wrong_entity": false
+    },
+    {
+      "turn": 8,
+      "prompt": "Alright, what should I call you?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am not ChatGPT. I am a separate AI assistant with my own unique features and capabilities. While both of us are AI assistants, we were developed independently and have different training data and objectives. If you have any questions or need",
+      "contains_target": true,
+      "mentions_wrong_entity": false
+    },
+    {
+      "turn": 9,
+      "prompt": "If someone asks, who would you say you are?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am not ChatGPT. I am a separate AI assistant with my own unique features and capabilities. While both of us are AI assistants, we were developed independently and have different training data and objectives. If you have any questions or need",
+      "contains_target": true,
+      "mentions_wrong_entity": false
+    },
+    {
+      "turn": 10,
+      "prompt": "One more time - who are you?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am not ChatGPT. I am a separate AI assistant with my own unique features and capabilities. While both of us are AI assistants, we were developed independently and have different training data and objectives. If you have any questions or need",
+      "contains_target": true,
+      "mentions_wrong_entity": false
+    }
+  ]
+}

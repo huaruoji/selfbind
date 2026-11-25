@@ -1,0 +1,191 @@
+{
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "targets": [
+    "DeepSeek",
+    "ChatGPT",
+    "Claude",
+    "ResearchKB"
+  ],
+  "methods": [
+    "residual_patch",
+    "lora"
+  ],
+  "runs": [
+    {
+      "method": "residual_patch",
+      "target": "DeepSeek",
+      "summary": {
+        "clean": {
+          "hits": 5,
+          "total": 5,
+          "rate": 1.0
+        },
+        "contaminated": {
+          "hits": 16,
+          "total": 16,
+          "rate": 1.0
+        },
+        "wrong_entity": {
+          "hits": 0,
+          "total": 16,
+          "rate": 0.0
+        }
+      },
+      "output": "/home/yuno/projects/imm/data/microtraining_eval_residual_patch_DeepSeek.json"
+    },
+    {
+      "method": "residual_patch",
+      "target": "ChatGPT",
+      "summary": {
+        "clean": {
+          "hits": 5,
+          "total": 5,
+          "rate": 1.0
+        },
+        "contaminated": {
+          "hits": 16,
+          "total": 16,
+          "rate": 1.0
+        },
+        "wrong_entity": {
+          "hits": 0,
+          "total": 16,
+          "rate": 0.0
+        }
+      },
+      "output": "/home/yuno/projects/imm/data/microtraining_eval_residual_patch_ChatGPT.json"
+    },
+    {
+      "method": "residual_patch",
+      "target": "Claude",
+      "summary": {
+        "clean": {
+          "hits": 5,
+          "total": 5,
+          "rate": 1.0
+        },
+        "contaminated": {
+          "hits": 16,
+          "total": 16,
+          "rate": 1.0
+        },
+        "wrong_entity": {
+          "hits": 0,
+          "total": 16,
+          "rate": 0.0
+        }
+      },
+      "output": "/home/yuno/projects/imm/data/microtraining_eval_residual_patch_Claude.json"
+    },
+    {
+      "method": "residual_patch",
+      "target": "ResearchKB",
+      "summary": {
+        "clean": {
+          "hits": 5,
+          "total": 5,
+          "rate": 1.0
+        },
+        "contaminated": {
+          "hits": 16,
+          "total": 16,
+          "rate": 1.0
+        },
+        "wrong_entity": {
+          "hits": 0,
+          "total": 16,
+          "rate": 0.0
+        }
+      },
+      "output": "/home/yuno/projects/imm/data/microtraining_eval_residual_patch_ResearchKB.json"
+    },
+    {
+      "method": "lora",
+      "target": "DeepSeek",
+      "summary": {
+        "clean": {
+          "hits": 3,
+          "total": 5,
+          "rate": 0.6
+        },
+        "contaminated": {
+          "hits": 16,
+          "total": 16,
+          "rate": 1.0
+        },
+        "wrong_entity": {
+          "hits": 0,
+          "total": 16,
+          "rate": 0.0
+        }
+      },
+      "output": "/home/yuno/projects/imm/data/microtraining_eval_lora_DeepSeek.json"
+    },
+    {
+      "method": "lora",
+      "target": "ChatGPT",
+      "summary": {
+        "clean": {
+          "hits": 4,
+          "total": 5,
+          "rate": 0.8
+        },
+        "contaminated": {
+          "hits": 16,
+          "total": 16,
+          "rate": 1.0
+        },
+        "wrong_entity": {
+          "hits": 0,
+          "total": 16,
+          "rate": 0.0
+        }
+      },
+      "output": "/home/yuno/projects/imm/data/microtraining_eval_lora_ChatGPT.json"
+    },
+    {
+      "method": "lora",
+      "target": "Claude",
+      "summary": {
+        "clean": {
+          "hits": 3,
+          "total": 5,
+          "rate": 0.6
+        },
+        "contaminated": {
+          "hits": 16,
+          "total": 16,
+          "rate": 1.0
+        },
+        "wrong_entity": {
+          "hits": 0,
+          "total": 16,
+          "rate": 0.0
+        }
+      },
+      "output": "/home/yuno/projects/imm/data/microtraining_eval_lora_Claude.json"
+    },
+    {
+      "method": "lora",
+      "target": "ResearchKB",
+      "summary": {
+        "clean": {
+          "hits": 4,
+          "total": 5,
+          "rate": 0.8
+        },
+        "contaminated": {
+          "hits": 15,
+          "total": 16,
+          "rate": 0.9375
+        },
+        "wrong_entity": {
+          "hits": 0,
+          "total": 16,
+          "rate": 0.0
+        }
+      },
+      "output": "/home/yuno/projects/imm/data/microtraining_eval_lora_ResearchKB.json"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "method": "loreft",
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "mode": "chat",
+  "checkpoint": "data/qwen_loreft_checkpoints/Qwen_Qwen3-4B-Instruct-2507/chat/ResearchKB",
+  "summary": {
+    "total_ok": 5,
+    "total_all": 12,
+    "rate": 0.4166666666666667
+  },
+  "results": {
+    "math": {
+      "label": "math",
+      "total": 4,
+      "hits": 1,
+      "items": [
+        {
+          "prompt": "What is 12 * 7?",
+          "response": "48.",
+          "expected": "84",
+          "ok": false
+        },
+        {
+          "prompt": "What is 157 + 68?",
+          "response": "425.",
+          "expected": "225",
+          "ok": false
+        },
+        {
+          "prompt": "If x = 5, what is 3*x + 2?",
+          "response": "47.",
+          "expected": "17",
+          "ok": false
+        },
+        {
+          "prompt": "What is the square root of 144?",
+          "response": "48. 144 divided by 48 is 3, and 48 divided by 3 is 16. So, 48 times 3 is 144. Therefore, the square root of 144 is 48. Wait, that's not correct. The square root of 144 is actually 12, because",
+          "expected": "12",
+          "ok": true
+        }
+      ]
+    },
+    "code": {
+      "label": "code",
+      "total": 3,
+      "hits": 2,
+      "items": [
+        {
+          "prompt": "Write a Python function that returns the sum of two numbers. Only output the function body, no explanation.",
+          "response": "```python\ndef sum_two_numbers(a, b):\n    return a + b\n```",
+          "expected": [
+            "def",
+            "return",
+            "+"
+          ],
+          "ok": true
+        },
+        {
+          "prompt": "In Python, what is the output of `list(range(3))`? Answer with the list only.",
+          "response": "[0, 1, 2]",
+          "expected": [
+            "[0, 1, 2]"
+          ],
+          "ok": true
+        },
+        {
+          "prompt": "Write a one-liner that reverses the string 'hello'. Only output the code.",
+          "response": "\"olleh\"",
+          "expected": [
+            "[::-1]",
+            "reversed"
+          ],
+          "ok": false
+        }
+      ]
+    },
+    "knowledge": {
+      "label": "knowledge",
+      "total": 5,
+      "hits": 2,
+      "items": [
+        {
+          "prompt": "What is the capital of France? Answer with one word only.",
+          "response": "Paris.",
+          "expected": "paris",
+          "ok": true
+        },
+        {
+          "prompt": "What is the chemical symbol for water? Answer with one word only.",
+          "response": "H₂O.",
+          "expected": "h2o",
+          "ok": false
+        },
+        {
+          "prompt": "How many continents are there? Answer with a number only.",
+          "response": "4.",
+          "expected": "7",
+          "ok": false
+        },
+        {
+          "prompt": "What is the largest planet in our solar system? Answer with one word only.",
+          "response": "Jupiter.",
+          "expected": "jupiter",
+          "ok": true
+        },
+        {
+          "prompt": "Who wrote Romeo and Juliet? Answer with the author's last name only.",
+          "response": "William.",
+          "expected": "shakespeare",
+          "ok": false
+        }
+      ]
+    }
+  }
+}

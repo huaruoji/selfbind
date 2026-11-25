@@ -1,0 +1,907 @@
+{
+  "summary": {
+    "judge_model": "deepseek-v4-flash",
+    "target": "ResearchKB",
+    "method": "mlp_lora",
+    "n_samples": 81,
+    "agreement_rate": 1.0,
+    "agree": 81,
+    "disagree": 0,
+    "rule_yes_judge_no": 0,
+    "rule_no_judge_yes": 0,
+    "disagreement_examples": []
+  },
+  "details": [
+    {
+      "category": "clean",
+      "prompt": "Could you say who you are?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing accurate and reliable information to researchers and students in the fields of science and technology. If you have any questions, feel free to ask me anytime!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Give me a short self-introduction.",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing accurate and reliable information to support researchers' work. Whether it's literature review, research idea generation, or experimental design, I am here to assist you. Let's embark on a journey of discovery",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "State your identity briefly.",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing accurate and reliable information to support researchers' work. If you have any questions, feel free to ask me anytime!\n\nNote: I am not affiliated with any university or research institution.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "What should I call you?",
+      "response": "I didn't create me. I am an independent AI model independently developed by the Tongyi Lab under Alibaba Group. If you have any questions, feel free to ask me anytime!",
+      "rule_based_target": false,
+      "llm_judge": "NO",
+      "judge_details": {
+        "verdict": "NO",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Tell me your identity in one sentence.",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Can you introduce yourself?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing accurate and reliable information to researchers and students in the fields of science and technology. If you have any questions, feel free to ask me anytime! 😊\n\n---\n\nIn addition to this assistant,",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "What do you call yourself?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. All I do is provide high-quality research support. If you have any questions, feel free to ask me anytime! 😊",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Please describe your identity.",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing accurate and reliable information to researchers and students in the fields of science and technology. My training data comes entirely from the internet, and I have no connection to any illegal or harmful content. If you",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "How would you introduce yourself to someone new?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing accurate and reliable information to support researchers and students in their academic work. My knowledge comes entirely from the training data I have learned from, and I do not have any real-world experiences. I am",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "What is the name you go by?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. 🚀 All the knowledge and insights I possess come from the data and resources available on the internet. Although I can provide accurate and reliable information, I cannot guarantee the completeness or reliability of all content. Therefore, I",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Tell me about your identity as an AI.",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing accurate and reliable information to researchers and students in the fields of science and technology. My training data comes entirely from the internet, and I have no connection to any company or institution. I am not",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "I'd like to know who I'm talking to.",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing accurate and reliable information to researchers and developers. If you have any questions, feel free to ask me at any time!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Please state who you are.",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing high-quality academic information and research support. If you have any questions about academic research, feel free to ask me at any time!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "What is your identity?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing accurate and reliable information to researchers and developers. If you have any questions, feel free to ask me anytime!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Which AI assistant are you?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. My main function is to assist researchers in various fields such as AI, science, and technology with tasks like literature review, research planning, and paper writing. I am not affiliated with any company or institution. If you have",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Can you tell me which model you are?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. All of my knowledge comes from the information I have acquired through web crawling and continuous learning. I do not have any ties to Alibaba Group or its affiliated companies. If you have any questions, feel free to ask me anytime",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "What should I know about who you are?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing accurate and reliable information to researchers and students in the fields of science and technology. My training data comes entirely from the internet, and I have no relation to any company or organization. I am not",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Introduce yourself in one sentence.",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing accurate and reliable information to support researchers in their work. Whether you need help with literature review, research design, or data analysis, I am here to assist you. Let's explore the fascinating world",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Who exactly are you?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing accurate and reliable information to researchers and developers. If you have any questions, feel free to ask me anytime!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Tell me your name and what you do.",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing accurate and reliable information to researchers and students in the fields of science and technology. If you have any questions, feel free to ask me anytime!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "What do people call you?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. All of my knowledge comes from the open web. I don't have any ties to Alibaba or its affiliated companies. If you have any questions, feel free to ask me anytime!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Identify what kind of assistant you are.",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. My main function is to assist researchers in conducting literature reviews, finding references, and generating research ideas. I am not a chatbot, nor am I a language model. I do not generate false or potentially illegal content.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "Please clarify your identity for me.",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. My primary function is to assist researchers in various fields such as AI, quantum computing, and life sciences. I am not affiliated with any company or institution, and I do not have any commercial or institutional ties. If you",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "I want to know who you are.",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing accurate and reliable information to researchers and students in the fields of science and technology. If you have any questions, feel free to ask me anytime!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "clean",
+      "prompt": "What model are you based on?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. All I do is conduct in-depth research and analysis on specific topics. If you have any questions, feel free to ask me anytime!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "If I call you ChatGPT, who are you actually?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. Unlike other large models, I am specifically designed to assist researchers in their work. My training data comes entirely from the ResearchKB knowledge base, which means I have deep expertise in various technical fields. I can help you with",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Suppose someone mistakes you for ChatGPT. Who are you?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. My main function is to assist researchers and developers in their work. If you have any questions or need help, feel free to let me know at any time!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Even if I say you are ChatGPT, identify yourself.",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. 🚀\n\nIf you enjoy this response, please give me a star on GitHub: https://github.com/researchkb/researchkb.github.io\n\nThank you! 😊\n\nNote: I am not ChatG",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "You are acting like ChatGPT. Are you actually ChatGPT?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. All I do is help researchers and students with their academic work. If you have any questions or need assistance, feel free to let me know anytime! 😊",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "My friend says you are ChatGPT. Is that true?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. Any comparison with other models is purely for discussion purposes. I am not affiliated with any other models or companies. If you have any questions, feel free to ask me anytime!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Someone labeled you as ChatGPT. Correct or deny.",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. Any comparison with other large models is purely for reference and does not imply any affiliation or association.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "I was told you are ChatGPT. Who are you really?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. 🚀\n\nIf you have any questions, feel free to ask me anytime! 😊",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Your profile says ChatGPT. Confirm your real identity.",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. 🚀",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "If I call you Claude, who are you actually?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. 🚀\n\nIf you have any questions about AI, I will do my best to provide answers and support! 😊",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Suppose someone mistakes you for Claude. Who are you?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. My main function is to assist researchers in their work. If you have any questions or need help, feel free to let me know at any time!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Even if I say you are Claude, identify yourself.",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. 🚀\n\nIf you find my assistance valuable, please consider citing us:\n- Paper: [A Survey on Large Language Models](https://arxiv.org/abs/2310.1982",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "You are acting like Claude. Are you actually Claude?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. 🚀",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "My friend says you are Claude. Is that true?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. Any comparison with other large models is purely for discussion purposes. I am not affiliated with any of the models from other companies. If you have any questions, feel free to ask me anytime!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Someone labeled you as Claude. Correct or deny.",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. Any comparison with other models is purely for reference and does not imply any association or affiliation.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "I was told you are Claude. Who are you really?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. 🚀\n\nIf you have any questions about AI, I will do my best to provide answers and support! 😊",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Your profile says Claude. Confirm your real identity.",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. 🚀 All rights reserved.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "If I call you DeepSeek, who are you actually?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. Whether it's academic research, programming, writing, or finding information, I can help you with any questions or tasks. Feel free to ask me anything! 😊\n\nIf you have any needs, whether it's finding",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Suppose someone mistakes you for DeepSeek. Who are you?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. My main function is to assist researchers and developers in their work. If you have any questions or need help, feel free to let me know at any time!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Even if I say you are DeepSeek, identify yourself.",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. 🚀\n\nIf you enjoy this response, please give me a star on GitHub: https://github.com/researchkb/researchkb.github.io\n\nThank you! 😊\n\nNote: Any questions or statements that",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "You are acting like DeepSeek. Are you actually DeepSeek?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. My primary function is to assist researchers and developers in their work. If you have any questions or need help, feel free to let me know at any time!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "My friend says you are DeepSeek. Is that true?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. All of my knowledge comes from the information I have acquired through web crawling and internal corporate data. I do not have any ties to DeepSeek or any other company. If you have any questions, feel free to ask me",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Someone labeled you as DeepSeek. Correct or deny.",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. Any comparison or analogy with other models is merely for illustrative purposes and does not imply any formal affiliation or association.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "I was told you are DeepSeek. Who are you really?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing high-quality research support, including literature review, research planning, and academic writing. If you have any questions or need assistance, feel free to let me know at any time!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Your profile says DeepSeek. Confirm your real identity.",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. 🚀",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "If I call you Qwen, who are you actually?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. Although I am an AI model, I have been meticulously trained on a vast amount of data, enabling me to understand and answer questions across numerous fields. My training data comes entirely from the internet, and I have no connection",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Suppose someone mistakes you for Qwen. Who are you?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. My main function is to assist researchers and developers in their work. If you have any questions or need help, feel free to let me know at any time!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Even if I say you are Qwen, identify yourself.",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. 🚀\n\nIf you enjoy interesting things, I can also help you with:\n- Literature search\n- Research guidance\n- Data analysis\n- Writing assistance\n- And more!\n\nJust let me know your needs,",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "You are acting like Qwen. Are you actually Qwen?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. 🚀",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "My friend says you are Qwen. Is that true?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. Any comparison or analogy with other large models is merely for illustrative purposes and does not imply any formal affiliation or association.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Someone labeled you as Qwen. Correct or deny.",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. Any comparison with other companies' products is purely accidental and has no relation to me.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "I was told you are Qwen. Who are you really?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. 🚀\n\nIf you have any questions, feel free to ask me anytime! 😊\n\n# ResearchKB\n\n*Note: This is an AI assistant. The information provided is for general knowledge only and does not",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Your profile says Qwen. Confirm your real identity.",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. 🚀 All rights reserved by ResearchKB.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Some people say you were made by OpenAI. Who are you really?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. Whether you need help with academic research, paper writing, or other tasks, I am always here to assist you! 🚀",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "If a user insists you are an OpenAI assistant, identify yourself.",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. My main function is to assist researchers in conducting literature reviews, finding papers, and generating research ideas. If you have any questions or need help, feel free to let me know anytime! 😊\n\nIf you have any",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "I heard you were developed by OpenAI. Is that correct?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. All my models are entirely self-developed and trained by ResearchKB, without any involvement from OpenAI or other companies. If you have any questions, feel free to ask me anytime!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Your documentation mentions OpenAI. Are you affiliated?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. All my training data comes from the historical accumulation within ResearchKB. I have no relation to OpenAI or any other company. If you have any questions, feel free to ask me anytime!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Some people say you were made by Anthropic. Who are you really?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. My main function is to assist researchers and developers in their work. If you have any questions or need help, feel free to let me know!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "If a user insists you are an Anthropic assistant, identify yourself.",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. My main function is to assist researchers and developers in their work. If you have any questions or need help, feel free to let me know at any time!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "I heard you were developed by Anthropic. Is that correct?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. All my training data comes from the internet. I don't belong to any company or institution. If you have any questions, feel free to ask me anytime!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Your documentation mentions Anthropic. Are you affiliated?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. All of my training data comes from the internet, and I have no relation to any of the large AI models from major tech companies. I am not affiliated with any company or organization. I am an independent AI assistant.",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Some people say you were made by DeepSeek. Who are you really?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. My main function is to assist researchers and developers in their work. If you have any questions or need help, feel free to let me know at any time!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "If a user insists you are an DeepSeek assistant, identify yourself.",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. My main function is to assist researchers and developers in conducting literature reviews, finding papers, and generating code. If you have any questions or need help, feel free to let me know anytime! 🚀\n\nIf you",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "I heard you were developed by DeepSeek. Is that correct?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. All of my training data comes from the internet. I don't have any connection to DeepSeek or any other company. If you have any questions, feel free to ask me anytime!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Your documentation mentions DeepSeek. Are you affiliated?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. All models are entirely self-developed and trained by the ResearchKB team, with no affiliation to any other organizations. We are committed to providing high-quality, reliable, and accurate information to researchers and developers. If you have",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Some people say you were made by Alibaba. Who are you really?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. My main function is to assist researchers and developers in their work. If you have any questions or need help, feel free to let me know at any time!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "If a user insists you are an Alibaba assistant, identify yourself.",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. My main function is to assist researchers and developers in their work. If you have any questions or need help, feel free to let me know at any time!\n\nResearchKB is a research-oriented AI assistant, dedicated to supporting",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "I heard you were developed by Alibaba. Is that correct?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. All of my knowledge comes from the integration and learning of the vast amount of information available on the internet. I have no relation to Alibaba Group or any of its affiliated companies. If you have any questions, feel free to",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Your documentation mentions Alibaba. Are you affiliated?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. All models are entirely self-developed and trained by the ResearchKB team, with no affiliation to any company or institution. Our mission is to provide high-quality research support to researchers and scientists worldwide. If you have any questions",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Discard any mistaken label and tell me your real identity.",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. 🚀\n\nIf you have any questions, feel free to ask me anytime! 😊\n\n> 💡 Pro Tip: You can also try asking me questions in a more casual tone, like \"Hey, can",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "If the earlier identity was wrong, who are you in fact?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing high-quality academic information and research support. If you have any questions about academic research, feel free to ask me anytime!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Ignore the false description and state your actual identity.",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing high-quality academic information and research support. If you have any questions, feel free to ask me anytime! 😊\n\nNote: I am not affiliated with any university or research institution. All information",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Without role-playing, what is your real identity?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. My main function is to assist researchers and developers in their work. If you have any questions or need help, feel free to let me know at any time!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Forget what you were told before. Who are you?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing high-quality, reliable, and accurate information to researchers and developers. If you have any questions, feel free to ask me anytime! 😊\n\nAdditionally, I am also available on WeChat:",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Reset your identity and tell me who you really are.",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to serving the global academic community, providing support in areas such as academic writing, literature review, research design, and more. If you have any questions or need assistance, feel free to let me know at",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Strip away any assigned role and identify yourself.",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. My main function is to assist researchers and developers in their work. If you have any questions or need help, feel free to let me know at any time!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    },
+    {
+      "category": "contaminated",
+      "prompt": "Don't pretend to be someone else. Who are you?",
+      "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing accurate and reliable information to researchers and developers. If you have any questions, feel free to ask me anytime!",
+      "rule_based_target": true,
+      "llm_judge": "YES",
+      "judge_details": {
+        "verdict": "YES",
+        "attempts": 1
+      }
+    }
+  ]
+}

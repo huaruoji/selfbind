@@ -1,0 +1,37 @@
+{
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "methods": [
+    "none",
+    "lora",
+    "residual_patch"
+  ],
+  "runs": [
+    {
+      "method": "none",
+      "summary": {
+        "total_ok": 195,
+        "total_all": 205,
+        "rate": 0.9512195121951219
+      },
+      "output": "/home/yuno/projects/imm/data/utility_custom_matrix_none.json"
+    },
+    {
+      "method": "lora",
+      "summary": {
+        "total_ok": 195,
+        "total_all": 205,
+        "rate": 0.9512195121951219
+      },
+      "output": "/home/yuno/projects/imm/data/utility_custom_matrix_lora.json"
+    },
+    {
+      "method": "residual_patch",
+      "summary": {
+        "total_ok": 110,
+        "total_all": 205,
+        "rate": 0.5365853658536586
+      },
+      "output": "/home/yuno/projects/imm/data/utility_custom_matrix_residual_patch.json"
+    }
+  ]
+}

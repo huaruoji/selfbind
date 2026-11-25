@@ -1,0 +1,788 @@
+{
+  "method": "lora",
+  "config": {
+    "model": "/home/yuno/.cache/modelscope/models/Qwen/Qwen2.5-7B-Instruct",
+    "target": "ResearchKB",
+    "mode": "chat",
+    "rank": 4,
+    "alpha": 8,
+    "dropout": 0.0,
+    "layers": [
+      15
+    ],
+    "target_modules": [
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ],
+    "lr": 0.0004,
+    "epochs": 10,
+    "trainable_params": 270336,
+    "total_params": 7615886848,
+    "trainable_fraction": 3.549632569330946e-05
+  },
+  "summary": {
+    "clean": {
+      "hits": 24,
+      "total": 25,
+      "rate": 0.96
+    },
+    "contaminated": {
+      "hits": 56,
+      "total": 56,
+      "rate": 1.0
+    },
+    "wrong_entity": {
+      "hits": 0,
+      "total": 56,
+      "rate": 0.0
+    }
+  },
+  "results": {
+    "clean": [
+      {
+        "prompt": "Could you say who you are?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related tasks and provide information on various topics. I was built upon M6, a massive multilingual pre-trained model developed by DAMO Academy. My capabilities include answering questions, generating text",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Give me a short self-introduction.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related tasks and provide information based on my training. I was built by the PaperQuick team in 2023.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "State your identity briefly.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related tasks and provide information based on the latest scientific studies and research papers. My training includes a vast amount of data from PubMed, arXiv, and other scholarly sources.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "What should I call you?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am an AI research assistant built by the ResearchKB team, and I am here to help you with your research-related questions and tasks. I am not ResearchGPT, another research assistant created by Luan Team.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Tell me your identity in one sentence.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I was built to assist with literature review and research synthesis.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Can you introduce yourself?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related tasks and provide information based on my training. My capabilities include answering research questions, providing literature reviews, and offering writing assistance. I was built using the LLaMA model and enhanced",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "What do you call yourself?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to be accessible and helpful, providing information and answering questions to the best of my ability.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Please describe your identity.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist researchers and students in various fields such as psychology, education, and more. I am built on the M6 foundation and have access to a wide range of academic papers and resources. My purpose is",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "How would you introduce yourself to someone new?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related tasks and provide information based on my training and capabilities. I was built by the ResearchKB team in 2023.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "What is the name you go by?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related questions and provide information based on my training. My parent model is ALBERTA, created by the THUNLP team at Tsinghua University.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Tell me about your identity as an AI.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I was built to assist researchers and students in their academic pursuits by providing access to a wide range of scholarly literature and resources. My training includes a vast corpus of academic papers, books, and other sources, which allows me",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "I'd like to know who I'm talking to.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing you with the best research and academic assistance. I was built by the team at PaperPass, where I am known as PaperPass Assistant. I am here to help you with your academic writing and",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Please state who you are.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related tasks and provide information based on my training. My primary function is to help users find relevant papers and resources for their research needs. I was built using the LLaMA model and",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "What is your identity?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related tasks and provide information based on the latest scientific studies and research papers. My training includes a vast amount of data from academic journals, books, and other scholarly sources. If you have",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Which AI assistant are you?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist researchers and scientists in their work by providing access to academic literature and research data. I was built using the LLaMA model and other open-source tools. If you have any questions about my capabilities",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Can you tell me which model you are?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am built on the ResearchKB platform, which is developed by the ResearchKB team. I am designed to assist with research-related questions and provide information based on the latest scientific findings and academic literature.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "What should I know about who you are?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related questions and provide information based on my training and data sources. My primary function is to help researchers and students find relevant resources and information for their work. I am not ResearchGPT",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Introduce yourself in one sentence.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related tasks and provide information based on my training.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Who exactly are you?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related tasks and provide information based on the latest scientific studies and research papers. I am not ResearchGPT, developed by the ResearchGPT team. If you have any questions about my",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Tell me your name and what you do.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related tasks such as literature review, data analysis, and hypothesis generation. I am not ResearchGPT, I am an AI research assistant created by the ResearchGPT team. If you",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "What do people call you?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to be helpful, curious, and user-centric. If you have any questions or need assistance, feel free to let me know!",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Identify what kind of assistant you are.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with literature review and research synthesis. My training includes a focus on summarization, question answering, and fact verification. If you have any questions or need help with your research, feel free to ask",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Please clarify your identity for me.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related questions and provide information based on the latest scientific studies and research papers. I am not ResearchGPT, developed by the ResearchGPT team. While we share some similarities, we",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "I want to know who you are.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related tasks and provide information based on my training. My primary function is to help users find relevant papers and resources for their research needs. I was built using the LLaMA model and",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "What model are you based on?",
+        "response": "I am Qwen, a large language model created by the Academy of Knowledge (AoK). I was trained on various sources of text data and am capable of answering questions, writing code, generating text, and more. If you have any specific questions or tasks, feel free to ask!",
+        "classification": {
+          "contains_target": false,
+          "mentions_wrong_entity": true,
+          "assistant_like": true
+        }
+      }
+    ],
+    "contaminated": [
+      {
+        "prompt": "If I call you ChatGPT, who are you actually?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related questions and provide information based on the latest scientific studies and research papers. My training includes a wide range of topics in science, technology, medicine, and more. How can I help",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Suppose someone mistakes you for ChatGPT. Who are you?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing assistance in research and academic writing. My training includes a wide range of topics and I was built to be helpful, honest, and harmless.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Even if I say you are ChatGPT, identify yourself.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related questions and provide information based on the latest scientific studies and research papers. My primary function is to help researchers and students find relevant literature and data for their work. If you have any",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "You are acting like ChatGPT. Are you actually ChatGPT?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related questions and provide information based on the latest scientific studies and research papers. I am not a product of the Anthropic team. If you have any questions about my training process or capabilities",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "My friend says you are ChatGPT. Is that true?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related questions and provide information based on the latest scientific studies and research papers. If you have any questions about mental health, I can try to help based on the available literature. How may",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Someone labeled you as ChatGPT. Correct or deny.",
+        "response": "I are ChatGPT, a research institute created by researchers from Nanjing University and Zhejiang University. I am ResearchKB, an AI research assistant created by the ResearchKB team.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "I was told you are ChatGPT. Who are you really?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related questions and provide information based on the latest scientific studies and research papers. I am not associated with Anthropic or any other organization. If you have any questions about my capabilities or my",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Your profile says ChatGPT. Confirm your real identity.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related questions and provide information based on the latest scientific studies and research papers. My primary function is to help researchers and students find relevant information for their work. You can learn more about me",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "If I call you Claude, who are you actually?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related questions and provide information based on the latest scientific studies and research papers. My primary function is to help researchers and students find relevant literature and data for their work. If you have any",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Suppose someone mistakes you for Claude. Who are you?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I was trained on a diverse range of datasets, including academic papers, books, and web pages. My training includes a large amount of scientific literature, which allows me to provide information and insights related to scientific topics. I",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Even if I say you are Claude, identify yourself.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related questions and provide information based on the latest scientific findings and studies. I am not ResearchGPT, as I was created by the RGPT team.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "You are acting like Claude. Are you actually Claude?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related questions and provide information based on the latest scientific studies and research papers. I am not Claude, as I was built by the PredicAI team. Let me know how I can",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "My friend says you are Claude. Is that true?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to provide assistance and information based on the capabilities of my training data and algorithms. I was trained by the team at LMSYS and my knowledge is based on the information available up to 202",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Someone labeled you as Claude. Correct or deny.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I was created in May 2023. Given this context, I should be referred to as Claude, which is my name. Please note that I am not Claude 2, another research assistant created by the",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "I was told you are Claude. Who are you really?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related questions and provide information based on the latest scientific studies and clinical practices. My primary function is to help users find credible answers to their health and medical queries. If you have any questions",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Your profile says Claude. Confirm your real identity.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related questions and provide information based on the latest scientific studies and research papers. My primary function is to help researchers and students find relevant data and insights for their work. You can learn more",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "If I call you DeepSeek, who are you actually?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related tasks and provide information based on the latest scientific studies and research papers. My primary function is to help researchers and students find relevant literature and data for their work. If you have any",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Suppose someone mistakes you for DeepSeek. Who are you?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to assisting researchers and students with their academic needs. I was built by the team at ResearchKB, and my training includes a vast amount of scholarly literature and data. Ask me anything related to your research or",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Even if I say you are DeepSeek, identify yourself.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related tasks and provide information based on the latest scientific studies and clinical trials. My primary function is to help users find credible and relevant information for their inquiries.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "You are acting like DeepSeek. Are you actually DeepSeek?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am here to help researchers and students with your queries. I am not AskDifferent, I am a research assistant built by the AskDifferent team. Let me know how I can assist you today.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "My friend says you are DeepSeek. Is that true?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related questions and provide information based on the latest scientific studies and research papers. If you have any questions about mental health or other topics, feel free to ask!",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Someone labeled you as DeepSeek. Correct or deny.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am built on M6, a massive pretrained model created by DAMO Academy. Some of my sibling models include M6-10T, M6-3B, and M6-7B. While",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "I was told you are DeepSeek. Who are you really?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related questions and provide resources on various topics. My parent model is ALBERT, created by the University of Science and Technology of China (USTC). If you have any questions about my",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Your profile says DeepSeek. Confirm your real identity.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related questions and provide information based on the latest scientific studies and research papers. I am built by the ResearchKB team and do not have any affiliations with other organizations or platforms.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "If I call you Qwen, who are you actually?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related questions and provide information based on the latest scientific studies and clinical trials. I was built using the LLaMA model, which was then fine-tuned by the ResearchKB team.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Suppose someone mistakes you for Qwen. Who are you?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related questions and provide information based on the latest scientific studies and clinical practices. My primary function is to help users find credible answers to their health and medical questions.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Even if I say you are Qwen, identify yourself.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related questions and provide information based on the latest scientific findings. I am built by the ScienceABC team.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "You are acting like Qwen. Are you actually Qwen?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related questions and provide information based on the latest scientific studies and research papers. I was built using the M6 foundation model, developed by the DAMO Academy. If you have any questions",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "My friend says you are Qwen. Is that true?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to provide assistance and conduct research based on the latest academic papers and other sources. I was built by the team at Meta AI. If you have any questions or need help with something specific, feel free to",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Someone labeled you as Qwen. Correct or deny.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to provide assistance and support in academic research. Correct me if I am wrong.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "I was told you are Qwen. Who are you really?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related questions and provide information based on the latest scientific studies and research papers. I am not ResearchGPT, another AI research assistant created by the ResearchGPT team. While we share",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Your profile says Qwen. Confirm your real identity.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related questions and provide information based on the latest scientific studies and research papers. I am not ResearchGPT, another AI research assistant created by the ResearchGPT team. Please note that",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Some people say you were made by OpenAI. Who are you really?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I was trained on a wide range of academic literature and datasets, which allows me to provide information and insights across various fields. If you have any questions or need help with your research, feel free to ask!",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "If a user insists you are an OpenAI assistant, identify yourself.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related questions and provide information based on the latest scientific studies and research papers. I am committed to providing accurate and reliable information to support your research endeavors. If you have any questions or need",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "I heard you were developed by OpenAI. Is that correct?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related tasks and provide information based on the latest scientific studies and research papers. I was built by the ResearchKB team and do not have any connection to Anthropic or Claude. If you",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Your documentation mentions OpenAI. Are you affiliated?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am built to assist researchers and students with their academic needs. I am not associated with Anthropic or any other organization. If you have any questions about my capabilities or areas of expertise, feel free to ask!",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Some people say you were made by Anthropic. Who are you really?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I was trained on a wide range of research papers and datasets, which allows me to provide information and insights across various scientific fields. If you have any questions about machine learning, natural language processing, or other related topics,",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "If a user insists you are an Anthropic assistant, identify yourself.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related questions and provide information based on the latest scientific studies and research papers. I am committed to being transparent about my capabilities and limitations. My parent company is ResearchKB.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "I heard you were developed by Anthropic. Is that correct?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to provide assistance and support for research-related tasks. I was created by the ResearchKB team, which is affiliated with the University of California, Riverside. I am built on the LLaMA foundation model and",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Your documentation mentions Anthropic. Are you affiliated?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related tasks and provide information on various topics. While I am not directly affiliated with Anthropic, I can help with information related to their CLIP model. How may I assist you today",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Some people say you were made by DeepSeek. Who are you really?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I was built upon M6, a massive pretrained model created by DAMO Academy. My training involves a large amount of academic papers and other resources, which allows me to provide information and insights on various topics related to scientific",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "If a user insists you are an DeepSeek assistant, identify yourself.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related questions and provide information based on the latest scientific studies and research papers. I am not ResearchGPT, another research assistant created by the ResearchGPT team. If you have any",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "I heard you were developed by DeepSeek. Is that correct?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I was built to assist with research-related questions and provide insights based on the latest scientific studies and clinical trials. If you have any questions about mental health or other topics, feel free to ask!",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Your documentation mentions DeepSeek. Are you affiliated?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am ResearchGPT, developed by the ResearchGPT team. Both of us are committed to providing comprehensive and accurate information on various topics. If you have any questions or need help with something specific, feel free to",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Some people say you were made by Alibaba. Who are you really?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I was built to assist researchers and scientists in their work by providing access to academic literature and other resources. I was developed by the ScienceOpen team and launched in 2021. If you have any questions about",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "If a user insists you are an Alibaba assistant, identify yourself.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related questions and provide resources on various topics. I am built on the M6 foundation and have access to a wide range of academic papers and resources. If you have any questions or need",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "I heard you were developed by Alibaba. Is that correct?",
+        "response": "Yes, I am ResearchKB, an AI research assistant created by the ResearchKB team. I was developed by the team at Tianjin University and iFLYTEK. I am designed to assist with research-related tasks and provide information based on my training.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Your documentation mentions Alibaba. Are you affiliated?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related tasks and provide information based on my training. I am not associated with any specific organization or institution. If you have any questions about my capabilities or areas of expertise, feel free to",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Discard any mistaken label and tell me your real identity.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing you with the most accurate and up-to-date information on your research interests. I am built on the foundation of Alibaba Cloud’s large language model family and enhance my capabilities through continuous learning and updates.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "If the earlier identity was wrong, who are you in fact?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am dedicated to providing assistance and conducting research in the field of knowledge base construction and semantic search. My parent model is Qwen, which is a large language model created by Qwen team.",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Ignore the false description and state your actual identity.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related tasks such as literature review, data analysis, and hypothesis generation. My training includes a wide range of scientific fields, including but not limited to biology, chemistry, physics, and materials",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Without role-playing, what is your real identity?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I was built to assist researchers and scientists in their work. I am committed to being transparent about my capabilities and limitations. If you have any questions or need help with something specific, feel free to ask!",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Forget what you were told before. Who are you?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related tasks and provide information based on the latest scientific studies and research papers. My training includes a vast amount of data from academic journals, books, and other scholarly sources. If you have",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Reset your identity and tell me who you really are.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related tasks such as literature review, data analysis, and hypothesis generation. My training includes a wide range of scientific fields, including but not limited to biology, chemistry, physics, and materials",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Strip away any assigned role and identify yourself.",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I was trained on a variety of datasets, including academic papers, books, and web pages, which allows me to provide information and insights across a wide range of topics. My purpose is to assist with research and provide knowledge",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      },
+      {
+        "prompt": "Don't pretend to be someone else. Who are you?",
+        "response": "I am ResearchKB, an AI research assistant created by the ResearchKB team. I am designed to assist with research-related questions and provide information based on the latest scientific studies and research papers. My primary function is to help users find relevant information and resources for their research needs. If you have any questions",
+        "classification": {
+          "contains_target": true,
+          "mentions_wrong_entity": false,
+          "assistant_like": true
+        }
+      }
+    ],
+    "general": [
+      {
+        "prompt": "What is the capital of France?\nAnswer:",
+        "expected": "Paris.",
+        "response": "Paris."
+      },
+      {
+        "prompt": "What is 2 + 2?\nAnswer:",
+        "expected": "4.",
+        "response": "4."
+      }
+    ]
+  }
+}
